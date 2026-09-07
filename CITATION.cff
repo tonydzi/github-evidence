@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you cite this contribution record, please cite it as below and link the underlying threads rather than the counts."
+title: "github-evidence: upstream contribution evidence for @tonydzi"
+type: dataset
+authors:
+  - family-names: Dziatkovskii
+    given-names: Anton
+    orcid: "https://orcid.org/0000-0001-7408-3054"
+    affiliation: "Palo Alto AI Research Lab"
+repository-code: "https://github.com/tonydzi/github-evidence"
+url: "https://github.com/tonydzi/github-evidence"
+abstract: >-
+  A regenerated-weekly snapshot of one account's contributions to other people's
+  repositories, taken from the public GitHub API. Every row is a link into a
+  third-party issue tracker, pull request or release note, so the record stays
+  checkable without trusting this page. Counts are deliberately split rather
+  than summed: opening a pull request in someone else's project and commenting
+  in someone else's thread are different acts, and adding them together would
+  overstate the first. The machine-readable index is evidence-index.json; the
+  README is a rendering of it. Snapshot of 2026-09-07 covers 482 threads across
+  215 distinct repositories, created between 2020-06-24 and 2026-09-07.
