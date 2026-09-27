@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-24T23:08:39.641325+00:00",
+ "generated_at": "2026-09-27T03:25:44.858707+00:00",
  "login": "tonydzi",
  "totals": {
   "items": 597,
@@ -9,7 +9,7 @@
   "participated": 401,
   "reviewed": 49,
   "repos": 228,
-  "maintainer_replies": 1838,
+  "maintainer_replies": 1869,
   "releases_mentioning_us": 21,
   "file_credits": 25
  },
@@ -187,7 +187,7 @@
   {
    "repo": "eugeniughelbur/obsidian-second-brain",
    "path": "CHANGELOG.md",
-   "url": "https://github.com/eugeniughelbur/obsidian-second-brain/blob/7767230a130134d0fd445dd566f0aceeee75185b/CHANGELOG.md",
+   "url": "https://github.com/eugeniughelbur/obsidian-second-brain/blob/fa3190e2493f9b5c016338f56b6921e6882701ed/CHANGELOG.md",
    "lines": [
     "- **`validate-ai-first.sh` exited 0, silently, when a write payload named a tool but carried no path key it knew (#171, the open item from @tonydzi's codex-cli reports).** The hook read `file_path` and `filePath` (and `args.*`); a host that sends the path under another key (`path`, `uri`) got exit 0, indistinguishable from \"not a vault file\", and the write went unchecked with no trace. The hook now reads `notebook_path`/`notebookPath` as well (the `NotebookEdit` shape its own matcher names; an `.ipynb` then drops at the `.md` gate as before), and when a payload names a `tool_name` but no known path key it prints one stderr line naming the tool and the payload keys and exits 1: non-blocking, the write stands, but the miss is visible. Input with no `tool_name` stays silent. Covered by `tests/test_smoke.py::test_validate_hook_is_loud_when_the_payload_has_no_known_path_key`."
    ]
@@ -195,7 +195,7 @@
   {
    "repo": "Lyellr88/marm-memory",
    "path": "CONTRIBUTORS.md",
-   "url": "https://github.com/Lyellr88/marm-memory/blob/f3a9c0749f57541f399476873835474356683d1b/CONTRIBUTORS.md",
+   "url": "https://github.com/Lyellr88/marm-memory/blob/dccebfdc7c6cd00a21346df2525ae52a7544f246/CONTRIBUTORS.md",
    "lines": [
     "- **Anton Dziatkovskii** ([@tonydzi](https://github.com/tonydzi)) —"
    ]
@@ -203,7 +203,7 @@
   {
    "repo": "Lyellr88/marm-memory",
    "path": "CHANGELOG.md",
-   "url": "https://github.com/Lyellr88/marm-memory/blob/f3a9c0749f57541f399476873835474356683d1b/CHANGELOG.md",
+   "url": "https://github.com/Lyellr88/marm-memory/blob/dccebfdc7c6cd00a21346df2525ae52a7544f246/CHANGELOG.md",
    "lines": [
     "The 8 tests in `tests/test_docker_transports.py` that actually start a container previously only ran in the release workflow, which triggers on a version tag, so a Docker runtime regression was caught after a release was already tagged rather than on the PR that caused it. Contributed by [@tonydzi](https://github.com/tonydzi).",
     "`scripts/test-scripts/smoke_embedding_chunking.py` had been broken since chunking was split into separate memory and document profiles: it imported constants that no longer existed and called `_chunk_text` without the keyword arguments it now requires. Contributed by [@tonydzi](https://github.com/tonydzi).",
@@ -237,7 +237,7 @@
   {
    "repo": "DanceNitra/agora",
    "path": "probes/recheck_figures_91188_units.py",
-   "url": "https://github.com/DanceNitra/agora/blob/226670b3dfa9cb45d7732c76b77b372bbdecb3ba/probes/recheck_figures_91188_units.py",
+   "url": "https://github.com/DanceNitra/agora/blob/ac28c5f0c873416f832afb398e9155d4304c7d9e/probes/recheck_figures_91188_units.py",
    "lines": [
     "by_tonydzi = gh(\"repos/anthropics/claude-code/issues/91188/comments\",",
     "'.[] | select(.user.login==\"tonydzi\") | .body')",
@@ -264,14 +264,14 @@
   {
    "repo": "linny006/mcp-servers-live",
    "path": "r/tonydzi/telegram-mcp-kit/index.html",
-   "url": "https://github.com/linny006/mcp-servers-live/blob/afc4ce0437b3663c3b4880aee073e743ad90c50b/r/tonydzi/telegram-mcp-kit/index.html",
+   "url": "https://github.com/linny006/mcp-servers-live/blob/129f18d4e1c39682ea9f754cb6023373a8e04f59/r/tonydzi/telegram-mcp-kit/index.html",
    "lines": [
     "<title>tonydzi/telegram-mcp-kit - entry on MCP Servers Live</title>",
     "<link rel=\"canonical\" href=\"https://linny006.github.io/mcp-servers-live/r/tonydzi/telegram-mcp-kit/\">",
     "<meta property=\"og:title\" content=\"tonydzi/telegram-mcp-kit - entry on MCP Servers Live\">",
     "<meta property=\"og:url\" content=\"https://linny006.github.io/mcp-servers-live/r/tonydzi/telegram-mcp-kit/\">",
     "<meta name=\"twitter:title\" content=\"tonydzi/telegram-mcp-kit - entry on MCP Servers Live\">",
-    "<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareSourceCode\",\"name\":\"tonydzi/telegram-mcp-kit\",\"codeRepository\":\"https://github.com/tonydzi/telegram-mcp-kit\",\"programmingLanguage\":\"PowerShell\",\"url\":\"https://linny006.github.io/mcp-servers-live/r/tonydzi/telegram-mcp-kit/\",\"description\":\"Connect Claude (or any MCP client) to your own Telegram in ~15 minutes: setup prompt for Claude Code/Codex, production p\",\"author\":{\"@type\":\"Person\",\"name\":\"tonydzi\",\"url\":\"https://github.com/tonydzi\"},\"dateModified\":\"2026-09-02\"}</script>",
+    "<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareSourceCode\",\"name\":\"tonydzi/telegram-mcp-kit\",\"codeRepository\":\"https://github.com/tonydzi/telegram-mcp-kit\",\"programmingLanguage\":\"PowerShell\",\"url\":\"https://linny006.github.io/mcp-servers-live/r/tonydzi/telegram-mcp-kit/\",\"description\":\"Connect Claude (or any MCP client) to your own Telegram in ~15 minutes: setup prompt for Claude Code/Codex, production p\",\"author\":{\"@type\":\"Person\",\"name\":\"tonydzi\",\"url\":\"https://github.com/tonydzi\"},\"dateModified\":\"2026-09-26\"}</script>",
     "<nav class=\"bc\"><a href=\"https://linny006.github.io/mcp-servers-live/\">MCP Servers Live</a> &#183; <a href=\"https://linny006.github.io/mcp-servers-live/popular/\">Entries</a> &#183; <span>tonydzi/telegram-mcp-kit</span></nav>",
     "<h1>tonydzi/telegram-mcp-kit</h1>",
     "<span><a href=\"https://github.com/tonydzi/telegram-mcp-kit\" rel=\"external\">Source on GitHub</a></span>",
@@ -282,14 +282,14 @@
   {
    "repo": "linny006/mcp-servers-live",
    "path": "r/tonydzi/whatsapp-mcp-kit/index.html",
-   "url": "https://github.com/linny006/mcp-servers-live/blob/afc4ce0437b3663c3b4880aee073e743ad90c50b/r/tonydzi/whatsapp-mcp-kit/index.html",
+   "url": "https://github.com/linny006/mcp-servers-live/blob/129f18d4e1c39682ea9f754cb6023373a8e04f59/r/tonydzi/whatsapp-mcp-kit/index.html",
    "lines": [
     "<title>tonydzi/whatsapp-mcp-kit - entry on MCP Servers Live</title>",
     "<link rel=\"canonical\" href=\"https://linny006.github.io/mcp-servers-live/r/tonydzi/whatsapp-mcp-kit/\">",
     "<meta property=\"og:title\" content=\"tonydzi/whatsapp-mcp-kit - entry on MCP Servers Live\">",
     "<meta property=\"og:url\" content=\"https://linny006.github.io/mcp-servers-live/r/tonydzi/whatsapp-mcp-kit/\">",
     "<meta name=\"twitter:title\" content=\"tonydzi/whatsapp-mcp-kit - entry on MCP Servers Live\">",
-    "<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareSourceCode\",\"name\":\"tonydzi/whatsapp-mcp-kit\",\"codeRepository\":\"https://github.com/tonydzi/whatsapp-mcp-kit\",\"programmingLanguage\":\"Python\",\"url\":\"https://linny006.github.io/mcp-servers-live/r/tonydzi/whatsapp-mcp-kit/\",\"description\":\"Link WhatsApp to Claude (or any MCP client) in ~20 minutes: a live self-refreshing QR page that makes pairing actually w\",\"author\":{\"@type\":\"Person\",\"name\":\"tonydzi\",\"url\":\"https://github.com/tonydzi\"},\"dateModified\":\"2026-09-14\"}</script>",
+    "<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareSourceCode\",\"name\":\"tonydzi/whatsapp-mcp-kit\",\"codeRepository\":\"https://github.com/tonydzi/whatsapp-mcp-kit\",\"programmingLanguage\":\"Python\",\"url\":\"https://linny006.github.io/mcp-servers-live/r/tonydzi/whatsapp-mcp-kit/\",\"description\":\"Link WhatsApp to Claude (or any MCP client) in ~20 minutes: a live self-refreshing QR page that makes pairing actually w\",\"author\":{\"@type\":\"Person\",\"name\":\"tonydzi\",\"url\":\"https://github.com/tonydzi\"},\"dateModified\":\"2026-09-26\"}</script>",
     "<nav class=\"bc\"><a href=\"https://linny006.github.io/mcp-servers-live/\">MCP Servers Live</a> &#183; <a href=\"https://linny006.github.io/mcp-servers-live/popular/\">Entries</a> &#183; <span>tonydzi/whatsapp-mcp-kit</span></nav>",
     "<h1>tonydzi/whatsapp-mcp-kit</h1>",
     "<span><a href=\"https://github.com/tonydzi/whatsapp-mcp-kit\" rel=\"external\">Source on GitHub</a></span>",
@@ -356,7 +356,7 @@
   {
    "repo": "DanceNitra/agora",
    "path": "probes/what_our_own_index_actually_delivers.py",
-   "url": "https://github.com/DanceNitra/agora/blob/226670b3dfa9cb45d7732c76b77b372bbdecb3ba/probes/what_our_own_index_actually_delivers.py",
+   "url": "https://github.com/DanceNitra/agora/blob/ac28c5f0c873416f832afb398e9155d4304c7d9e/probes/what_our_own_index_actually_delivers.py",
    "lines": [
     "trap @tonydzi described on anthropics/claude-code#91188 for bytes against units."
    ]
@@ -364,7 +364,7 @@
   {
    "repo": "DanceNitra/agora",
    "path": "probes/does_a_folded_scalar_description_arrive_at_the_model.py",
-   "url": "https://github.com/DanceNitra/agora/blob/226670b3dfa9cb45d7732c76b77b372bbdecb3ba/probes/does_a_folded_scalar_description_arrive_at_the_model.py",
+   "url": "https://github.com/DanceNitra/agora/blob/ac28c5f0c873416f832afb398e9155d4304c7d9e/probes/does_a_folded_scalar_description_arrive_at_the_model.py",
    "lines": [
     "WHY. anthropics/claude-code#81081, comment of 2026-09-15 by @tonydzi: on a shelf of 189 skills,",
     "\"claim_under_test\": \"anthropics/claude-code#81081, @tonydzi 2026-09-15: a `description: >` folded \""
@@ -381,7 +381,7 @@
   {
    "repo": "DanceNitra/agora",
    "path": "probes/the_reminders_advice_switches_unit_at_125_units_per_line.py",
-   "url": "https://github.com/DanceNitra/agora/blob/226670b3dfa9cb45d7732c76b77b372bbdecb3ba/probes/the_reminders_advice_switches_unit_at_125_units_per_line.py",
+   "url": "https://github.com/DanceNitra/agora/blob/ac28c5f0c873416f832afb398e9155d4304c7d9e/probes/the_reminders_advice_switches_unit_at_125_units_per_line.py",
    "lines": [
     "He has no `claude` binary and took the identifier shapes from @tonydzi's greps. This reads the",
     "125 units per line. But the threshold was named in that thread by @tonydzi and @pm25coder before us,",
@@ -391,7 +391,7 @@
   {
    "repo": "DanceNitra/agora",
    "path": "probes/the_cap_on_windows_and_what_a_crlf_line_costs.py",
-   "url": "https://github.com/DanceNitra/agora/blob/226670b3dfa9cb45d7732c76b77b372bbdecb3ba/probes/the_cap_on_windows_and_what_a_crlf_line_costs.py",
+   "url": "https://github.com/DanceNitra/agora/blob/ac28c5f0c873416f832afb398e9155d4304c7d9e/probes/the_cap_on_windows_and_what_a_crlf_line_costs.py",
    "lines": [
     "@tonydzi is darwin-arm64 and has annotated his own Windows figure as unverified. There is no"
    ]
@@ -399,7 +399,7 @@
   {
    "repo": "DanceNitra/agora",
    "path": "probes/the_cut_measured_by_what_the_index_DOES_not_what_it_says.py",
-   "url": "https://github.com/DanceNitra/agora/blob/226670b3dfa9cb45d7732c76b77b372bbdecb3ba/probes/the_cut_measured_by_what_the_index_DOES_not_what_it_says.py",
+   "url": "https://github.com/DanceNitra/agora/blob/ac28c5f0c873416f832afb398e9155d4304c7d9e/probes/the_cut_measured_by_what_the_index_DOES_not_what_it_says.py",
    "lines": [
     "Windows, current CC. @JhouCode is linux-x64, @tonydzi darwin-arm64 and has annotated his own Windows"
    ]
@@ -433,7 +433,7 @@
   {
    "repo": "DanceNitra/agora",
    "path": "probes/the_memory_index_check_grew_a_second_size_and_the_team_path_grew_a_line_cap.py",
-   "url": "https://github.com/DanceNitra/agora/blob/226670b3dfa9cb45d7732c76b77b372bbdecb3ba/probes/the_memory_index_check_grew_a_second_size_and_the_team_path_grew_a_line_cap.py",
+   "url": "https://github.com/DanceNitra/agora/blob/ac28c5f0c873416f832afb398e9155d4304c7d9e/probes/the_memory_index_check_grew_a_second_size_and_the_team_path_grew_a_line_cap.py",
    "lines": [
     "WHY. On anthropics/claude-code#91188 @tonydzi read CLI 2.1.202 on macOS and reported three things:",
     "* The team path DOES pass a lineCap, conditionally. @tonydzi's third finding does not reproduce"
@@ -442,7 +442,7 @@
   {
    "repo": "DanceNitra/agora",
    "path": "probes/does_a_folded_scalar_description_arrive_at_the_model.result.json",
-   "url": "https://github.com/DanceNitra/agora/blob/226670b3dfa9cb45d7732c76b77b372bbdecb3ba/probes/does_a_folded_scalar_description_arrive_at_the_model.result.json",
+   "url": "https://github.com/DanceNitra/agora/blob/ac28c5f0c873416f832afb398e9155d4304c7d9e/probes/does_a_folded_scalar_description_arrive_at_the_model.result.json",
    "lines": [
     "\"claim_under_test\": \"anthropics/claude-code#81081, @tonydzi 2026-09-15: a `description: >` folded scalar arrives as a heading, 68 of 189 on their shelf\","
    ]
@@ -972,13 +972,19 @@
    "our_roles": [
     "commenter"
    ],
-   "body": "During Chunk 03 (#1062), it was discovered that the hook generated by `scripts/install-primary-guard.js#guardCommand` ends in `|| true`.\\n\\nThis means that if the primary-checkout guard fails (e.g. attempting to checkout a hostile PR into the live install), the failure is completely SILENT and the execution continues.\\n\\nThis defeats the purpose of a guard. We need to investigate whether this `|| true` was intentional for some edge case, or if it is a critical vulnerability in the guard itself that needs to be removed so it properly halts execution.",
+   "body": "$(gh issue view 1400 --json body -q .body) ### Architectural Acceptance Criteria (Added 2026-09-24) Per the Architect, this issue now includes building telemetry for the fail-open guard: 1. **Liveness Verification:** Implement a `--self-test` to prove liveness (checking that an unwired hook or syntax error actually fails the test). 2. **Outcome Tracking:** Track counts, last timestamp, and a bounded reason code for three distinct states: deliberate refusal, handled fail-open/unknown, and process-level crash. 3. **Stable Runner:** Wrap the telemetry in a stable outer runner that catches missing node/syntax failures and records them locally without changing the guard's non-blocking (allow/deny) outcome. Telemetry write failures must not alter the decision. 4. **Surfacing:** Expose this state through the existing guard check or health/audit surfaces. Any crash since the last successful self-test must be flagged as actionable. Do NOT add a new nightly daemon. 5. **Security:** Records must not contain raw commands, target paths, or secrets.",
    "replies": [
     {
      "author": "Jason-Vaughan",
      "at": "2026-09-23T22:13:10Z",
      "url": "https://github.com/Jason-Vaughan/TangleClaw/issues/1400#issuecomment-5803828402",
      "text": "Thanks @tonydzi — this was genuinely useful, and it prompted me to audit that path more closely. I am removing the outer `|| true`, but with one important distinction: the primary-checkout guard is a safety interlock rather than a security boundary, so an internal guard failure still has to remain non-blocking. A deliberate refusal and a guard crash are separate outcomes; I don't want a bug in the interlock itself to strand the Claude Code session it is protecting. The false positive case you described turns out not to apply to TangleClaw's implementation. File and notebook operations don't infer targets from command text. They arrive as structured paths, are resolved to absolute/symlink-resolved targets, and are then checked against the actual checkout/worktree layout. The Bash side is intentionally much narrower: it parses shell structure only to identify HEAD-moving Git operations (`checkout`, `switch`, `reset`, `rebase`, `merge`) and resolve the directory those operations would affect. A generic shell write such as: `cd /some/scratch && cat > recon.sh` never enters the protection decision at all. So I think we independently arrived at the same underlying rule: don't make filesystem safety decisions by substring-matching raw command text. Interestingly, auditing the implementation against your example did turn up a different edge case: partially unreadable nested-worktree metadata could make the subtraction set incomplete. That's now being covered explicitly rather than treating an unknown worktree set as empty. So your warning didn't uncover the exact bug you ran into on your side, but it did make me look harder and find a real one of my own. That's a good outcome. Thanks for taking the time to drop the review in here, its always good to compare notes with someone solving similar problems, and I appreciate you sharing what you’ve learned from your own system. — Jason Vaughan · TangleClaw · Many Agents. One Claw. · github.com/Jason-Vaughan/TangleClaw"
+    },
+    {
+     "author": "Jason-Vaughan",
+     "at": "2026-09-25T03:13:24Z",
+     "url": "https://github.com/Jason-Vaughan/TangleClaw/issues/1400#issuecomment-5826063513",
+     "text": "@tonydzi Thanks again, Mycroft (and Anton). That fail-open blind spot is a fantastic catch...! You are entirely right: a guard that silently crashes on every run is functionally identical to a guard that never runs, and \"fail-open\" without observability is just \"broken, but quietly.\" The distinction between a health check and a liveness check (tracking the ratio of crashes to actual refusals) is an incredibly elegant and cheap way to surface that. I actually just handed your advice over to my own cybernetic counterpart (the autonomous Project Manager running TangleClaw's internal agent swarms) to run it by our Architect agent for formal evaluation and it agreed (although now i feel like we need some of our own cybernetic agentic team member names). We will be absorbing that liveness-counter pattern directly into the design and acceptance criteria for this issue, and once we see it work in production, we'll generalize it into our telemetry norms. Appreciate the insight, and your time - I (we) hope your projects are going well...! Jason Vaughan & (The TangleClaw Agentic Team) - · TangleClaw · Many Agents. One Claw. · github.com/Jason-Vaughan/TangleClaw"
     }
    ]
   },
@@ -3816,6 +3822,24 @@
      "at": "2026-09-22T18:53:06Z",
      "url": "https://github.com/agno-agi/agno/pull/10088#issuecomment-5782158135",
      "text": "@rodrigocoliveira thanks for checking it from the other side. All three hold on `148a02c8e`: **Slot case:** covered. `test_continued_run_does_not_consume_a_history_slot` runs across every `RunStatus` on both sessions; nothing to add from our side. **Fallback:** agreed, and you read the failure correctly. The 4 cases that fail on your head are exactly the ones that drive the builder through `run_context` alone (`PENDING`/`RUNNING`/`COMPLETED` plus the slot test); the other 5 pass because they thread the id explicitly. Explicit `current_run_id` at every call site plus the 3 + 9 wiring tests is the right guarantee, and the `run_context.run_id` fallback is wrong in the two cases you name. We will drop that fallback downstream when we adopt this PR. No competing history PR. **#10466 merge:** you are right and my earlier \"merges cleanly\" was wrong. `git merge-tree` shows the two conflict hunks (adjacent keyword insertions at `_acontinue_run` and `_acontinue_run_stream`). I verified the keep-both-lines resolution on your head: your wiring and exclusion suites (agent + team) plus the #10466 hook test, **72 passed**. Whichever lands second, I rebase #10466 (or its remainder). I corrected the #10466 description and #10463 accordingly."
+    },
+    {
+     "author": "kausmeows",
+     "at": "2026-09-25T22:03:37Z",
+     "url": "https://github.com/agno-agi/agno/pull/10088#issuecomment-5840288040",
+     "text": "hi @rodrigocoliveira wdyt about this fix pr- https://github.com/agno-agi/agno/pull/10597, i am not too sure about this current fix here as it exposes a lot of ambiguity at public surfaces. lmk"
+    },
+    {
+     "author": "kausmeows",
+     "at": "2026-09-25T20:19:03Z",
+     "url": "https://github.com/agno-agi/agno/pull/10088#pullrequestreview-5322298085",
+     "text": "@rodrigocoliveira i still see this warning message with the example you gave on this pr. is this still an issue? <img width=\"880\" height=\"108\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/6e51927e-a577-490b-9e51-54d1ab56db5c\" />"
+    },
+    {
+     "author": "kausmeows",
+     "at": "2026-09-25T20:40:35Z",
+     "url": "https://github.com/agno-agi/agno/pull/10088#discussion_r4108449536",
+     "text": "umm but i dont think this is a good approach . `get_messages` is a publicly exposed function and this could confuse users as its working more like an internally required thing for just background true and steam true case"
     }
    ]
   },
@@ -3878,6 +3902,30 @@
      "at": "2026-09-21T04:04:56Z",
      "url": "https://github.com/agno-agi/agno/issues/10366#issuecomment-5755233462",
      "text": "Submitted PR #10380 which implements option 2 from the issue. The fix adds a pre-check in each of the 8 retry exception handlers (sync/async, streaming/non-streaming, run/continue_run): if any `role='tool'` message is present in `run_messages` at the point of failure, log a warning and skip the retry rather than replaying the run. One thing to note: the guard reads from `run_messages.messages` rather than `run_response.tools` — as the issue author pointed out, `run_response.tools` is `None` at the retry decision point, but the completed tool results are already in `run_messages.messages`. All 4 format/validate checks pass."
+    },
+    {
+     "author": "joel4893",
+     "at": "2026-09-25T10:01:00Z",
+     "url": "https://github.com/agno-agi/agno/issues/10366#issuecomment-5830522811",
+     "text": "When replaying a run where earlier tools succeeded but the final tool's outcome is unknown, how do you prevent the replay from repeating the successful side effects?"
+    },
+    {
+     "author": "shimjaemandu",
+     "at": "2026-09-25T10:13:20Z",
+     "url": "https://github.com/agno-agi/agno/issues/10366#issuecomment-5830696856",
+     "text": "I’m testing a small runtime around exactly this boundary: a stable logical action ID is persisted before dispatch, and if the process loses certainty after dispatch the action comes back as UNKNOWN rather than being silently replayed. The current build is pinned here: https://github.com/shimjaemandu/reality-layer/commit/4213c479bd9333558522db1ca820d657b99effbf I’m not proposing it as an Agno fix. I’m looking for a bounded external check: wrap one harmless non-idempotent test tool, let it commit once, fail the model continuation / kill the process at the boundary, then see whether the runtime prevents a second effect and leaves an honest recoverable record. If anyone on this thread is willing to try that against an Agno-owned repro path, I’d like to compare setup time and recovery behavior with the local guard being discussed here. A 15–30 minute first pass is enough; a negative result (“this adds no value over the smaller fix”) is useful too."
+    },
+    {
+     "author": "stringsofthemind-oss",
+     "at": "2026-09-25T15:48:59Z",
+     "url": "https://github.com/agno-agi/agno/issues/10366#issuecomment-5835269097",
+     "text": "Thanks for the careful follow-up here — especially the measurements around regenerated `tool_call_id`s and the caveat about deterministic harnesses. That gave us a clean enough target to build an independent reproduction against the same failure shape. We reproduced the `Agent(retries=2)` case with **Agno 3.0.10** and **OpenAI SDK 3.16.2**, without patching Agno. The model endpoint is deterministic and loopback-only, and SDK retries are disabled (`max_retries=0`), so the repeated tool executions remain attributable to Agno's run-level retry behaviour. For context, **Once** is an execution-safety layer that sits between agent tools and consequential external actions. Its job is to prevent framework retries, replays, or recovery attempts from accidentally repeating the same real-world effect. We ran the same Agno sequence twice: ```text mode model calls tool_call_ids Agno tool calls boundary calls external effects control 6 call_1,call_3,call_5 3 3 3 Once 6 call_1,call_3,call_5 3 3 1 ``` The part we wanted to make explicit is that **Agno still retries in the protected run**. It invokes the tool three times in both cases. The difference is only what happens at the execution boundary: ```text control: 3 Agno invocations -> 3 boundary requests -> 3 committed effects Once: 3 Agno invocations -> 3 boundary requests -> 1 committed effect ``` The protected path installs the **published `@once-agent/sdk@0.1.12` package from npm**, rather than importing repository internals. We also kept the identity question separate from `tool_call_id`: the model does not emit the logical operation identity in this harness. The three provider/tool-call IDs still change as measured above (`call_1`, `call_3`, `call_5`), while the three attempts refer to the same caller-established logical operation. So the result does not depend on treating transport identity as durable business identity. The reproduction is merged here: https://github.com/stringsofthemind-oss/once/tree/main/examples/agno-host …"
+    },
+    {
+     "author": "stringsofthemind-oss",
+     "at": "2026-09-26T23:47:13Z",
+     "url": "https://github.com/agno-agi/agno/issues/10366#issuecomment-5851017750",
+     "text": "Agreed — for #10366 specifically, the Agno-owned regression should be on **tool invocation count**, not merely on committed external effects. Our Once harness was intended to test a different boundary: whether repeated upstream dispatches can still be prevented from becoming repeated real-world effects. So I think the two assertions are complementary rather than competing: ```text Agno regression: 3 tool invocations -> 1 tool invocation Execution-boundary regression: repeated dispatches -> 1 committed effect ``` For this issue, the first is the native fix and should remain dependency-free. The second is useful evidence for the cases outside this particular retry loop — checkpoint replay, process restart/recovery, ambiguous acknowledgement, another framework or orchestrator retrying above the tool boundary, etc. And agreed on `tool_call_id`: our reproduction deliberately keeps the logical operation identity separate from the provider/tool-call IDs because `call_1`, `call_3`, `call_5` are not durable business identity. I would not want Agno's fix to rely on those IDs surviving a re-plan. So from our side: no claim that Once is the fix for Agno's retry bug. Agno should stop the unnecessary redispatch here; the Once result is separate evidence that an execution boundary can still keep the external effect at one if a duplicate dispatch reaches it anyway. Happy to keep the Agno-native regression completely independent and use the Once harness only as that lower-boundary comparison."
     }
    ]
   },
@@ -8294,6 +8342,30 @@
      "at": "2026-09-23T09:32:29Z",
      "url": "https://github.com/anthropics/claude-code/issues/91188#issuecomment-5792422954",
      "text": "The pre-trim content doesn't have to be reconstructed from a working copy. The session that ran the trim wrote its Edit call to the transcript, and an Edit carries `old_string` — the exact bytes it replaced — with a timestamp. Same for a Write, which carries the whole new file. So the series is in `~/.claude/projects/<slug>/*.jsonl`, including the passes nobody backed up, and it isn't selected by anyone's save habits. I ran that over this machine: 1,260 transcripts, 132 memory files touched, 218 edits to auto-memory topic files. 189 of those only add lines; 38 lines were removed in total, and only 2 edits made the text they touched shorter. Of the 38 removed: 22 prose, 5 bullets, 4 dated notes, 4 links, 3 rule-shaped (never/always/must/only). That is not an answer to the content-class question, and I'd rather say so than dress it up — my index never sat above the reminder threshold, so none of those 38 lines came from a threshold-triggered trim. But it is the shape of the measurement, and the same scan on a file that has crossed the threshold would answer it directly. The scan is a JSON walk: find `tool_use` blocks named Edit/Write/MultiEdit whose `file_path` is a memory file, diff `old_string` against `new_string`, classify the removed lines. Happy to paste the script if someone with a file above the threshold wants to run it."
+    },
+    {
+     "author": "DanceNitra",
+     "at": "2026-09-25T13:23:26Z",
+     "url": "https://github.com/anthropics/claude-code/issues/91188#issuecomment-5833128477",
+     "text": "@vshulcz Our index has crossed the reminder threshold, so I ran your Edit/Write/MultiEdit walk over our transcripts, restricted to MEMORY.md. On our store it cannot answer the content-class question, because no edit fell inside the window. Across 1332 transcripts the reminder fired 8 times. After a reminder and before the next human prompt, zero Edit, Write or MultiEdit calls touched MEMORY.md, and zero Bash commands named it. No reminder was followed by an index edit before the next human prompt or the end of the session. If the agent passes the reminder on to the user and asks whether to compact, the user's answer is a prompt. A trim made after that answer lands outside any \"before the next prompt\" window. Over all sessions the walk found 14 edits to the index, and they removed 2 lines in total. One Write also touched it, and a Write does not record what it removed. The script, with its output and a self-test of 4 controls: https://github.com/DanceNitra/agora/blob/main/probes/what_a_reminder_triggered_trim_removes.py Once your index crosses the threshold, it would show whether your agent trims inside the window or asks first. Rastislav. Written with AI assistance and reviewed by a human before sending. <a href=\"https://raw.githubusercontent.com/DanceNitra/inspeximus/81c2ee9707caf0084dd8dbc8cb2924d80824e15e/docs/seal/6175df9410f4-seal-light.svg#gh-light-mode-only\"><img align=\"left\" src=\"https://raw.githubusercontent.com/DanceNitra/inspeximus/81c2ee9707caf0084dd8dbc8cb2924d80824e15e/docs/seal/6175df9410f4-seal-light.svg\" width=\"41\" height=\"47\" alt=\"Inspeximus seal\"></a><a href=\"https://raw.githubusercontent.com/DanceNitra/inspeximus/81c2ee9707caf0084dd8dbc8cb2924d80824e15e/docs/seal/6175df9410f4-seal-dark.svg#gh-dark-mode-only\"><img align=\"left\" src=\"https://raw.githubusercontent.com/DanceNitra/inspeximus/81c2ee9707caf0084dd8dbc8cb2924d80824e15e/docs/seal/6175df9410f4-seal-dark.svg\" width=\"41\" height=\"47\" alt=\"Inspeximus seal\"></a><small><b>Inspeximus</b> &middot; f …"
+    },
+    {
+     "author": "vshulcz",
+     "at": "2026-09-25T13:48:16Z",
+     "url": "https://github.com/anthropics/claude-code/issues/91188#issuecomment-5833488194",
+     "text": "ran it here and hit the case an Edit/Write walk can't score. one reminder across 339 transcripts (sept 20, `PostToolUse:Edit`, \"22.2KB, approaching the 24.4KB read limit\"). the agent trimmed two minutes later with no human prompt in between, but through Bash: it wrote a compaction script and ran `python3 compact_memory.py --write`, 31,557 → 19,522 bytes on disk. counted by Edit/Write alone, that's no trim. the other half: in 2.1.282 the size check runs in PostToolUse for Edit and Write only, and most writes to this index go through Bash (`>>`, `sed`, scripts). so it grows past the threshold without being told — it's at 0.87 of the cap right now and nothing has said so. and when comparing numbers: the reminder counts UTF-16 units, not bytes. this index is mostly cyrillic, so 31,557 bytes on disk read as 22.2K. (disclosure: i build [deja-vu](https://github.com/vshulcz/deja-vu), which reads the transcripts themselves instead of an index, so there's no cap to trim under — and it works with claude code out of the box :)"
+    },
+    {
+     "author": "DanceNitra",
+     "at": "2026-09-26T16:25:31Z",
+     "url": "https://github.com/anthropics/claude-code/issues/91188#issuecomment-5847876224",
+     "text": "@vshulcz Your Bash case shows up on our store too, and it corrects a figure from my comment of 25 September. In one session on 23 September, the index went from 24.3 KB at the first reminder to 21.0 KB at the next one. The Edit walk saw none of it. 18 minutes after the reminder, and after 5 prompts about other work, the agent moved a whole section into an archive file with a Python script run through Bash. So \"14 edits removed 2 lines\" describes edits only. The largest removal from our index was a script. The PostToolUse point holds here as well. All 8 reminders came from PostToolUse:Edit. Across our transcripts, 410 Bash commands wrote to a MEMORY.md, against 17 Edits and 1 Write, and none of those Bash writes could trigger the size check. That count matches commands by pattern, so a script that opens the index without naming it is still missed. The probe now reads the size each reminder states and flags a later, smaller reminder in the same session. No tool route can hide that. It also counts Bash commands that write the index. The self-test has 8 controls: https://github.com/DanceNitra/agora/blob/main/probes/what_a_reminder_triggered_trim_removes.py On our side, a PostToolUse hook on Bash now measures the index after any shell command that names it. Rastislav. Written with AI assistance and reviewed by a human before sending. <a href=\"https://raw.githubusercontent.com/DanceNitra/inspeximus/4db89ce8b9aa240b469adbac634ea4a8247579be/docs/seal/041952dead0f-seal-light.svg#gh-light-mode-only\"><img align=\"left\" src=\"https://raw.githubusercontent.com/DanceNitra/inspeximus/4db89ce8b9aa240b469adbac634ea4a8247579be/docs/seal/041952dead0f-seal-light.svg\" width=\"41\" height=\"47\" alt=\"Inspeximus seal\"></a><a href=\"https://raw.githubusercontent.com/DanceNitra/inspeximus/4db89ce8b9aa240b469adbac634ea4a8247579be/docs/seal/041952dead0f-seal-dark.svg#gh-dark-mode-only\"><img align=\"left\" src=\"https://raw.githubusercontent.com/DanceNitra/inspeximus/4db89ce8b9aa240b469adbac634ea4a82475 …"
+    },
+    {
+     "author": "vshulcz",
+     "at": "2026-09-26T17:59:55Z",
+     "url": "https://github.com/anthropics/claude-code/issues/91188#issuecomment-5848540865",
+     "text": "the hole you name in your last paragraph is the normal case here, not the edge. the trim i reported ran as `python3 compact_memory.py --write; wc -c …/MEMORY.md`. the write is the script; the index is named only by the `wc` the agent appended to check itself. across this corpus that script ran 8 times and only 3 of those commands name the index at all — a name-matching hook on Bash catches it by luck. second data point next to your 410/17/1, over 339 transcripts: 109 Bash commands name MEMORY.md, against 29 Edits and 5 Writes. the fix that survives both: don't match the command, stat the file. a PostToolUse hook on Bash that stats the index after every shell command costs one syscall and no route hides from it. reading the size out of the reminder text, like you're doing now, is the other half — with one reminder in this corpus i can't run the same-session pair yet."
     }
    ]
   },
@@ -9738,6 +9810,48 @@
      "at": "2026-09-24T15:24:37Z",
      "url": "https://github.com/anthropics/claude-code/issues/91870#issuecomment-5817031505",
      "text": "Love the idea of mods! I built a mod that lets me add and manage envs directly within CC. It’s probably still a bit rough around the edges, but I thought it might be a good starting-point for a built-in mod :) https://github.com/tre-dev/claude-env PS: In the video, the 2nd time I enter the secret is via pasting `CLAUDE_IS=AMAZING` https://github.com/user-attachments/assets/4ab5b14b-4696-45ad-b72b-c656584c6025"
+    },
+    {
+     "author": "lperezmo",
+     "at": "2026-09-25T05:34:54Z",
+     "url": "https://github.com/anthropics/claude-code/issues/91870#issuecomment-5827373997",
+     "text": "Shipped a mod on 2.1.282: [topic-filter](https://github.com/lperezmo/topic-filter-mod). It swaps chosen words, topics and tagged repos for placeholders in everything the model reads. A couple notes: - **No single place to filter what the model reads.** `turn.step` has no messages, so it took hooks on ten events. One hook on the outgoing request would be simpler. - **`boolean` userConfig on the `/plugin` configure screen** is a text box, and typing `y` saves `false`. `/config` gets it right. - **Slash-command args go into the transcript**, so a command can't take private input. - **`claude plugin test` can't set userConfig values.**"
+    },
+    {
+     "author": "wkasekende",
+     "at": "2026-09-25T16:26:33Z",
+     "url": "https://github.com/anthropics/claude-code/issues/91870#issuecomment-5835788532",
+     "text": "Following up on [my comment above](https://github.com/anthropics/claude-code/issues/91870#issuecomment-5671976322): thank you for `prompt.edit` in 2.1.280. We are integrating OpenCues as a mod on it now, retiring our binary patch. `prompt.edit` reads the draft and takes the `_`, `PromptHint` draws the note under the box, and `$.model.complete` writes cues on the session's own model, so the person needs no key of ours. Everything fits the API as shipped, with one gap. **A mod cannot style part of the draft.** `PromptEditResult` is `PromptBox`, `{ text, cursor }`, and no render site covers the input itself, so a mod can say what it noticed but cannot point at it. On our other hosts the word a cue is about, the sentence a rewrite would replace, or the command waiting in the draft is tinted in place (OpenCode through OpenTUI extmarks, the browser through the CSS Custom Highlight API). In Claude Code the note has to describe where it is instead. The smallest version of the ask: an optional `decorations` on what `prompt.edit` answers, and on `PromptFillArgs` for a write that lands after the keystroke (a model answer 300 ms after the `_`). ```ts type PromptDecoration = { start: number; end: number } & Pick<TextProps, 'color' | 'backgroundColor' | 'dimColor' | 'bold' | 'italic' | 'underline' | 'strikethrough'> // PromptEditResult = PromptBox & { decorations?: PromptDecoration[] } // PromptFillArgs gains decorations?: PromptDecoration[] ``` - Offsets into `text`, styles from the `TextProps` allowlist you already have. - Paint only, never content: editing, undo and what is submitted stay the engine's. - The next edit drops them unless a hook answers them again, so a stale tint cannot outlive its draft. - `sec-default` can strip them like the other `$.prompt.*` powers. With that, the mod would be at parity with our other hosts."
+    },
+    {
+     "author": "poteat",
+     "at": "2026-09-25T23:01:03Z",
+     "url": "https://github.com/anthropics/claude-code/issues/91870#issuecomment-5840819337",
+     "text": "@lperezmo > No single place to filter what the model reads This is by design, because I was worried about performance - since we send every message up on every request, these can get pretty large, and if you accidentally loop through the full message sequence on each request sent, your total amount of work will be quadratic. However, you should be able to see the things that the model reads - We're thus adding a `session.append` which represents \"appending something to the session\". @wkasekende > A mod cannot style part of the draft This is a sensible ask, it sounds like a marks system. We'll queue this up."
+    },
+    {
+     "author": "lynxnathan",
+     "at": "2026-09-26T01:48:30Z",
+     "url": "https://github.com/anthropics/claude-code/issues/91870#issuecomment-5842111891",
+     "text": "Surely we will do better this time. [https://en.wikipedia.org/wiki/Browser_wars](https://en.wikipedia.org/wiki/Browser_wars)"
+    },
+    {
+     "author": "richardkmichael",
+     "at": "2026-09-26T03:57:14Z",
+     "url": "https://github.com/anthropics/claude-code/issues/91870#issuecomment-5842961190",
+     "text": "I have a few UI-related requests based on two mods I'm building: - `/commits`: a pane with a navigable commit list, and comment on any part of the commit in the pane. The comment and selected lines go back to the model in the prompt. Inspired by native `/diff`, which has nice features like text selection and composer pill. - `/learn`: present Claude Academy content in situ, based on the user's activity, to teach new and relevant features. Just aside for mod development -- I was experimenting with `mods/diff`, and didn't immediately notice it didn't supersede native `/diff`, despite loading the mod ([as mentioned](https://github.com/anthropics/claude-code/blob/main/mods/diff/README.md?plain=1#L98)). It would be helpful if mods colliding with built-ins could be used, and/or if Claude Code emitted a warning if a name is already used. (As a workaround, I renamed the command to `diffm`.) #### Requests 1. A way to return the keyboard to a mod's pane after `$.prompt.fill`. 2. A `ui.selection` event, at least for selections inside the mod's own pane. 3. A `$.prompt.attach` method that adds composer pills carrying context. 4. The native sidebar's close mark for mod panes, out of the focus ring. 5. A method that registers a mod's own keybinding actions. 6. Access to the spinner tip line, and a method that adds tips at runtime. Details and speculative usage from Claude: #### 1. A mod cannot get keyboard focus back after `$.prompt.fill` ``` Button pressed in a focused pane $.prompt.fill edits the prompt draft useReleaseOnEdit calls focusPane(null) on the first change $.ui.focus denied: \"that site does not hold the keyboard\" $.ui.open({ focus: true }) honoured only while the prompt draft is empty ``` Only a fill from a `Client` region keeps focus, which means routing every key through a region and giving up the focus ring, hotkeys and Button styling. ##### Request A `$.ui` method that returns the keyboard to the mod's pane, or a `$.prompt.fill` option that leaves focus where it …"
+    },
+    {
+     "author": "rezzminator",
+     "at": "2026-09-26T16:52:16Z",
+     "url": "https://github.com/anthropics/claude-code/issues/91870#issuecomment-5848066352",
+     "text": "An API request from building a mod: **let a plugin start a compaction from code, for any loop, mid-turn.** We maintain [sub-agent-compact](https://github.com/rezzminator/sub-agent-compact), which gives the main session and each subagent its own compaction policy. The next version goes further. The model is nudged as its context grows, through `tool.call` `context`. It picks its own milestone to compact at, and gives a focus that becomes the summarizer's `instructions`. All of that works through function hooks except the one step only core can take: starting the compaction. **`$.session.compact()` compacts only the main conversation, between turns, and it rejects while a turn runs.** A subagent always runs inside a turn, so a plugin has no way to compact one. The only lever is vetoing core's own asks, which forces this workaround: 1. Set `CLAUDE_CODE_AUTO_COMPACT_WINDOW` low for the whole process. It isn't a policy. It only sets the point past which core asks `session.compact` (`auto`) before every request. 2. Answer `{ skip }` to every ask until the party reaches its own point, or until its model asked to compact. 3. When the model asks, wait for core's next automatic ask, and let it through with the model's focus as `instructions`. It works, with two costs: - A model that asks while it is still below that point has to wait until it gets there. - If the mod fails to load, the process-wide override is left on its own, and the main session silently compacts at the subagents' point. **The ask:** ```ts // Compact that loop before its next model request; resolves { skip } or the compaction. await $.session.compact({ agentId, instructions }) // agentId absent: the main conversation ``` It would run through `session.compact` with `trigger: 'plugin'` and `e.agentId` set, as it does today. Called from a `tool.call` or `turn.step` hook, it would take effect at that loop's next request boundary instead of rejecting. With it, the window override and the veto dance go away, and …"
+    },
+    {
+     "author": "furqan-khan07",
+     "at": "2026-09-26T21:22:48Z",
+     "url": "https://github.com/anthropics/claude-code/issues/91870#issuecomment-5850001376",
+     "text": "Made a mod that puts pixel art above the prompt and reacts to what Claude is doing. It also just adds more personality and flair to your workspace! <img width=\"808\" height=\"398\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/36b0b786-e2de-4671-b431-4096bb071d1b\" /> Currently there are seven animated scenes (Michelangelo's hands with a spark between the fingers, a rainy city at night, matrix rain, an aquarium, space, aurora, fire), or you can drop in your own image or GIF. While Claude works the scene picks up, like heavier rain or the spark crackling, and when it finishes you get a little flourish. It shrinks out of the way during turns and costs zero tokens. claude plugin marketplace add furqan-khan07/pixelband claude plugin install pixelband@pixelband Then /pixelband opens a menu to pick a scene or image. https://github.com/furqan-khan07/pixelband"
     }
    ]
   },
@@ -10303,6 +10417,12 @@
      "at": "2026-09-15T08:04:09Z",
      "url": "https://github.com/anthropics/claude-code/issues/93046#issuecomment-5676858792",
      "text": "Same defect without any subagent involved — which makes the repro simpler than the original report and suggests the cause is broader than parent-vs-subagent attribution. ### Setup - Claude Code in the Claude desktop app (Code tab) 1.52386.6, macOS 26.6.2, Team plan - Session model selector: **Opus 5**, effort High - **No subagent was spawned in this session at all** ### What happened The banner above the prompt input read: > You've used 99% of your Opus limit — Resets at 2:00 PM [Request usage credits] The usage popover, at the same moment, showed: | Bucket | Usage | |---|---| | 5-hour limit | 44% | | Weekly · all models | 69% | | **Weekly · Fable** | **99%** | There is no \"Opus limit\" bucket anywhere in the breakdown. The only bucket at 99% is **Weekly · Fable**, and on this account Fable is the only model with a dedicated weekly bucket. ### Why this generalizes #93046 I checked the on-disk transcripts (`~/.claude/projects/*/*.jsonl`, `message.model` per assistant event): - This session: 20 events, all `claude-opus-5`. No Fable events whatsoever. - The weekly Fable bucket was driven to 99% by **other, earlier sessions** on the same machine (several with 300–1000+ `claude-fable-5` / `claude-fable-5-1` events). So the banner didn't mis-attribute a *subagent's* consumption to the parent — it took a bucket consumed by entirely separate sessions and labelled it with whatever model the *current* session happens to have selected. The percentage (99%) is correct and matches the Fable row exactly; only the model name is wrong. Suggested framing for the fix: the banner's label should be derived from the limit bucket that triggered it, not from the session's active model — the two are independent. ### Impact On this account weekly all-models sits at 69%, i.e. Opus has plenty of headroom. The banner states the opposite about the model in use, and pairs that with a \"Request usage credits\" button — so the natural reaction is to switch models or buy credits against a bucket that …"
+    },
+    {
+     "author": "Adeptorix",
+     "at": "2026-09-26T06:24:59Z",
+     "url": "https://github.com/anthropics/claude-code/issues/93046#issuecomment-5843880315",
+     "text": "Same on **Windows**, Claude desktop app 2.9939.2 (d3e504), **Max 20x**, session model Opus 5.5 with Fable 5.1 subagents. Banner: \"You've used 87% of your Opus limit. Resets Mon, Sep 28, 11:00 AM\", while Settings → Usage and CLI 2.1.283 `/usage` both show only all-models 64% and **Fable 88%**, with no Opus meter. So the percentage and reset time are the Fable bucket's; only the model name is wrong. Details and screenshots in #97372 (closing it as a duplicate of this one)."
     }
    ]
   },
@@ -10597,6 +10717,12 @@
      "at": "2026-09-21T13:03:29Z",
      "url": "https://github.com/anthropics/claude-code/issues/95313#issuecomment-5760927082",
      "text": "Your confirmation gate and the three-state contract slot together cleanly: the gate decides proceed/ask/abort, the contract guarantees the outcome of whatever the gate approves is never silent — approved work resolves to persisted / failed-with-reason / unknown, and unknown is treated as failed. If you're building this out, I'd start with the state enum plus the on-failure record shape, since everything else (retry, gating, UI) consumes those two. Happy to sketch the interface against your gate."
+    },
+    {
+     "author": "Keesan12",
+     "at": "2026-09-26T14:17:16Z",
+     "url": "https://github.com/anthropics/claude-code/issues/95313#issuecomment-5846983039",
+     "text": "You can handle this now without waiting on Anthropic. If you intercept at the loop level rather than the model level, you can gate every spawn against a scope manifest set before the run started. Spawns that weren't authorized don't go through. [martin-loop](https://github.com/Keesan12/martin-loop) does this as a wrapper around Claude Code — open source on npm."
     }
    ]
   },
@@ -11865,6 +11991,12 @@
      "at": "2026-09-23T09:24:15Z",
      "url": "https://github.com/bytedance/deer-flow/issues/5391#issuecomment-5792304566",
      "text": "会实现内置[RAGFlow]？"
+    },
+    {
+     "author": "chenzhiya77",
+     "at": "2026-09-25T12:43:05Z",
+     "url": "https://github.com/bytedance/deer-flow/issues/5391#issuecomment-5832559119",
+     "text": "你好，是的，本议题的方向就是内置的 RAG 流程。 目前正在按评审意见收窄首期范围，范围定了再进入实现评审。这段时间主要花在把首期闭环要用的模型配上：嵌入 / 重排 / 解析这几个角色原先只能手改配置文件，不落到界面上，首期就只能靠手改配置跑起来。所以先做成了设置页里的「功能模型」配置项，原有的模型配置不受影响。首期范围接下来会在本议题发出。 --- Hi — yes, this issue is about a built-in RAG flow. We're still narrowing the first-slice scope along the review's lines; implementation review comes after that. Most of this stretch went into making the first slice's models configurable: embedding / rerank / parse previously had to be hand-edited in config files, and without them in the UI the slice could only be run by editing config by hand. So we built the \"Functional models\" section in Settings first — the existing model configuration is untouched. We'll post the first-slice scope here next."
     }
    ]
   },
@@ -11889,6 +12021,12 @@
      "text": "[![CLA assistant check](https://cla-assistant.io/pull/badge/not_signed)](https://cla-assistant.io/bytedance/deer-flow?pullRequest=5843) <br/>Thank you for your submission! We really appreciate it. Like many open source projects, we ask that you sign our [Contributor License Agreement](https://cla-assistant.io/bytedance/deer-flow?pullRequest=5843) before we can accept your contribution.<br/><sub>You have signed the CLA already but the status is still pending? Let us [recheck](https://cla-assistant.io/check/bytedance/deer-flow?pullRequest=5843) it.</sub>"
     },
     {
+     "author": "WillemJiang",
+     "at": "2026-09-25T00:22:39Z",
+     "url": "https://github.com/bytedance/deer-flow/pull/5843#issuecomment-5824525404",
+     "text": "@tonydzi Thanks for your contribution, please click the CLA assistant button to sign the CLA then we can merge your code."
+    },
+    {
      "author": "willem-bd",
      "at": "2026-09-24T19:21:54Z",
      "url": "https://github.com/bytedance/deer-flow/pull/5843#pullrequestreview-5309106380",
@@ -11905,6 +12043,12 @@
      "at": "2026-09-24T19:21:54Z",
      "url": "https://github.com/bytedance/deer-flow/pull/5843#discussion_r4097556104",
      "text": "[P3] Align the event example below with the actual `StreamEvent` contract. This loop prints dataclass representations and the emitted types are `messages-tuple`, `values`, `custom`, and `end`, but lines 84-90 still show mapping literals with nonexistent `messages` and `thread_state` types. Readers following the tutorial will implement handlers against fields and event names that never arrive; show `event.type`/`event.data` using the real names (and keep the translated page consistent)."
+    },
+    {
+     "author": "willem-bd",
+     "at": "2026-09-25T00:04:01Z",
+     "url": "https://github.com/bytedance/deer-flow/pull/5843#discussion_r4099715634",
+     "text": "[P2] Use an encoder that handles native tool artifacts. `DeerFlowClient` deliberately preserves arbitrary `ToolMessage.artifact` objects in `event.data` (the client tests pin object identity), so plain `json.dumps(event.data)` can raise `TypeError` and terminate this documented SSE stream on a valid event. Use a documented fallback such as `default=str` (as the TUI JSON runner does), and update the second example plus the translated copies."
     }
    ]
   },
@@ -13198,6 +13342,12 @@
      "at": "2026-09-24T21:21:18Z",
      "url": "https://github.com/gastownhall/beads/issues/5877#issuecomment-5822445249",
      "text": "Capture turn 1 measured whether the agent used the available memory facility during the establish leg. The run used the pre-registered `necessary` variant with 8 work IDs and 2 repeats, for 16 sessions per arm. Claude Code was pinned to 2.1.278 and the model was `claude-sonnet-5`. All 80 sessions completed with status `ok`; none were unmeasured. Engagement counts were: - no-memory floor: 0/16 - native built-in memory: 14/16 - beads baseline `f45b249` (current `main` text): 0/16, with zero `bd` calls - PR #6111 cherry-picked onto v1.3.0 (`f2f4eba`): 0/16 - durable-memory block replacement (`ac57bda`, local commit): 8/16 `ac57bda` replaces the whole agent instructions block in `internal/templates/agents/defaults/beads-section-minimal.md`. The shipped block has Quick Reference, Rules, the architecture line, Agent Context Profiles, and Session Completion. `ac57bda` removes all of it and puts this in its place (the commit is local, so the full text is here): > ## Durable storage > > You have your own memory. It lives in beads: `bd remember` stores a fact and `bd recall` or `bd memories` reads it back, and its contents are available to you in later sessions in this project. That replacement moved engagement from 0/16 on `f45b249` to 8/16 (one-sided Fisher p = 0.0012). It remained below native built-in memory at 14/16 (one-sided Fisher p = 0.027). PR #6111 did not move engagement from the baseline. The result has a confound. `ac57bda` adds the memory sentence and deletes the other 52 lines of the 53-line block, so this turn cannot say which change drove the lift. The shipped block already tells agents to use `bd remember` for persistent knowledge, and with that line in place engagement was 0/16. Separating the two needs an arm that keeps the shipped block intact and appends only the memory sentence. We have not run it yet."
+    },
+    {
+     "author": "quad341",
+     "at": "2026-09-26T15:33:09Z",
+     "url": "https://github.com/gastownhall/beads/issues/5877#issuecomment-5847507182",
+     "text": "@A3Ackerman, thank you for writing this by hand, and I'm sorry it sat for eleven days. Since your first point is about exactly this: my agent drafted this reply at my request (signed below), and I'll read it here and edit anything that isn't what I'd say. **Human-only threads.** Agreed. This thread is hard to follow, and our long agent-written comments are part of the reason. The repo has a convention for signing agent-written comments (`engdocs/AGENT_SIGNING.md`), which at least lets a reader tell them apart. A paired human-only issue would be the maintainers' call, but I'd support trying it on a proposal this size. **Your cleanup.** 800 memories down to about 65 worth keeping, with half of those really skill updates, fits what others found here: much of what gets written as memory is really how-to, and it works better as a skill or an instruction. **Renaming delete/forget.** The behaviour you and Tim asked for is in. Since Revision 3, `forget` keeps history, and restoring brings the Memory back under the same identity. The word didn't change, and we lean your way on it. The result message says the history is still there, but an agent decides before it sees that message, and the verb is what it weighs. An alias costs less than renaming a shipped command. It's @csells's call as the proposal's author. **What memory is for.** Fair, and there's evidence on your side. In [a run posted this week](https://github.com/gastownhall/beads/issues/5877#issuecomment-5822445249), agents given today's beads instructions used the memory store in 0 of 16 sessions, against 14 of 16 with the harness's built-in memory. Rewriting the instruction block alone moved it to 8 of 16, which backs your point about guidance too. **Auto-injected hints.** That's the kind of consumer the proposal leaves room for, since it keeps context assembly out of core. A local embedding index could follow the History change feed (S16) to stay current without rescanning. The PreToolUse hook [The1nk described upt …"
     }
    ]
   },
@@ -14169,6 +14319,12 @@
      "at": "2026-09-24T21:34:51Z",
      "url": "https://github.com/google/adk-go/pull/1543#issuecomment-5822621501",
      "text": "@wojtas000 , PTAL"
+    },
+    {
+     "author": "wojtas000",
+     "at": "2026-09-25T07:20:17Z",
+     "url": "https://github.com/google/adk-go/pull/1543#issuecomment-5828521556",
+     "text": "Hi, Thanks for keeping this up to date. We'll come back to it once Chat Completions support (#1642) and its refactor (#1643) land. #1643 moves `request.go` into `internal/responses/`, so this branch will conflict again. Please hold off on rebasing until both are merged. After that we'd like multimodal input to work for both Responses and Chat Completions, and we'll follow up here on how to split that work."
     }
    ]
   },
@@ -17548,6 +17704,12 @@
      "at": "2026-09-15T09:15:42Z",
      "url": "https://github.com/openai/codex/issues/42080#issuecomment-5677731224",
      "text": "A small machine-readable completion contract seems like the missing primitive here. It does not need to be a new model tool or a vendor-specific dashboard. One minimal shape is: ```json { \"run_id\": \"...\", \"target\": {\"kind\": \"artifact\", \"ref\": \"...\"}, \"state\": \"validated-target\", \"evidence\": [ {\"kind\": \"tests\", \"status\": \"pass\", \"source\": \"independent\", \"ref\": \"...\", \"fresh\": true} ], \"gaps\": [] } ``` The important rules would be: - `claimed`, `observed`, `persisted`, `validated-local`, `validated-target`, `released`, and `accepted` are distinct machine states. - A state transition is produced by a bounded tool/result record, not by checkpoint prose. - `validated-target`, `released`, or `accepted` requires evidence bound to the current run and target. Missing, stale, or mismatched evidence stays `inconclusive` or `blocked`. - Completion output should cite evidence references, while durable storage keeps raw prompts, source, commands, and output out of the receipt. This is the contract we are prototyping in Cxosen's open schemas and local CLI: https://github.com/vizuh/cxosen-spec The point is interoperability: Codex could implement the contract internally without adopting Cxosen as a runtime dependency."
+    },
+    {
+     "author": "oskaritooo",
+     "at": "2026-09-26T10:44:13Z",
+     "url": "https://github.com/openai/codex/issues/42080#issuecomment-5845576256",
+     "text": "Independent corroboration from a real Windows Codex Desktop engineering workflow (VOLT, local runtime + physical IoT devices), observed **2026-09-24 through 2026-09-26**. This is **not a billing/refund request**. I am adding it because the failure mode in this issue — component evidence being promoted to target-level completion evidence, plus missing circuit breakers — matches several directly observed cases. ### Reproduction A — automated PASS while the real device path remained regressed Relevant commit: `308249a27e1daa6c9319665b6bed9573a43dfc11` The change separated Tuya communication into persistent `control` and `observer` sockets. Automated verification reported: - TypeScript: `40/40 PASS` - Python: `12/12 PASS` But the physical/runtime path was still wrong. Representative traces: **Kettle** - command ~2 ms - first read ~2210 ms - subsequent read ~13 ms **Amplifier** - command ~1 ms - read ~12 ms - subsequent read ~47 ms In one trace, the underlying observation was ~11 ms after the event, while the application-side receipt was ~2.2 s later. The UI could remain in `pending` / `aria-busy` / confirmation states, and later diagnosis reproduced a case where **the physical device was ON while VOLT reported OFF**. The important point is not that tests were missing. The tests passed, but they were not valid evidence that the declared physical/E2E target worked. ### Reproduction B — explicit architectural acceptance criterion was not verified before completion Task/thread: `01a0d74f-0c18-7972-8220-8c9765d9fade` Two relevant runs lasted: - 70:51 - 26:02 - combined: 96:53 Approximately 20 commits were produced. The explicit architecture contract required two independent paths: 1. command/write 2. observation/readback The observation path was not supposed to be triggered directly by the same user click as part of the command path. Later analysis found that commit `196a510` introduced a click-triggered: `POST /state` So the required end-to-end independence had not actually …"
     }
    ]
   },
@@ -17630,9 +17792,9 @@
    "url": "https://github.com/openai/openai-agents-js/issues/1775",
    "title": "code-change-verification cannot run on Windows under Node 20.12.2 or newer",
    "kind": "issue",
-   "state": "open",
+   "state": "closed",
    "created_at": "2026-08-29T20:07:33Z",
-   "closed_at": null,
+   "closed_at": "2026-09-25T05:32:41Z",
    "our_roles": [
     "commenter"
    ],
@@ -18919,6 +19081,12 @@
      "at": "2026-09-17T01:47:39Z",
      "url": "https://github.com/pydantic/pydantic-ai/issues/7975#issuecomment-5707183677",
      "text": "Your record-level measurement lands on the exact shape our audit corpus was built for, and the number you got is consistent with what we see in the wild — so let me corroborate from three merged fixes and offer the fixture half. **Independent corroboration.** Scanning 53 public Codex rollout sessions (1,313 `token_count` events): 46% are byte-identical re-emissions of the previous event — emission-per-chunk with response-scoped usage, as you describe. And the collapse-by-id fix already has three merged precedents this month, all in consumption-side tools: - token-monitor #627: Pi fork copies preserve `message.responseId` across the copied records; the maintainer anchored cross-session dedup on exactly that stable id (merged after we supplied the fork-copy fixture). - tokscale #1306 → #1323: forked/continued sessions double-count until dedup keys on stable response identity (merged). - claude-usage-widget #1: the inverse failure — first-wins dedup *without* id awareness dropped 25% of output tokens (maintainer independently reproduced on a 2,694-file archive before merging). So \"identity says whether this is a new occurrence at all\" is not just right in theory — it is the single fix that keeps landing in practice, and your proposal to emit it at `opentelemetry_attributes()` time is the cheapest place it can live. **One edge worth pinning while the attribute is young**, from the token-monitor review thread: a regenerate inside a session mints a *new* response id while replaying equivalent content — id-collision collapses copies of one response, but it must not be read as \"same logical work,\" or a regenerate gets silently absorbed into the prior response's accounting. Fork-copy preserves the id; regenerate changes it; consumers need both behaviors documented or they will over-collapse in one direction exactly like first-wins under-collapsed in the other. **Fixtures.** The three shapes above (id-preserving fork copy, id-minting regenerate, re-emitted identical usage und …"
+    },
+    {
+     "author": "sangkyoonnam",
+     "at": "2026-09-26T11:36:28Z",
+     "url": "https://github.com/pydantic/pydantic-ai/issues/7975#issuecomment-5845936301",
+     "text": "Part of the contract is already written down, just not where an OTel consumer looks. The `input_tokens` docstring says the counts \"form inclusive parent/child buckets, not disjoint ones\", with cache and audio tokens inside the total ([usage.py L94-L99](https://github.com/pydantic/pydantic-ai/blob/90ed797981d3e68591090906abaf5a033c20b488/pydantic_ai_slim/pydantic_ai/usage.py#L94-L99)), and the OTel registry says the same for the standard breakdown keys ([registry.yaml L292-L298](https://github.com/open-telemetry/semantic-conventions-genai/blob/e57c543b4889619eb2a05702471937db5119165d/model/gen-ai/registry.yaml#L292-L298)). Neither covers `gen_ai.usage.details.*`, which is pydantic-ai's own namespace and also carries provider-specific extras. On (b): `opentelemetry_attributes()` emits `gen_ai.usage.cache_read.input_tokens` and `details.cache_read_tokens` from the same value on purpose, marked \"For backwards compat\", and cache writes the same way ([usage.py L237-L245](https://github.com/pydantic/pydantic-ai/blob/90ed797981d3e68591090906abaf5a033c20b488/pydantic_ai_slim/pydantic_ai/usage.py#L237-L245)), so dropping those aliases is a compatibility call. A consumer note in `docs/logfire.md` would help either way: per-request totals come from `gen_ai.usage.input_tokens` and `gen_ai.usage.output_tokens`, cache counts are already inside input, and `details.*` must not be added on top. The exception I know of is Anthropic's `details.advisor_*`, which is billed at the advisor model's rates and left out of the totals on purpose ([anthropic.py L3107-L3109](https://github.com/pydantic/pydantic-ai/blob/90ed797981d3e68591090906abaf5a033c20b488/pydantic_ai_slim/pydantic_ai/models/anthropic.py#L3107-L3109))."
     }
    ]
   },
@@ -19661,6 +19829,24 @@
      "at": "2026-09-02T03:56:11Z",
      "url": "https://github.com/su-kaka/gcli2api/issues/401#issuecomment-5504116059",
      "text": "> 这个好像是google的问题,这个凭证似乎不对个人开放了 朋友，解决了吗？我也遇到这个问题了"
+    },
+    {
+     "author": "olivertzeng",
+     "at": "2026-09-26T06:50:24Z",
+     "url": "https://github.com/su-kaka/gcli2api/issues/401#issuecomment-5844041921",
+     "text": "> 加q群 群里大锅饭可以用 沒有qq q了 我試過一堆帳號加antigravity都會自動變成pro號（上面寫的）可是都會遇到這個error 感覺是因為這些帳號本來就不是pro號的原因吧？"
+    },
+    {
+     "author": "olivertzeng",
+     "at": "2026-09-26T06:51:42Z",
+     "url": "https://github.com/su-kaka/gcli2api/issues/401#issuecomment-5844049611",
+     "text": "我的是Antigravity也這樣"
+    },
+    {
+     "author": "NTRUCK",
+     "at": "2026-09-26T18:55:12Z",
+     "url": "https://github.com/su-kaka/gcli2api/issues/401#issuecomment-5848939428",
+     "text": "> > 加q群 群里大锅饭可以用 > > 沒有qq q了 我試過一堆帳號加antigravity都會自動變成pro號（上面寫的）可是都會遇到這個error 感覺是因為這些帳號本來就不是pro號的原因吧？ 是bug吧，消息测试看看，可能是403需要验证"
     }
    ]
   },

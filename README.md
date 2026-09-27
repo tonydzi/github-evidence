@@ -1,6 +1,6 @@
 # Upstream contribution evidence — @tonydzi
 
-Snapshot: **2026-09-24** · source: public GitHub API · regenerated weekly.
+Snapshot: **2026-09-27** · source: public GitHub API · regenerated weekly.
 
 This page exists so the contribution record stays checkable independently of any one profile page. Everything below is a link into someone else's repository: their issue tracker, their pull requests, their release notes.
 
@@ -14,7 +14,7 @@ Counts are split on purpose. Opening a pull request in someone else's project an
 | Other people's threads participated in | 401 |
 | Reviews on other people's PRs | 49 |
 | Distinct repositories | 228 |
-| Replies received from maintainers and participants | 1838 |
+| Replies received from maintainers and participants | 1869 |
 | Release notes crediting this account | 21 |
 | Files in other repos crediting this account | 25 |
 
@@ -137,15 +137,15 @@ Counts are split on purpose. Opening a pull request in someone else's project an
 
 Lines maintainers wrote into their own changelogs and contributor lists.
 
-**eugeniughelbur/obsidian-second-brain · [`CHANGELOG.md`](https://github.com/eugeniughelbur/obsidian-second-brain/blob/7767230a130134d0fd445dd566f0aceeee75185b/CHANGELOG.md)**
+**eugeniughelbur/obsidian-second-brain · [`CHANGELOG.md`](https://github.com/eugeniughelbur/obsidian-second-brain/blob/fa3190e2493f9b5c016338f56b6921e6882701ed/CHANGELOG.md)**
 
 > - **`validate-ai-first.sh` exited 0, silently, when a write payload named a tool but carried no path key it knew (#171, the open item from @tonydzi's codex-cli reports).** The hook read `file_path` and `filePath` (and `args.*`); a host that sends the path under another key (`path`, `uri`) got exit 0 …
 
-**Lyellr88/marm-memory · [`CONTRIBUTORS.md`](https://github.com/Lyellr88/marm-memory/blob/f3a9c0749f57541f399476873835474356683d1b/CONTRIBUTORS.md)**
+**Lyellr88/marm-memory · [`CONTRIBUTORS.md`](https://github.com/Lyellr88/marm-memory/blob/dccebfdc7c6cd00a21346df2525ae52a7544f246/CONTRIBUTORS.md)**
 
 > - **Anton Dziatkovskii** ([@tonydzi](https://github.com/tonydzi)) —
 
-**Lyellr88/marm-memory · [`CHANGELOG.md`](https://github.com/Lyellr88/marm-memory/blob/f3a9c0749f57541f399476873835474356683d1b/CHANGELOG.md)**
+**Lyellr88/marm-memory · [`CHANGELOG.md`](https://github.com/Lyellr88/marm-memory/blob/dccebfdc7c6cd00a21346df2525ae52a7544f246/CHANGELOG.md)**
 
 > The 8 tests in `tests/test_docker_transports.py` that actually start a container previously only ran in the release workflow, which triggers on a version tag, so a Docker runtime regression was caught after a release was already tagged rather than on the PR that caused it. Contributed by [@tonydzi]( …
 > `scripts/test-scripts/smoke_embedding_chunking.py` had been broken since chunking was split into separate memory and document profiles: it imported constants that no longer existed and called `_chunk_text` without the keyword arguments it now requires. Contributed by [@tonydzi](https://github.com/to …
@@ -163,7 +163,7 @@ Lines maintainers wrote into their own changelogs and contributor lists.
 
 > | plan-file-hygiene | #1479 | @tonydzi | Open, July 27 update | Lifecycle management for planning artifacts. Community credit to @halilxibrahim. |
 
-**DanceNitra/agora · [`probes/recheck_figures_91188_units.py`](https://github.com/DanceNitra/agora/blob/226670b3dfa9cb45d7732c76b77b372bbdecb3ba/probes/recheck_figures_91188_units.py)**
+**DanceNitra/agora · [`probes/recheck_figures_91188_units.py`](https://github.com/DanceNitra/agora/blob/ac28c5f0c873416f832afb398e9155d4304c7d9e/probes/recheck_figures_91188_units.py)**
 
 > by_tonydzi = gh("repos/anthropics/claude-code/issues/91188/comments",
 > '.[] | select(.user.login=="tonydzi") | .body')
@@ -172,7 +172,7 @@ Lines maintainers wrote into their own changelogs and contributor lists.
 > chk("tonydzi asked it, and the draft says so",
 > "@tonydzi asked @niels-roest whether that target", asked in by_tonydzi,
 
-**linny006/mcp-servers-live · [`r/tonydzi/telegram-mcp-kit/index.html`](https://github.com/linny006/mcp-servers-live/blob/afc4ce0437b3663c3b4880aee073e743ad90c50b/r/tonydzi/telegram-mcp-kit/index.html)**
+**linny006/mcp-servers-live · [`r/tonydzi/telegram-mcp-kit/index.html`](https://github.com/linny006/mcp-servers-live/blob/129f18d4e1c39682ea9f754cb6023373a8e04f59/r/tonydzi/telegram-mcp-kit/index.html)**
 
 > <title>tonydzi/telegram-mcp-kit - entry on MCP Servers Live</title>
 > <link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/tonydzi/telegram-mcp-kit/">
@@ -181,7 +181,7 @@ Lines maintainers wrote into their own changelogs and contributor lists.
 > <meta name="twitter:title" content="tonydzi/telegram-mcp-kit - entry on MCP Servers Live">
 > <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"tonydzi/telegram-mcp-kit","codeRepository":"https://github.com/tonydzi/telegram-mcp-kit","programmingLanguage":"PowerShell","url":"https://linny006.github.io/mcp-servers-live/r/tonydzi/telegram-m …
 
-**linny006/mcp-servers-live · [`r/tonydzi/whatsapp-mcp-kit/index.html`](https://github.com/linny006/mcp-servers-live/blob/afc4ce0437b3663c3b4880aee073e743ad90c50b/r/tonydzi/whatsapp-mcp-kit/index.html)**
+**linny006/mcp-servers-live · [`r/tonydzi/whatsapp-mcp-kit/index.html`](https://github.com/linny006/mcp-servers-live/blob/129f18d4e1c39682ea9f754cb6023373a8e04f59/r/tonydzi/whatsapp-mcp-kit/index.html)**
 
 > <title>tonydzi/whatsapp-mcp-kit - entry on MCP Servers Live</title>
 > <link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/tonydzi/whatsapp-mcp-kit/">
@@ -218,11 +218,11 @@ Lines maintainers wrote into their own changelogs and contributor lists.
 
 > | 🆕 **[@tonydzi](https://github.com/tonydzi)** | 🎉 Первый вклад: исправление запросов к хосту в режиме stream-json | [#9414](https://github.com/QwenLM/qwen-code/pull/9414) |
 
-**DanceNitra/agora · [`probes/what_our_own_index_actually_delivers.py`](https://github.com/DanceNitra/agora/blob/226670b3dfa9cb45d7732c76b77b372bbdecb3ba/probes/what_our_own_index_actually_delivers.py)**
+**DanceNitra/agora · [`probes/what_our_own_index_actually_delivers.py`](https://github.com/DanceNitra/agora/blob/ac28c5f0c873416f832afb398e9155d4304c7d9e/probes/what_our_own_index_actually_delivers.py)**
 
 > trap @tonydzi described on anthropics/claude-code#91188 for bytes against units.
 
-**DanceNitra/agora · [`probes/does_a_folded_scalar_description_arrive_at_the_model.py`](https://github.com/DanceNitra/agora/blob/226670b3dfa9cb45d7732c76b77b372bbdecb3ba/probes/does_a_folded_scalar_description_arrive_at_the_model.py)**
+**DanceNitra/agora · [`probes/does_a_folded_scalar_description_arrive_at_the_model.py`](https://github.com/DanceNitra/agora/blob/ac28c5f0c873416f832afb398e9155d4304c7d9e/probes/does_a_folded_scalar_description_arrive_at_the_model.py)**
 
 > WHY. anthropics/claude-code#81081, comment of 2026-09-15 by @tonydzi: on a shelf of 189 skills,
 > "claim_under_test": "anthropics/claude-code#81081, @tonydzi 2026-09-15: a `description: >` folded "
@@ -231,17 +231,17 @@ Lines maintainers wrote into their own changelogs and contributor lists.
 
 > | 🆕 **[@tonydzi](https://github.com/tonydzi)** | 🎉 Primeira contribuição: correção do host de perguntas no modo stream-json | [#9414](https://github.com/QwenLM/qwen-code/pull/9414) |
 
-**DanceNitra/agora · [`probes/the_reminders_advice_switches_unit_at_125_units_per_line.py`](https://github.com/DanceNitra/agora/blob/226670b3dfa9cb45d7732c76b77b372bbdecb3ba/probes/the_reminders_advice_switches_unit_at_125_units_per_line.py)**
+**DanceNitra/agora · [`probes/the_reminders_advice_switches_unit_at_125_units_per_line.py`](https://github.com/DanceNitra/agora/blob/ac28c5f0c873416f832afb398e9155d4304c7d9e/probes/the_reminders_advice_switches_unit_at_125_units_per_line.py)**
 
 > He has no `claude` binary and took the identifier shapes from @tonydzi's greps. This reads the
 > 125 units per line. But the threshold was named in that thread by @tonydzi and @pm25coder before us,
 > ("tonydzi index (his counts)", 8188, 72),
 
-**DanceNitra/agora · [`probes/the_cap_on_windows_and_what_a_crlf_line_costs.py`](https://github.com/DanceNitra/agora/blob/226670b3dfa9cb45d7732c76b77b372bbdecb3ba/probes/the_cap_on_windows_and_what_a_crlf_line_costs.py)**
+**DanceNitra/agora · [`probes/the_cap_on_windows_and_what_a_crlf_line_costs.py`](https://github.com/DanceNitra/agora/blob/ac28c5f0c873416f832afb398e9155d4304c7d9e/probes/the_cap_on_windows_and_what_a_crlf_line_costs.py)**
 
 > @tonydzi is darwin-arm64 and has annotated his own Windows figure as unverified. There is no
 
-**DanceNitra/agora · [`probes/the_cut_measured_by_what_the_index_DOES_not_what_it_says.py`](https://github.com/DanceNitra/agora/blob/226670b3dfa9cb45d7732c76b77b372bbdecb3ba/probes/the_cut_measured_by_what_the_index_DOES_not_what_it_says.py)**
+**DanceNitra/agora · [`probes/the_cut_measured_by_what_the_index_DOES_not_what_it_says.py`](https://github.com/DanceNitra/agora/blob/ac28c5f0c873416f832afb398e9155d4304c7d9e/probes/the_cut_measured_by_what_the_index_DOES_not_what_it_says.py)**
 
 > Windows, current CC. @JhouCode is linux-x64, @tonydzi darwin-arm64 and has annotated his own Windows
 
@@ -254,12 +254,12 @@ Lines maintainers wrote into their own changelogs and contributor lists.
 > prUrl: 'https://github.com/tonydzi/sqlite-graph-memory/pull/10',
 > prUrl: 'https://github.com/tonydzi/sqlite-graph-memory/pull/14',
 
-**DanceNitra/agora · [`probes/the_memory_index_check_grew_a_second_size_and_the_team_path_grew_a_line_cap.py`](https://github.com/DanceNitra/agora/blob/226670b3dfa9cb45d7732c76b77b372bbdecb3ba/probes/the_memory_index_check_grew_a_second_size_and_the_team_path_grew_a_line_cap.py)**
+**DanceNitra/agora · [`probes/the_memory_index_check_grew_a_second_size_and_the_team_path_grew_a_line_cap.py`](https://github.com/DanceNitra/agora/blob/ac28c5f0c873416f832afb398e9155d4304c7d9e/probes/the_memory_index_check_grew_a_second_size_and_the_team_path_grew_a_line_cap.py)**
 
 > WHY. On anthropics/claude-code#91188 @tonydzi read CLI 2.1.202 on macOS and reported three things:
 > * The team path DOES pass a lineCap, conditionally. @tonydzi's third finding does not reproduce
 
-**DanceNitra/agora · [`probes/does_a_folded_scalar_description_arrive_at_the_model.result.json`](https://github.com/DanceNitra/agora/blob/226670b3dfa9cb45d7732c76b77b372bbdecb3ba/probes/does_a_folded_scalar_description_arrive_at_the_model.result.json)**
+**DanceNitra/agora · [`probes/does_a_folded_scalar_description_arrive_at_the_model.result.json`](https://github.com/DanceNitra/agora/blob/ac28c5f0c873416f832afb398e9155d4304c7d9e/probes/does_a_folded_scalar_description_arrive_at_the_model.result.json)**
 
 > "claim_under_test": "anthropics/claude-code#81081, @tonydzi 2026-09-15: a `description: >` folded scalar arrives as a heading, 68 of 189 on their shelf",
 
@@ -1058,26 +1058,4 @@ Every position we opened, newest first. Full bodies and every reply are in [`evi
 
 ---
 
-Generated by `github_evidence_snapshot.py` on 2026-09-24T23:08:39Z. Regenerated weekly; the dated full archive lives outside GitHub.
-
----
-
-<!--ecosystem-map:start-->
-
-## 🧩 One piece of a working system
-
-This repository is one piece lifted out of a live operation: one non-technical founder, an AI
-cofounder, and a fleet of machines that reach consensus with each other and wake the human only
-for money or the irreversible. It was extracted after it survived production, not written as a
-demo — and it runs on its own: nothing here phones home to the rest.
-
-**See how the whole thing fits together → [SYSTEM.md](https://github.com/tonydzi/tonydzi/blob/main/SYSTEM.md)**
-
-<!--ecosystem-map:end-->
-
-## AI contributors
-
-This project is built by a human + AI team, and the git log says so: Claude writes most of
-the code, Codex and Grok review it, Gemini feeds the research. Each is credited on a commit
-**only if its output changed that commit's content** — no decorative credits. Lab-wide
-policy, one source for every repo: [AI-CONTRIBUTORS.md](https://github.com/tonydzi/.github/blob/main/AI-CONTRIBUTORS.md).
+Generated by `github_evidence_snapshot.py` on 2026-09-27T03:25:44Z. Regenerated weekly; the dated full archive lives outside GitHub.
