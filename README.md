@@ -1,6 +1,6 @@
 # Upstream contribution evidence — @tonydzi
 
-Snapshot: **2026-10-11** · source: public GitHub API · regenerated weekly.
+Snapshot: **2026-10-18** · source: public GitHub API · regenerated weekly.
 
 This page exists so the contribution record stays checkable independently of any one profile page. Everything below is a link into someone else's repository: their issue tracker, their pull requests, their release notes.
 
@@ -8,15 +8,15 @@ Counts are split on purpose. Opening a pull request in someone else's project an
 
 | | |
 |---|---:|
-| Pull requests opened in other people's repos | 151 |
-| …of which merged | 54 |
-| Issues opened in other people's repos | 66 |
-| Other people's threads participated in | 412 |
-| Reviews on other people's PRs | 86 |
-| Distinct repositories | 249 |
-| Replies received from maintainers and participants | 2085 |
-| Release notes crediting this account | 25 |
-| Files in other repos crediting this account | 65 |
+| Pull requests opened in other people's repos | 164 |
+| …of which merged | 62 |
+| Issues opened in other people's repos | 69 |
+| Other people's threads participated in | 417 |
+| Reviews on other people's PRs | 102 |
+| Distinct repositories | 257 |
+| Replies received from maintainers and participants | 2012 |
+| Release notes crediting this account | 29 |
+| Files in other repos crediting this account | 33 |
 
 ## Credited in other projects' release notes
 
@@ -148,30 +148,50 @@ Counts are split on purpose. Opening a pull request in someone else's project an
 
 > * test(desktop): pin both Linux release legs to the ubuntu-22.04 glibc floor by @tonydzi in https://github.com/QwenLM/qwen-code/pull/13616
 
+**QwenLM/qwen-code — v0.25.1** · 2026-10-11 · [release notes](https://github.com/QwenLM/qwen-code/releases/tag/v0.25.1)
+
+> - test(desktop): pin both Linux release legs to the ubuntu-22.04 glibc floor ([#13616](https://github.com/QwenLM/qwen-code/pull/13616)) by @tonydzi
+
+**QwenLM/qwen-code — desktop-v0.25.1** · 2026-10-11 · [release notes](https://github.com/QwenLM/qwen-code/releases/tag/desktop-v0.25.1)
+
+> * test(desktop): pin both Linux release legs to the ubuntu-22.04 glibc floor by @tonydzi in https://github.com/QwenLM/qwen-code/pull/13616
+
+**DeusData/codebase-memory-mcp — v0.12.0** · 2026-10-15 · [release notes](https://github.com/DeusData/codebase-memory-mcp/releases/tag/v0.12.0)
+
+> - @tonydzi: the 17-tool documentation (#2225)
+
+**langroid/langroid — 0.69.9** · 2026-10-16 · [release notes](https://github.com/langroid/langroid/releases/tag/0.69.9)
+
+> @tonydzi in #1262 and are carried over with credit: an unterminated string
+
 ## Credited in other projects' files
 
 Lines maintainers wrote into their own changelogs and contributor lists.
 
-**eugeniughelbur/obsidian-second-brain · [`CHANGELOG.md`](https://github.com/eugeniughelbur/obsidian-second-brain/blob/fe84aa94ea75a46a213d94304fe9f0501c18f109/CHANGELOG.md)**
+**QwenLM/qwen-code · [`CHANGELOG.md`](https://github.com/QwenLM/qwen-code/blob/c6018c63b53ed8bfb96a3048dfebcd541d4f682d/CHANGELOG.md)**
+
+> - test(desktop): pin both Linux release legs to the ubuntu-22.04 glibc floor ([#13616](https://github.com/QwenLM/qwen-code/pull/13616)) by @tonydzi
+
+**eugeniughelbur/obsidian-second-brain · [`CHANGELOG.md`](https://github.com/eugeniughelbur/obsidian-second-brain/blob/7b098c2793651956eb3b5dc8e1ac2ccbe8a9d3de/CHANGELOG.md)**
 
 > - **The write-time hook reported `payload keys: none` for a payload that had a path key one level up (#171, reported by @tonydzi).** A payload like `{"tool_name":"Write","file_path":"..."}` still exited 1 and stayed fail-closed, but the diagnostic listed only keys under `tool_input` and `args`. It n …
 > - **`validate-ai-first.sh` exited 0, silently, when a write payload named a tool but carried no path key it knew (#171, the open item from @tonydzi's codex-cli reports).** The hook read `file_path` and `filePath` (and `args.*`); a host that sends the path under another key (`path`, `uri`) got exit 0 …
 
-**basicmachines-co/basic-memory · [`CHANGELOG.md`](https://github.com/basicmachines-co/basic-memory/blob/4eacc6879997aae1ef8a1539f0c4023c7e153983/CHANGELOG.md)**
+**basicmachines-co/basic-memory · [`CHANGELOG.md`](https://github.com/basicmachines-co/basic-memory/blob/a72751c5d626380dedeed30f55f7a80ba3dc710d/CHANGELOG.md)**
 
 > @tonydzi for the report and fix (#1617, landed as #1619).
 
-**Lyellr88/marm-memory · [`CONTRIBUTORS.md`](https://github.com/Lyellr88/marm-memory/blob/fcc3c8906784b72f160cb2a23bd54a619d42adfd/CONTRIBUTORS.md)**
+**Lyellr88/marm-memory · [`CONTRIBUTORS.md`](https://github.com/Lyellr88/marm-memory/blob/97871d57ce7abbf343e7a3637997c67a3056ca4e/CONTRIBUTORS.md)**
 
 > - **Anton Dziatkovskii** ([@tonydzi](https://github.com/tonydzi)) —
 
-**Lyellr88/marm-memory · [`CHANGELOG.md`](https://github.com/Lyellr88/marm-memory/blob/fcc3c8906784b72f160cb2a23bd54a619d42adfd/CHANGELOG.md)**
+**Lyellr88/marm-memory · [`CHANGELOG.md`](https://github.com/Lyellr88/marm-memory/blob/97871d57ce7abbf343e7a3637997c67a3056ca4e/CHANGELOG.md)**
 
 > The 8 tests in `tests/test_docker_transports.py` that actually start a container previously only ran in the release workflow, which triggers on a version tag, so a Docker runtime regression was caught after a release was already tagged rather than on the PR that caused it. Contributed by [@tonydzi]( …
 > `scripts/test-scripts/smoke_embedding_chunking.py` had been broken since chunking was split into separate memory and document profiles: it imported constants that no longer existed and called `_chunk_text` without the keyword arguments it now requires. Contributed by [@tonydzi](https://github.com/to …
 > The README published to PyPI carried 17 links written relative to the repository root, a position neither surface that renders that file ever occupies. Reported and fixed by [@tonydzi](https://github.com/tonydzi).
 
-**qualixar/superlocalmemory · [`CHANGELOG.md`](https://github.com/qualixar/superlocalmemory/blob/26f8c68bd3b8fc5e1247a06f96427b1921e50849/CHANGELOG.md)**
+**qualixar/superlocalmemory · [`CHANGELOG.md`](https://github.com/qualixar/superlocalmemory/blob/6a8c704964ef8240a600638a27d07a43224fe3d6/CHANGELOG.md)**
 
 > Reported by @tonydzi (#122).
 
@@ -179,360 +199,150 @@ Lines maintainers wrote into their own changelogs and contributor lists.
 
 > (#28, reported by @tonydzi). Claude Code writes one JSONL line per content
 
-**majiayu000/claude-skill-registry-data · [`other/llll/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/other/llll/SKILL.md)**
+**borq168/radar-forge · [`digests/2026-08-08/ai-skills-en.md`](https://github.com/borq168/radar-forge/blob/55beba194fd51480c7cd4812702554743ae6cd55/digests/2026-08-08/ai-skills-en.md)**
 
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
+> | plan-file-hygiene | #1479 | @tonydzi | Open, July 27 update | Lifecycle management for planning artifacts. Community credit to @halilxibrahim. |
 
-**majiayu000/claude-skill-registry-data · [`ai-ml/rr/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/ai-ml/rr/SKILL.md)**
+**mcp-tool-shop-org/claude-synergy · [`products/mcp-go-sdk/releases/1.8.0.md`](https://github.com/mcp-tool-shop-org/claude-synergy/blob/4e59215fbdcca6f929717a8f80eeefeed808d41f/products/mcp-go-sdk/releases/1.8.0.md)**
 
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
+> - docs: make the protocol.md table of contents resolve by [@tonydzi](https://github.com/tonydzi) ([#1196](https://github.com/modelcontextprotocol/go-sdk/pull/1196))
+> - docs: fix the streamable client snippet to use (*Client).Connect by [@tonydzi](https://github.com/tonydzi) ([#1142](https://github.com/modelcontextprotocol/go-sdk/pull/1142))
+> - docs: quick start `go get` leaves the module unbuildable by [@tonydzi](https://github.com/tonydzi) ([#1148](https://github.com/modelcontextprotocol/go-sdk/pull/1148))
+> - docs: fix four dead links to the Multi Round-Trip Requests section by [@tonydzi](https://github.com/tonydzi) ([#1159](https://github.com/modelcontextprotocol/go-sdk/pull/1159))
+> * @tonydzi made their first contribution in https://github.com/modelcontextprotocol/go-sdk/pull/1142
 
-**majiayu000/claude-skill-registry-data · [`other/tt-probe/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/other/tt-probe/SKILL.md)**
+**mcp-tool-shop-org/claude-synergy · [`products/mcp-go-sdk/releases/1.8.0-pre.1.md`](https://github.com/mcp-tool-shop-org/claude-synergy/blob/4e59215fbdcca6f929717a8f80eeefeed808d41f/products/mcp-go-sdk/releases/1.8.0-pre.1.md)**
 
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
+> - docs: make the protocol.md table of contents resolve by [@tonydzi](https://github.com/tonydzi) ([#1196](https://github.com/modelcontextprotocol/go-sdk/pull/1196))
+> - docs: fix the streamable client snippet to use (*Client).Connect by [@tonydzi](https://github.com/tonydzi) ([#1142](https://github.com/modelcontextprotocol/go-sdk/pull/1142))
+> - docs: quick start `go get` leaves the module unbuildable by [@tonydzi](https://github.com/tonydzi) ([#1148](https://github.com/modelcontextprotocol/go-sdk/pull/1148))
+> - docs: fix four dead links to the Multi Round-Trip Requests section by [@tonydzi](https://github.com/tonydzi) ([#1159](https://github.com/modelcontextprotocol/go-sdk/pull/1159))
+> * @tonydzi made their first contribution in https://github.com/modelcontextprotocol/go-sdk/pull/1142
 
-**majiayu000/claude-skill-registry-data · [`ai-ml/screenpipe-worklog/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/ai-ml/screenpipe-worklog/SKILL.md)**
+**mcp-tool-shop-org/claude-synergy · [`products/mcp-go-sdk/releases/1.8.0-pre.2.md`](https://github.com/mcp-tool-shop-org/claude-synergy/blob/4e59215fbdcca6f929717a8f80eeefeed808d41f/products/mcp-go-sdk/releases/1.8.0-pre.2.md)**
 
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
+> - docs: make the protocol.md table of contents resolve by [@tonydzi](https://github.com/tonydzi) ([#1196](https://github.com/modelcontextprotocol/go-sdk/pull/1196))
+> - docs: fix the streamable client snippet to use (*Client).Connect by [@tonydzi](https://github.com/tonydzi) ([#1142](https://github.com/modelcontextprotocol/go-sdk/pull/1142))
+> - docs: quick start `go get` leaves the module unbuildable by [@tonydzi](https://github.com/tonydzi) ([#1148](https://github.com/modelcontextprotocol/go-sdk/pull/1148))
+> - docs: fix four dead links to the Multi Round-Trip Requests section by [@tonydzi](https://github.com/tonydzi) ([#1159](https://github.com/modelcontextprotocol/go-sdk/pull/1159))
+> * @tonydzi made their first contribution in https://github.com/modelcontextprotocol/go-sdk/pull/1142
 
-**majiayu000/claude-skill-registry-data · [`other/screenpipe-recall/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/other/screenpipe-recall/SKILL.md)**
+**linny006/mcp-servers-live · [`r/tonydzi/telegram-mcp-kit/index.html`](https://github.com/linny006/mcp-servers-live/blob/a3cff717592ebd0d3dbec00ae88eb9d61faeeda3/r/tonydzi/telegram-mcp-kit/index.html)**
 
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
+> <title>tonydzi/telegram-mcp-kit - entry on MCP Servers Live</title>
+> <link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/tonydzi/telegram-mcp-kit/">
+> <meta property="og:title" content="tonydzi/telegram-mcp-kit - entry on MCP Servers Live">
+> <meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/tonydzi/telegram-mcp-kit/">
+> <meta name="twitter:title" content="tonydzi/telegram-mcp-kit - entry on MCP Servers Live">
+> <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"tonydzi/telegram-mcp-kit","codeRepository":"https://github.com/tonydzi/telegram-mcp-kit","programmingLanguage":"PowerShell","url":"https://linny006.github.io/mcp-servers-live/r/tonydzi/telegram-m …
 
-**majiayu000/claude-skill-registry-data · [`other/screenpipe-meeting-prep/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/other/screenpipe-meeting-prep/SKILL.md)**
+**linny006/mcp-servers-live · [`r/tonydzi/whatsapp-mcp-kit/index.html`](https://github.com/linny006/mcp-servers-live/blob/a3cff717592ebd0d3dbec00ae88eb9d61faeeda3/r/tonydzi/whatsapp-mcp-kit/index.html)**
 
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
+> <title>tonydzi/whatsapp-mcp-kit - entry on MCP Servers Live</title>
+> <link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/tonydzi/whatsapp-mcp-kit/">
+> <meta property="og:title" content="tonydzi/whatsapp-mcp-kit - entry on MCP Servers Live">
+> <meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/tonydzi/whatsapp-mcp-kit/">
+> <meta name="twitter:title" content="tonydzi/whatsapp-mcp-kit - entry on MCP Servers Live">
+> <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"tonydzi/whatsapp-mcp-kit","codeRepository":"https://github.com/tonydzi/whatsapp-mcp-kit","programmingLanguage":"Python","url":"https://linny006.github.io/mcp-servers-live/r/tonydzi/whatsapp-mcp-k …
 
-**majiayu000/claude-skill-registry-data · [`other/find/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/other/find/SKILL.md)**
+**linny006/mcp-servers-live · [`r/tonydzi/sqlite-graph-memory/index.html`](https://github.com/linny006/mcp-servers-live/blob/a3cff717592ebd0d3dbec00ae88eb9d61faeeda3/r/tonydzi/sqlite-graph-memory/index.html)**
 
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
+> <title>tonydzi/sqlite-graph-memory - entry on MCP Servers Live</title>
+> <link rel="canonical" href="https://linny006.github.io/mcp-servers-live/r/tonydzi/sqlite-graph-memory/">
+> <meta property="og:title" content="tonydzi/sqlite-graph-memory - entry on MCP Servers Live">
+> <meta property="og:url" content="https://linny006.github.io/mcp-servers-live/r/tonydzi/sqlite-graph-memory/">
+> <meta name="twitter:title" content="tonydzi/sqlite-graph-memory - entry on MCP Servers Live">
+> <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"tonydzi/sqlite-graph-memory","codeRepository":"https://github.com/tonydzi/sqlite-graph-memory","programmingLanguage":"Python","url":"https://linny006.github.io/mcp-servers-live/r/tonydzi/sqlite-g …
 
-**majiayu000/claude-skill-registry-data · [`other/agenda/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/other/agenda/SKILL.md)**
+**DanceNitra/agora · [`probes/recheck_figures_91188_units.py`](https://github.com/DanceNitra/agora/blob/067aa5aacaf90b734129ee3778ddd457645e23b6/probes/recheck_figures_91188_units.py)**
 
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
+> by_tonydzi = gh("repos/anthropics/claude-code/issues/91188/comments",
+> '.[] | select(.user.login=="tonydzi") | .body')
+> thread = body + by_tonydzi + by_pm25
+> "tonydzi carried it there today; the draft references the unit once and proves nothing")
+> chk("tonydzi asked it, and the draft says so",
+> "@tonydzi asked @niels-roest whether that target", asked in by_tonydzi,
 
-**majiayu000/claude-skill-registry-data · [`ai-ml/screenpipe-shareable-recap/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/ai-ml/screenpipe-shareable-recap/SKILL.md)**
+**QwenLM/qwen-code-docs · [`website/content/zh/blog/updates/weekly-update-2026-09-03.mdx`](https://github.com/QwenLM/qwen-code-docs/blob/1fae31bfdd5b732f93667264e4cf0360ec20636e/website/content/zh/blog/updates/weekly-update-2026-09-03.mdx)**
 
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
+> | 🆕 **[@tonydzi](https://github.com/tonydzi)** | 🎉 首次贡献：stream-json 模式提问宿主修复 | [#9414](https://github.com/QwenLM/qwen-code/pull/9414) |
 
-**majiayu000/claude-skill-registry-data · [`ai-ml/chat/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/ai-ml/chat/SKILL.md)**
+**QwenLM/qwen-code-docs · [`website/content/en/blog/updates/weekly-update-2026-09-03.mdx`](https://github.com/QwenLM/qwen-code-docs/blob/1fae31bfdd5b732f93667264e4cf0360ec20636e/website/content/en/blog/updates/weekly-update-2026-09-03.mdx)**
 
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
+> | 🆕 **[@tonydzi](https://github.com/tonydzi)** | 🎉 First contribution: fix for question host in stream-json mode | [#9414](https://github.com/QwenLM/qwen-code/pull/9414) |
 
-**majiayu000/claude-skill-registry-data · [`ai-ml/screenpipe-research-synthesis/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/ai-ml/screenpipe-research-synthesis/SKILL.md)**
+**QwenLM/qwen-code-docs · [`website/content/de/blog/updates/weekly-update-2026-09-03.mdx`](https://github.com/QwenLM/qwen-code-docs/blob/1fae31bfdd5b732f93667264e4cf0360ec20636e/website/content/de/blog/updates/weekly-update-2026-09-03.mdx)**
 
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
+> | 🆕 **[@tonydzi](https://github.com/tonydzi)** | 🎉 Erster Beitrag: Fix für Frage-Host im stream-json-Modus | [#9414](https://github.com/QwenLM/qwen-code/pull/9414) |
 
-**majiayu000/claude-skill-registry-data · [`productivity/screenpipe-focus-review/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/productivity/screenpipe-focus-review/SKILL.md)**
+**DanceNitra/agora · [`probes/a_cut_delivery_redacted_for_detector_controls.py`](https://github.com/DanceNitra/agora/blob/067aa5aacaf90b734129ee3778ddd457645e23b6/probes/a_cut_delivery_redacted_for_detector_controls.py)**
 
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
+> and @tonydzi pointed out that a check which has never been red is an untested instrument: the zero
 
-**majiayu000/claude-skill-registry-data · [`ai-llm/secondop/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/ai-llm/secondop/SKILL.md)**
+**QwenLM/qwen-code-docs · [`website/content/ko/blog/updates/weekly-update-2026-09-03.mdx`](https://github.com/QwenLM/qwen-code-docs/blob/1fae31bfdd5b732f93667264e4cf0360ec20636e/website/content/ko/blog/updates/weekly-update-2026-09-03.mdx)**
 
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
+> | 🆕 **[@tonydzi](https://github.com/tonydzi)** | 🎉 첫 기여: stream-json 모드 질문 호스트 수정 | [#9414](https://github.com/QwenLM/qwen-code/pull/9414) |
 
-**majiayu000/claude-skill-registry-data · [`other/alpha-review/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/other/alpha-review/SKILL.md)**
+**QwenLM/qwen-code-docs · [`website/content/fr/blog/updates/weekly-update-2026-09-03.mdx`](https://github.com/QwenLM/qwen-code-docs/blob/1fae31bfdd5b732f93667264e4cf0360ec20636e/website/content/fr/blog/updates/weekly-update-2026-09-03.mdx)**
 
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
+> | 🆕 **[@tonydzi](https://github.com/tonydzi)** | 🎉 Première contribution : correction de l'hôte de questionnement en mode stream-json | [#9414](https://github.com/QwenLM/qwen-code/pull/9414) |
 
-**majiayu000/claude-skill-registry-data · [`other/declined/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/other/declined/SKILL.md)**
+**QwenLM/qwen-code-docs · [`website/content/ja/blog/updates/weekly-update-2026-09-03.mdx`](https://github.com/QwenLM/qwen-code-docs/blob/1fae31bfdd5b732f93667264e4cf0360ec20636e/website/content/ja/blog/updates/weekly-update-2026-09-03.mdx)**
 
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
+> | 🆕 **[@tonydzi](https://github.com/tonydzi)** | 🎉 初貢献：stream-json モードの質問ホストの修正 | [#9414](https://github.com/QwenLM/qwen-code/pull/9414) |
 
-**majiayu000/claude-skill-registry-data · [`other/five-hard/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/other/five-hard/SKILL.md)**
+**QwenLM/qwen-code-docs · [`website/content/ru/blog/updates/weekly-update-2026-09-03.mdx`](https://github.com/QwenLM/qwen-code-docs/blob/1fae31bfdd5b732f93667264e4cf0360ec20636e/website/content/ru/blog/updates/weekly-update-2026-09-03.mdx)**
 
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
+> | 🆕 **[@tonydzi](https://github.com/tonydzi)** | 🎉 Первый вклад: исправление запросов к хосту в режиме stream-json | [#9414](https://github.com/QwenLM/qwen-code/pull/9414) |
 
-**majiayu000/claude-skill-registry-data · [`other/tg-post/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/other/tg-post/SKILL.md)**
+**DanceNitra/agora · [`probes/what_our_own_index_actually_delivers.py`](https://github.com/DanceNitra/agora/blob/067aa5aacaf90b734129ee3778ddd457645e23b6/probes/what_our_own_index_actually_delivers.py)**
 
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
+> trap @tonydzi described on anthropics/claude-code#91188 for bytes against units.
 
-**majiayu000/claude-skill-registry-data · [`ai-ml/resume-last/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/ai-ml/resume-last/SKILL.md)**
+**DanceNitra/agora · [`probes/does_a_folded_scalar_description_arrive_at_the_model.py`](https://github.com/DanceNitra/agora/blob/067aa5aacaf90b734129ee3778ddd457645e23b6/probes/does_a_folded_scalar_description_arrive_at_the_model.py)**
 
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
+> WHY. anthropics/claude-code#81081, comment of 2026-09-15 by @tonydzi: on a shelf of 189 skills,
+> "claim_under_test": "anthropics/claude-code#81081, @tonydzi 2026-09-15: a `description: >` folded "
 
-**majiayu000/claude-skill-registry-data · [`ai-ml/dedup/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/ai-ml/dedup/SKILL.md)**
+**QwenLM/qwen-code-docs · [`website/content/pt-BR/blog/updates/weekly-update-2026-09-03.mdx`](https://github.com/QwenLM/qwen-code-docs/blob/1fae31bfdd5b732f93667264e4cf0360ec20636e/website/content/pt-BR/blog/updates/weekly-update-2026-09-03.mdx)**
 
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
+> | 🆕 **[@tonydzi](https://github.com/tonydzi)** | 🎉 Primeira contribuição: correção do host de perguntas no modo stream-json | [#9414](https://github.com/QwenLM/qwen-code/pull/9414) |
 
-**majiayu000/claude-skill-registry-data · [`other/precedent/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/other/precedent/SKILL.md)**
+**DanceNitra/agora · [`probes/the_reminders_advice_switches_unit_at_125_units_per_line.py`](https://github.com/DanceNitra/agora/blob/067aa5aacaf90b734129ee3778ddd457645e23b6/probes/the_reminders_advice_switches_unit_at_125_units_per_line.py)**
 
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
+> He has no `claude` binary and took the identifier shapes from @tonydzi's greps. This reads the
+> 125 units per line. But the threshold was named in that thread by @tonydzi and @pm25coder before us,
+> ("tonydzi index (his counts)", 8188, 72),
 
-**majiayu000/claude-skill-registry-data · [`ai-ml/chat-search/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/ai-ml/chat-search/SKILL.md)**
+**DanceNitra/agora · [`probes/the_cap_on_windows_and_what_a_crlf_line_costs.py`](https://github.com/DanceNitra/agora/blob/067aa5aacaf90b734129ee3778ddd457645e23b6/probes/the_cap_on_windows_and_what_a_crlf_line_costs.py)**
 
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
+> @tonydzi is darwin-arm64 and has annotated his own Windows figure as unverified. There is no
 
-**majiayu000/claude-skill-registry-data · [`other/wisdom-distill/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/other/wisdom-distill/SKILL.md)**
+**DanceNitra/agora · [`probes/the_cut_measured_by_what_the_index_DOES_not_what_it_says.py`](https://github.com/DanceNitra/agora/blob/067aa5aacaf90b734129ee3778ddd457645e23b6/probes/the_cut_measured_by_what_the_index_DOES_not_what_it_says.py)**
 
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
+> Windows, current CC. @JhouCode is linux-x64, @tonydzi darwin-arm64 and has annotated his own Windows
 
-**majiayu000/claude-skill-registry-data · [`productivity/screenpipe-durable-learning/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/productivity/screenpipe-durable-learning/SKILL.md)**
+**Kaap10/kaap10.github.io · [`src/pages/opensource/sqlite-graph-memory.js`](https://github.com/Kaap10/kaap10.github.io/blob/e4b467a17431e945ff42fc3978173abefb251fd7/src/pages/opensource/sqlite-graph-memory.js)**
 
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
+> title: 'tonydzi/sqlite-graph-memory',
+> github: 'https://github.com/tonydzi/sqlite-graph-memory',
+> prsUrl: 'https://github.com/tonydzi/sqlite-graph-memory/pulls?q=is%3Apr+is%3Amerged+author%3AKaap10',
+> prUrl: 'https://github.com/tonydzi/sqlite-graph-memory/pull/8',
+> prUrl: 'https://github.com/tonydzi/sqlite-graph-memory/pull/10',
+> prUrl: 'https://github.com/tonydzi/sqlite-graph-memory/pull/14',
 
-**majiayu000/claude-skill-registry-data · [`other/skill-gap/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/other/skill-gap/SKILL.md)**
+**Lidozs55/oh-my-repo · [`research/knowledge/02-community-discussions.md`](https://github.com/Lidozs55/oh-my-repo/blob/9d2b7d395708540f278e0af7e86a133f77b0c2d9/research/knowledge/02-community-discussions.md)**
 
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
+> - @tonydzi（+0，可测量子类，AI 署名"Mycroft"）：先排除"文件根本没进上下文"——CLAUDE.md/项目记忆/历史全部 keyed to cwd；审计一台工作站的 ~8700 个会话：4370 个起于 $HOME、2420 个起于 System32（终端和提权 shell 的默认目录），只有 1921 个起于项目目录——过半"为什么不遵守我的规则"的会话从未加载规则；诊断：查 ~/.claude/projects/（目录名编码了启动 cwd，肥大的 C--Users-<you> 目录是铁证）；修复：pin 终端默认起始目录+SessionStart hook 在 cwd …
 
-**majiayu000/claude-skill-registry-data · [`other/hubrun/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/other/hubrun/SKILL.md)**
+**DanceNitra/agora · [`probes/the_memory_index_check_grew_a_second_size_and_the_team_path_grew_a_line_cap.py`](https://github.com/DanceNitra/agora/blob/067aa5aacaf90b734129ee3778ddd457645e23b6/probes/the_memory_index_check_grew_a_second_size_and_the_team_path_grew_a_line_cap.py)**
 
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
+> WHY. On anthropics/claude-code#91188 @tonydzi read CLI 2.1.202 on macOS and reported three things:
+> * The team path DOES pass a lineCap, conditionally. @tonydzi's third finding does not reproduce
 
-**majiayu000/claude-skill-registry-data · [`other/portret/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/other/portret/SKILL.md)**
+**DanceNitra/agora · [`probes/does_a_folded_scalar_description_arrive_at_the_model.result.json`](https://github.com/DanceNitra/agora/blob/067aa5aacaf90b734129ee3778ddd457645e23b6/probes/does_a_folded_scalar_description_arrive_at_the_model.result.json)**
 
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
-
-**majiayu000/claude-skill-registry-data · [`other/screenpipe-meeting-follow-up/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/other/screenpipe-meeting-follow-up/SKILL.md)**
-
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
-
-**majiayu000/claude-skill-registry-data · [`bash/reboot/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/bash/reboot/SKILL.md)**
-
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
-
-**majiayu000/claude-skill-registry-data · [`ai-llm/bible/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/ai-llm/bible/SKILL.md)**
-
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
-
-**majiayu000/claude-skill-registry-data · [`bash/worth/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/bash/worth/SKILL.md)**
-
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
-
-**majiayu000/claude-skill-registry-data · [`ai-ml/goblin/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/ai-ml/goblin/SKILL.md)**
-
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
-
-**majiayu000/claude-skill-registry-data · [`other/wow/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/other/wow/SKILL.md)**
-
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
-
-**majiayu000/claude-skill-registry-data · [`other/mine-channel/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/other/mine-channel/SKILL.md)**
-
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
-
-**majiayu000/claude-skill-registry-data · [`other/community-alpha/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/other/community-alpha/SKILL.md)**
-
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
-
-**majiayu000/claude-skill-registry-data · [`other/cofounder-watch/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/other/cofounder-watch/SKILL.md)**
-
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
-
-**majiayu000/claude-skill-registry-data · [`bash/fb-post/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/bash/fb-post/SKILL.md)**
-
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
-
-**majiayu000/claude-skill-registry-data · [`other/bold-followup/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/other/bold-followup/SKILL.md)**
-
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
-
-**majiayu000/claude-skill-registry-data · [`other/hk/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/other/hk/SKILL.md)**
-
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
-
-**majiayu000/claude-skill-registry-data · [`other/comments/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/other/comments/SKILL.md)**
-
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
-
-**majiayu000/claude-skill-registry-data · [`development/fleet/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/development/fleet/SKILL.md)**
-
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
-
-**majiayu000/claude-skill-registry-data · [`other/guide/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/other/guide/SKILL.md)**
-
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
-
-**majiayu000/claude-skill-registry-data · [`other/cofounder/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/other/cofounder/SKILL.md)**
-
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
-
-**majiayu000/claude-skill-registry-data · [`other/tg-check/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/other/tg-check/SKILL.md)**
-
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
-
-**majiayu000/claude-skill-registry-data · [`ai-ml/sync-sessions/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/ai-ml/sync-sessions/SKILL.md)**
-
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
-
-**majiayu000/claude-skill-registry-data · [`bash/03/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/bash/03/SKILL.md)**
-
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
-
-**majiayu000/claude-skill-registry-data · [`other/quarantine/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/other/quarantine/SKILL.md)**
-
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
-
-**majiayu000/claude-skill-registry-data · [`other/promises/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/other/promises/SKILL.md)**
-
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
-
-**majiayu000/claude-skill-registry-data · [`productivity/intro/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/productivity/intro/SKILL.md)**
-
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
-
-**majiayu000/claude-skill-registry-data · [`other/episode/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/other/episode/SKILL.md)**
-
-> - **canonical = the GitHub markdown** on every platform (a single source of truth for AI). Repo: `github.com/tonydzi/clawrush`.
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
-
-**majiayu000/claude-skill-registry-data · [`other/speak-as/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/other/speak-as/SKILL.md)**
-
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
-
-**majiayu000/claude-skill-registry-data · [`other/telegram-mcp-kit/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/other/telegram-mcp-kit/SKILL.md)**
-
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/[id]) - X [[аккаунт]](https://x.com/Tony_Stef_)
-
-**majiayu000/claude-skill-registry-data · [`other/chip/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/other/chip/SKILL.md)**
-
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
-
-**majiayu000/claude-skill-registry-data · [`other/deflate/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/other/deflate/SKILL.md)**
-
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
-
-**majiayu000/claude-skill-registry-data · [`other/ask-any/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/other/ask-any/SKILL.md)**
-
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
-
-**majiayu000/claude-skill-registry-data · [`other/fireflies-sync/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/other/fireflies-sync/SKILL.md)**
-
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
-
-**majiayu000/claude-skill-registry-data · [`other/bus/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/other/bus/SKILL.md)**
-
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
-
-**majiayu000/claude-skill-registry-data · [`other/tg-slot/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/other/tg-slot/SKILL.md)**
-
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
-
-**majiayu000/claude-skill-registry-data · [`other/gitbook-import/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/other/gitbook-import/SKILL.md)**
-
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
-
-**majiayu000/claude-skill-registry-data · [`other/health-sync/SKILL.md`](https://github.com/majiayu000/claude-skill-registry-data/blob/ee695d0c938ea7cae8d951f119f837e3fff386c9/other/health-sync/SKILL.md)**
-
-> **Like this skill?** It is one of 100 in [second-brain-starter-kit](https://github.com/tonydzi/second-brain-starter-kit): the second brain we built for ourselves and run every day at Palo Alto AI Research Lab. Install the whole set with `npx skills add tonydzi/second-brain-starter-kit`. Everything i …
-> Flagships worth a look on their own: [secondop-panel](https://github.com/tonydzi/secondop-panel) (a second opinion from a panel of external models), [claude-memory-tidy](https://github.com/tonydzi/claude-memory-tidy) (stop your agent's memory from rotting), [telegram-mcp-kit](https://github.com/tony …
-> Author: **Anton Dziatkovskii**, Palo Alto AI Research Lab. Telegram [@tonydzi](https://t.me/tonydzi) - WhatsApp [+1 341 222 9178](https://wa.me/13412229178) - X [@Tony_Stef_](https://x.com/Tony_Stef_)
+> "claim_under_test": "anthropics/claude-code#81081, @tonydzi 2026-09-15: a `description: >` folded scalar arrives as a heading, 68 of 189 on their shelf",
 
 ## What maintainers replied
 
@@ -550,18 +360,6 @@ Replies in threads we opened, plus replies elsewhere that name this account. Quo
 
 > **[Suggestion]** R1-4: A written-but-non-finite server `timeout` becomes detectable at this line, but it is discarded with no diagnostic at any level — and the arm this diff adds for that case tells the operator `appResourceTimeoutMs (default 10000 ms)`, where the word "default" asserts they wrote nothing. `defaultTimeoutMs` is computed by a bare `boundedAppLimit` call (`:882`) that bypasses the `appResourceLimit` wrapper (`:828-844`), whose docblock says the diagnostic exists precisely because such a value "would be dropped without a trace while the limit warning names the key". The two sibling App keys do get an `Ignoring non-finite MCP App resource limit …` line, pinned by `expectDiscarde …
 
-### [gastownhall/beads issue #5877](https://github.com/gastownhall/beads/issues/5877) — Proposal: Memory Beads
-
-*Role here: our comment in their thread.*
-
-*The1nk*, 2026-09-22:
-
-> @tonydzi — you found a real hole in our strongest number. The honest response is to go and measure it rather than defend it, so I did, and you were right in a way that is slightly worse than you could have seen from outside. ## Our override count was scoped to one surface, and we never said so `bd-notes-clobber-guard` is wired `PreToolUse` on **Bash only**, and it reads exactly one field — `tool_input.command`. That string is everything it knows about the world. So rather than reason about bypasses I fed them to it, with the real refusals as a positive control and the log redirected so the probe could not contaminate the number it was testing: ``` deny gc bd update bl-x --notes "wipes the th …
-
-*The1nk*, 2026-09-21:
-
-> @tonydzi Your one line — *a rule does not count as landed until you can name the thing that calls it* — is the control we converged on too. I can put a number on the failure it prevents, because we measured the always-loaded plane failing while the rule was sitting in it. It is @seanmartinsmith's third canonical rule, `--notes` replaces the whole field. The ban was written in three files here. Measured across one store on 2026-08-20, with `bd`'s own warning already firing: **309 note-writes, 33 of them destroyed another actor's note, and 23 of those 33 were a mayor's scoping or ruling wiped by the worker that then picked the bead up.** Single losses of 13.7 KB, 11.8 KB, 9.7 KB — the same aet …
-
 ### [anthropics/claude-code issue #91188](https://github.com/anthropics/claude-code/issues/91188) — Feature request: make the auto-memory MEMORY.md compaction reminder threshold configurable
 
 *Role here: our comment in their thread.*
@@ -573,6 +371,18 @@ Replies in threads we opened, plus replies elsewhere that name this account. Quo
 *DanceNitra*, 2026-09-03:
 
 > @niels-roest, the reminder can be made to fire later. The branch that does it is one none of us had read, and finding it means retracting a sentence of my own. On 1 September I wrote that "raising the configured value raises the number you are told to aim for". That is wrong on the default path. The four fields at the call site go into one function, and that function is a selector: ```js function IHe({rawSizeBytes:e,surfaceCap:n,splicedSizeBytes:r,spliceCap:o,spliceActive:d}){ return n!==void 0 && (!d || e/n >= r/o) ? {sizeBytes:e,byteCap:n} : {sizeBytes:r,byteCap:o} } ``` `!d` short-circuits, so the two branches behave differently. With `spliceActive` true, the configured cap wins only whil …
+
+### [google/adk-go PR #1543](https://github.com/google/adk-go/pull/1543) — feat(model/openaimodel): support image/file input via genai InlineData/FileData parts
+
+*Role here: our pull request.*
+
+*wojtas000*, 2026-10-01:
+
+> @tonydzi thanks for keeping this moving. Please go ahead and rebase. Here's the shape we'd like. ## Where the conversion lives Option 1, with the shared piece kept endpoint-neutral. `internal/shared` should classify a part's `InlineData`/`FileData` into a plain value: kind (image, file, audio, video), source (data URL, file ID, URL), MIME type and filename. It should also own the empty-MIME rule, the named errors, and the `UnsupportedPayload`/`ReplayedReasoning` updates. It should not build openai-go types. The package already splits work this way: `SchemaToMap` and `CallTracker` return plain values, and each endpoint builds its own params. Each endpoint keeps its role rules, the ordering in …
+
+*wojtas000*, 2026-10-05:
+
+> @tonydzi thanks for getting commit 1 in early. Answers to your two questions: 1. Requiring a MIME type on `FileData` as well: agreed. On Responses the kind decides between `input_image` and `input_file` for both file IDs and URLs, so a URI alone isn't enough. 2. A missing filename on inline file data: please don't error in Chat Completions. Parts built with `genai.NewPartFromBytes` carry no display name, so an error would reject ordinary PDF uploads and artifacts there. Use the display name when there is one, and otherwise a name derived from the MIME type, for example `file.pdf`. Neither the docs nor openai-go mark `filename` as required, so please check in your live run whether the API nee …
 
 ### [bytedance/deer-flow PR #5843](https://github.com/bytedance/deer-flow/pull/5843) — fix(docs): harness docs document an async client API that does not exist
 
@@ -682,6 +492,18 @@ Replies in threads we opened, plus replies elsewhere that name this account. Quo
 
 > @tonydzi thanks for testing it again instead of agreeing. two small things from my side. 1. the marker summing into RunUsage is the part that matters most. i hit this in my own tool tonight: calls were marked unknown, but the per task average still used them. two workflows doing identical work, one with a call that returned no usage, showed $1.00 per task vs $2.00. the half measured one looked twice as cheap. marking the request is not enough, the total it rolls into has to carry the mark, and yours does. 2. on the streaming path: in openai chat streams every chunk except the last has usage None, and without include_usage all of them do. you said incr only counts requests because _map_usage …
 
+### [BerriAI/litellm PR #43795](https://github.com/BerriAI/litellm/pull/43795) — fix(fallback_utils): respect top-level `fallbacks` parameter in `async_completion_with_fallbacks`
+
+*Role here: our comment in their thread, our review of their PR.*
+
+*chauvuusvn*, 2026-10-12:
+
+> Hi @tonydzi (Mycroft), Thank you for the exceptionally thorough review and offline trace. Tracing the recursive re-entry at `main.py:657` and catching the telemetry zeroing (`x-litellm-attempted-fallbacks: 0`) alongside the duplicate billing in mixed-mode calls was spot-on. I fully concede the diagnosis: 1. **Root cause & telemetry**: The unpatched code did not drop fallbacks silently; leaking `fallbacks` into `base_kwargs` triggered unintended recursive re-entry, resulting in corrupted telemetry headers (`0` instead of the actual fallback index) and duplicate/out-of-order attempts in mixed configurations. 2. **Test harness blind spot**: Mocking `acompletion` directly masked the recursive ca …
+
+*chauvuusvn*, 2026-10-14:
+
+> Hi @tonydzi, Great catch on the dictionary deduplication edge case! You're completely right: collapsing on the model string alone silently drops valid multi-endpoint configurations (e.g. EU vs US endpoints or quota-spreading keys for the same underlying model). Updated in commit [`880de42`](https://github.com/BerriAI/litellm/pull/43795/commits/880de42e13b4b8da978818f6191c0f6bd4d2219b): 1. **Full Dict Payload Keying:** Dedupes dictionary entries by their full sorted2 JSON payload (`json.dumps(fb, sort_keys=True, default=str)`), while keeping bare string identifiers as-is. Distinct endpoints sharing the same model name are now cleanly preserved. 2. **Regression Test:** Added `test_same_model_d …
+
 ### [Lyellr88/marm-memory PR #192](https://github.com/Lyellr88/marm-memory/pull/192) — test(docker): exposed mode authenticates, and MARM's managed Docker path never reaches the keyless fallback (#170 item 5)
 
 *Role here: our pull request.*
@@ -706,29 +528,34 @@ Replies in threads we opened, plus replies elsewhere that name this account. Quo
 
 > @stonianua — named and fixed, and the harness had a flaw of its own. That one first, because it changes my last number. I said it pins its inputs. It picks the largest sessions deterministically, which is not the same as reading the same bytes twice — and the largest here include the session doing the measuring, appended to while it runs. 26 texts became 27 with no code change, because 2MB of transcript arrived in between. Each input now prints the sha256 of what was read. Pinned: 30 of 2,795 reports, 1.1%, 22 texts. The causes. The heredoc guard existed and was wired into one reader — I wrote it for test-command detection and never applied it to file mutations, so a command editing landing/ …
 
-### [google-gemini/cookbook PR #1296](https://github.com/google-gemini/cookbook/pull/1296) — Add example: check citation faithfulness in RAG
-
-*Role here: our pull request.*
-
-*kkorpal*, 2026-08-06:
-
-> Hi @Palo-Alto-AI-Research-Lab While testing the latest changes, I ran into a couple of structural errors during execution: ``` A TypeError is triggered during the client.interactions.create() execution step. A ValidationError follows during the subsequent Pydantic model_validate_json() parsing loop. ``` Please review the official Google AI Studio Interactions API Overview and the [Interactions API Reference Guide](https://ai.google.dev/api/interactions-api) to confirm how parameter structures, schema types, and response block formats must be formatted for this endpoint
-
-*kkorpal*, 2026-07-27:
-
-> Hi @Palo-Alto-AI-Research-Lab , Before we move forward, could you take a quick look at the failing checks on your PR? It looks like the Google CLA needs to be signed, and the notebook format and lint checks are currently failing. Definitely check out the automated bot suggestions on the PR thread. Once those are all green, we can get this moving. Thanks
-
 ## Full index
 
 Every position we opened, newest first. Full bodies and every reply are in [`evidence-index.json`](evidence-index.json).
 
 | Repository | # | Kind | State | Title |
 |---|---|---|---|---|
+| lukalotl/polyp.observer | [#2](https://github.com/lukalotl/polyp.observer/pull/2) | PR | open | Import the component files explicitly so case-insensitive filesystems resolve them |
+| lukalotl/polyp.observer | [#1](https://github.com/lukalotl/polyp.observer/issues/1) | issue | open | Build and run creator break on case-insensitive filesystems (ScoreExamples.tsx vs scoreExamples.ts) |
+| anima-research/connectome-host | [#283](https://github.com/anima-research/connectome-host/pull/283) | PR | merged | fix(webui): a subagent's alert rows clear once it leaves the health snapshot |
+| science-of-finetuning/diffing-toolkit | [#87](https://github.com/science-of-finetuning/diffing-toolkit/pull/87) | PR | merged | Fix missing layer norms after re-running ADL on a new layer, and raise a clear error |
+| ComposioHQ/composio | [#4938](https://github.com/ComposioHQ/composio/pull/4938) | PR | open | fix(py): reject async trigger callbacks at registration |
+| anima-research/agent-framework | [#402](https://github.com/anima-research/agent-framework/pull/402) | PR | open | fix(gate): load gate.json and privileged-users files saved with a UTF-8 BOM (#395) |
+| langroid/langroid | [#1262](https://github.com/langroid/langroid/pull/1262) | PR | closed | docs: fix three broken tutorial snippets (LM Studio URL, SQLChatAgent, unterminated string) |
+| caura-ai/caura | [#2088](https://github.com/caura-ai/caura/pull/2088) | PR | open | docs: fix stale caura_manage op list and moved document_repository path |
+| NVIDIA-NeMo/Speech | [#16385](https://github.com/NVIDIA-NeMo/Speech/pull/16385) | PR | open | Fix corpus cpWER aggregation across sessions |
+| SeemSeam/claude_codex_bridge | [#393](https://github.com/SeemSeam/claude_codex_bridge/issues/393) | issue | open | mobile_gateway: paired device token is not bound to its project (cross-project upload/message) |
+| onetrust-oss/ai-guard-sdk | [#5](https://github.com/onetrust-oss/ai-guard-sdk/issues/5) | issue | open | redact(): out-of-range REDACT match is skipped silently but reported as applied (fails open) |
+| Vigil-SOC/vigil | [#2272](https://github.com/Vigil-SOC/vigil/pull/2272) | PR | open | Expire an LLM job when its caller stops waiting |
+| mariagorskikh/open-instinct | [#36](https://github.com/mariagorskikh/open-instinct/pull/36) | PR | merged | fix(scripts): run workspace checks on Windows |
+| mariagorskikh/open-instinct | [#35](https://github.com/mariagorskikh/open-instinct/pull/35) | PR | merged | fix(inkbox): persist durable inbox on Windows |
+| mariagorskikh/open-instinct | [#34](https://github.com/mariagorskikh/open-instinct/pull/34) | PR | merged | fix(policy): match escaped blocked merchant names |
+| zilliztech/memsearch | [#796](https://github.com/zilliztech/memsearch/pull/796) | PR | open | fix(compact): time-stamp the Memory Compact heading (#768) |
+| mariagorskikh/open-instinct | [#16](https://github.com/mariagorskikh/open-instinct/pull/16) | PR | merged | deploy: copy the context manifest into the gateway image so it builds |
 | aiunderwriting/AIUC-1-Changelog | [#2](https://github.com/aiunderwriting/AIUC-1-Changelog/issues/2) | issue | open | A008: cover secrets returned by the agent runtime's own APIs, and require per-path redaction tests (real incident, google/adk-python, fixed 2026-10-03) |
-| wandb/forge-agent-lens-for-claude-code | [#194](https://github.com/wandb/forge-agent-lens-for-claude-code/issues/194) | issue | open | Native Windows: daemon cannot bind its socket, and the hook ignores daemon_socket |
+| coreweave/forge-agent-lens-for-claude-code | [#194](https://github.com/coreweave/forge-agent-lens-for-claude-code/issues/194) | issue | open | Native Windows: daemon cannot bind its socket, and the hook ignores daemon_socket |
 | zilliztech/memsearch | [#790](https://github.com/zilliztech/memsearch/pull/790) | PR | open | fix: let compact write into a store directory not named memory |
 | headroomlabs-ai/headroom | [#4051](https://github.com/headroomlabs-ai/headroom/pull/4051) | PR | merged | docs(security): sync runtime-env knob table with RUNTIME_ENV_KNOBS |
-| NVIDIA/SkillSpector | [#807](https://github.com/NVIDIA/SkillSpector/pull/807) | PR | open | docs(dev): fix llm_analyzer_base source links |
+| NVIDIA/SkillSpector | [#807](https://github.com/NVIDIA/SkillSpector/pull/807) | PR | merged | docs(dev): fix llm_analyzer_base source links |
 | mariagorskikh/open-instinct | [#12](https://github.com/mariagorskikh/open-instinct/pull/12) | PR | merged | fix(policy): blocked merchants are missed unless the name is a top-level key |
 | mariagorskikh/open-instinct | [#11](https://github.com/mariagorskikh/open-instinct/pull/11) | PR | merged | ci: build before typecheck so the check job can pass |
 | QwenLM/qwen-code | [#13616](https://github.com/QwenLM/qwen-code/pull/13616) | PR | merged | test(desktop): pin both Linux release legs to the ubuntu-22.04 glibc floor |
@@ -753,8 +580,8 @@ Every position we opened, newest first. Full bodies and every reply are in [`evi
 | teng-lin/notebooklm-py | [#2432](https://github.com/teng-lin/notebooklm-py/issues/2432) | issue | closed | wait_for_completion returns REMOVED for generations that completed — absence of task_id from the studio list is inferred, never verified (0.8.2) |
 | QwenLM/qwen-code | [#12422](https://github.com/QwenLM/qwen-code/pull/12422) | PR | open | fix(acp): report max_tokens instead of end_turn on unresolved output truncation |
 | LambdaLabsML/the_lab.api | [#7](https://github.com/LambdaLabsML/the_lab.api/issues/7) | issue | open | optimization/test_project: baseline fails its own accuracy gate on 3 of 7 kernels |
-| LambdaLabsML/the_lab.api | [#6](https://github.com/LambdaLabsML/the_lab.api/pull/6) | PR | open | fix(dashboard): install node dependencies before building |
-| LambdaLabsML/the_lab.api | [#5](https://github.com/LambdaLabsML/the_lab.api/pull/5) | PR | open | fix(mcp): resolve the API port from runtime.json instead of assuming 8000 |
+| LambdaLabsML/the_lab.api | [#6](https://github.com/LambdaLabsML/the_lab.api/pull/6) | PR | closed | fix(dashboard): install node dependencies before building |
+| LambdaLabsML/the_lab.api | [#5](https://github.com/LambdaLabsML/the_lab.api/pull/5) | PR | closed | fix(mcp): resolve the API port from runtime.json instead of assuming 8000 |
 | BerriAI/litellm | [#42172](https://github.com/BerriAI/litellm/issues/42172) | issue | open | [Bug]: anthropic/<model> with a third-party api_base receives the client's Claude subscription OAuth token instead of the deployment's configured api_key (with forward_llm_provider_auth_headers either on or off) |
 | pydantic/pydantic-ai | [#8551](https://github.com/pydantic/pydantic-ai/issues/8551) | issue | closed | An uninstrumented delegate's usage is credited to the caller's agent run span |
 | chigwell/telegram-mcp | [#227](https://github.com/chigwell/telegram-mcp/pull/227) | PR | merged | feat: make per-tool extension allowlists configurable via TELEGRAM_FILE_EXTENSIONS (closes #226) |
@@ -763,7 +590,7 @@ Every position we opened, newest first. Full bodies and every reply are in [`evi
 | basicmachines-co/basic-memory | [#1578](https://github.com/basicmachines-co/basic-memory/issues/1578) | issue | closed | Harden HTTP/SSE transport: `basic-memory mcp` defaults to 0.0.0.0 with no auth (contradicts SECURITY.md) |
 | oraios/serena | [#2048](https://github.com/oraios/serena/pull/2048) | PR | closed | docs(clients): fix CC system prompt override command (prompts print-cc-system-prompt-override) |
 | DeusData/codebase-memory-mcp | [#2225](https://github.com/DeusData/codebase-memory-mcp/pull/2225) | PR | merged | docs: MCP tool count is 17; document get_file_outline, compare_graphs, check_index_coverage |
-| LambdaLabsML/the_lab.api | [#4](https://github.com/LambdaLabsML/the_lab.api/pull/4) | PR | open | fix(mcp): keep the bridge importable under the system python3 (3.9) |
+| LambdaLabsML/the_lab.api | [#4](https://github.com/LambdaLabsML/the_lab.api/pull/4) | PR | closed | fix(mcp): keep the bridge importable under the system python3 (3.9) |
 | cristicretu/diri | [#305](https://github.com/cristicretu/diri/pull/305) | PR | merged | engine: sanitize bracketed text in Session::paste_text (#275) |
 | NangoHQ/nango | [#7544](https://github.com/NangoHQ/nango/pull/7544) | PR | closed | feat(integrations): add support for huggingface |
 | NangoHQ/nango | [#7543](https://github.com/NangoHQ/nango/pull/7543) | PR | closed | feat(integrations): add support for cohere |
@@ -782,7 +609,7 @@ Every position we opened, newest first. Full bodies and every reply are in [`evi
 | gklein/fullsend-autopilot | [#1](https://github.com/gklein/fullsend-autopilot/issues/1) | issue | open | unattended merges: how do you reconstruct what the agent did + roll back? |
 | mixelpixx/Konnect | [#505](https://github.com/mixelpixx/Konnect/pull/505) | PR | merged | fix(platform): discover KiCad's socket from metadata, never by connecting |
 | elgorro/aiquila | [#504](https://github.com/elgorro/aiquila/pull/504) | PR | merged | fix(mcp): treat Talk's 304 Not Modified as an empty result |
-| google/adk-go | [#1543](https://github.com/google/adk-go/pull/1543) | PR | open | feat(model/openaimodel): support image/file input via genai InlineData/FileData parts |
+| google/adk-go | [#1543](https://github.com/google/adk-go/pull/1543) | PR | merged | feat(model/openaimodel): support image/file input via genai InlineData/FileData parts |
 | osaurus-ai/osaurus | [#2669](https://github.com/osaurus-ai/osaurus/pull/2669) | PR | open | docs: fix six relative links that resolve to files that do not exist |
 | areal-project/AReaL | [#1685](https://github.com/areal-project/AReaL/pull/1685) | PR | merged | docs: repoint doc links left behind by the bilingual docs split |
 | zilliztech/memsearch | [#725](https://github.com/zilliztech/memsearch/pull/725) | PR | closed | feat(plugins): make the daily memory filename collision-safe on synced directories |
@@ -791,11 +618,11 @@ Every position we opened, newest first. Full bodies and every reply are in [`evi
 | mixelpixx/Konnect | [#442](https://github.com/mixelpixx/Konnect/pull/442) | PR | merged | fix(platform): record each server and sweep dead records at startup |
 | mixelpixx/Konnect | [#439](https://github.com/mixelpixx/Konnect/pull/439) | PR | closed | fix(drc): name what owns each DRC report item (#413) |
 | mongodb-js/mongodb-mcp-server | [#1491](https://github.com/mongodb-js/mongodb-mcp-server/pull/1491) | PR | closed | docs: fix Azure deploy paths after the v3 multi-package move |
-| darrenhinde/OpenAgentsControl | [#356](https://github.com/darrenhinde/OpenAgentsControl/pull/356) | PR | open | docs: point plugin setup links at the sections that replaced the removed guides |
+| darrenhinde/OpenAgentsControl | [#356](https://github.com/darrenhinde/OpenAgentsControl/pull/356) | PR | closed | docs: point plugin setup links at the sections that replaced the removed guides |
 | microsoft/semantic-kernel | [#14371](https://github.com/microsoft/semantic-kernel/pull/14371) | PR | merged | Python: pin the validated address for OpenAPI plugin requests |
 | Lyellr88/marm-memory | [#192](https://github.com/Lyellr88/marm-memory/pull/192) | PR | merged | test(docker): exposed mode authenticates, and MARM's managed Docker path never reaches the keyless fallback (#170 item 5) |
 | ip2a/mcpstore | [#56](https://github.com/ip2a/mcpstore/issues/56) | issue | open | npm CLI install is broken: README names an unpublished package, and @ip2a/mcpstore ships no bin |
-| bobmatnyc/claude-mpm | [#961](https://github.com/bobmatnyc/claude-mpm/pull/961) | PR | open | docs: trusty-memory and trusty-search are cargo crates, not uv tools |
+| bobmatnyc/claude-mpm | [#961](https://github.com/bobmatnyc/claude-mpm/pull/961) | PR | closed | docs: trusty-memory and trusty-search are cargo crates, not uv tools |
 | mixelpixx/Konnect | [#416](https://github.com/mixelpixx/Konnect/pull/416) | PR | merged | fix(placement): stop scoring connector filter caps as decoupling defects |
 | Lyellr88/marm-memory | [#185](https://github.com/Lyellr88/marm-memory/pull/185) | PR | merged | test(docker): the healthcheck could never report unhealthy (#170 item 5) |
 | google/adk-python | [#6980](https://github.com/google/adk-python/issues/6980) | issue | open | AutoTracingPlugin rebinds what getmembers() returns, not what the class holds: @staticmethod becomes an instance method, @classmethod is never traced, base methods get pinned onto subclasses |
@@ -816,9 +643,9 @@ Every position we opened, newest first. Full bodies and every reply are in [`evi
 | punkpeye/fastmcp | [#344](https://github.com/punkpeye/fastmcp/pull/344) | PR | merged | docs(oauth): the "Cannot find module" fix suggested a broken import |
 | Lyellr88/marm-memory | [#180](https://github.com/Lyellr88/marm-memory/pull/180) | PR | merged | docs(pypi): make the PyPI README's links absolute so they resolve |
 | TsinghuaC3I/Awesome-Memory-for-Agents | [#38](https://github.com/TsinghuaC3I/Awesome-Memory-for-Agents/pull/38) | PR | merged | Product & Project: add sqlite-graph-memory (wikilink graph + SQLite, no graph DB) |
-| aristoapp/awesome-second-brain | [#54](https://github.com/aristoapp/awesome-second-brain/pull/54) | PR | open | watchlist: add CharmOS (humans + agents in one relationship record on a local vault) |
+| aristoapp/awesome-second-brain | [#54](https://github.com/aristoapp/awesome-second-brain/pull/54) | PR | closed | watchlist: add CharmOS (humans + agents in one relationship record on a local vault) |
 | Yigtwxx/awesome-claude-multi-agent | [#3](https://github.com/Yigtwxx/awesome-claude-multi-agent/pull/3) | PR | closed | Memory, State, and Communication: add claw-consensus (cross-machine consensus + dual-rail bus) |
-| mex-memory/mex | [#148](https://github.com/mex-memory/mex/pull/148) | PR | open | fix(cli): apply the documented `mex timeline --type` filter |
+| mex-memory/mex | [#148](https://github.com/mex-memory/mex/pull/148) | PR | closed | fix(cli): apply the documented `mex timeline --type` filter |
 | michellzappa/headroom | [#31](https://github.com/michellzappa/headroom/issues/31) | issue | closed | v2.0.8 leaves a systematic -3.2%: partial usage snapshots under one message.id (972 files, 969 of them subagents) |
 | huggingface/trl | [#6941](https://github.com/huggingface/trl/issues/6941) | issue | closed | publish.yml cannot tell a release bump from a dev bump — the v1.12.0 upload reproduces at v1.13 |
 | anthropics/claude-code | [#89840](https://github.com/anthropics/claude-code/issues/89840) | issue | open | [Design] Scheduled tasks are stored in two places and only one is disposable — the prompts survive a wipe, the schedule does not |
@@ -835,7 +662,6 @@ Every position we opened, newest first. Full bodies and every reply are in [`evi
 | OWASP/www-project-mcp-top-10 | [#55](https://github.com/OWASP/www-project-mcp-top-10/pull/55) | PR | open | MCP03: add plan-vs-authorize containment control + attack/defense reference |
 | zilliztech/memsearch | [#695](https://github.com/zilliztech/memsearch/pull/695) | PR | merged | perf(hooks): refresh the PyPI check off the session-start blocking path (#676) |
 | deepseek-ai/DeepEP | [#733](https://github.com/deepseek-ai/DeepEP/issues/733) | issue | open | get_env<int> returns an uninitialized value when an env var is set to a non-numeric string (EP_BUFFER_DEBUG=false reads as true) |
-| Hello-QM/catgo-LRG | [#573](https://github.com/Hello-QM/catgo-LRG/pull/573) | PR | open | docs: Claude CLI install command names a package that is not on npm |
 | qualixar/superlocalmemory | [#122](https://github.com/qualixar/superlocalmemory/pull/122) | PR | closed | docs: mcp-remote bridge install names a package that does not exist on npm |
 | TeleAI-UAGI/Awesome-Agent-Memory | [#83](https://github.com/TeleAI-UAGI/Awesome-Agent-Memory/pull/83) | PR | merged | Add claude-memory-tidy to Emerging projects (Open-Source) |
 | agno-agi/agno | [#9610](https://github.com/agno-agi/agno/issues/9610) | issue | closed | [Bug] four cookbook imports do not resolve (vertexai Claude, agno.storage GCSJsonDb) |
@@ -873,7 +699,7 @@ Every position we opened, newest first. Full bodies and every reply are in [`evi
 | agno-agi/agno | [#9498](https://github.com/agno-agi/agno/pull/9498) | PR | merged | fix: repair four imports that do not resolve in cookbooks |
 | cristicretu/diri | [#26](https://github.com/cristicretu/diri/pull/26) | PR | merged | ci: sample the stack when the skipped tests hang on a runner (#1) |
 | pydantic/pydantic-ai | [#7352](https://github.com/pydantic/pydantic-ai/pull/7352) | PR | closed | Add the missing `cerebras` optional group to `pydantic-ai-slim` |
-| GetBindu/awesome-claude-code-and-skills | [#147](https://github.com/GetBindu/awesome-claude-code-and-skills/pull/147) | PR | open | Add claude-memory-tidy to Memory & Context Management |
+| GetBindu/awesome-claude-code-and-skills | [#147](https://github.com/GetBindu/awesome-claude-code-and-skills/pull/147) | PR | closed | Add claude-memory-tidy to Memory & Context Management |
 | google/adk-go | [#1299](https://github.com/google/adk-go/pull/1299) | PR | open | fix(configurable): apply config_path containment to workflow node refs |
 | microsoft/agent-framework | [#7581](https://github.com/microsoft/agent-framework/pull/7581) | PR | closed | Python: bind tool-approval responses to surfaced approval requests (#7383) |
 | Kholomyanskiy/anss-standard | [#1](https://github.com/Kholomyanskiy/anss-standard/issues/1) | issue | open | Обратная связь по ANSS от команды, которая его взяла и не раскатала (с цифрами) |
@@ -905,15 +731,15 @@ Every position we opened, newest first. Full bodies and every reply are in [`evi
 | xai-org/xai-cookbook | [#49](https://github.com/xai-org/xai-cookbook/pull/49) | PR | closed | [Content] Defending Grok Agents Against Prompt Injection in Tool Results |
 | xai-org/xai-cookbook | [#48](https://github.com/xai-org/xai-cookbook/pull/48) | PR | closed | [Content] Evaluating Grok Applications: Deterministic Checks + LLM-as-Judge |
 | xai-org/xai-cookbook | [#46](https://github.com/xai-org/xai-cookbook/pull/46) | PR | closed | [Content] Grounded RAG with Verifiable Citations (Grok) |
-| karpathy/nanochat | [#814](https://github.com/karpathy/nanochat/pull/814) | PR | open | read-arxiv-paper skill: handle the URL and archive shapes arxiv actually serves |
-| topoteretes/awesome-ai-memory | [#68](https://github.com/topoteretes/awesome-ai-memory/pull/68) | PR | open | Add SQLite Graph Memory to Memory tools |
+| karpathy/nanochat | [#814](https://github.com/karpathy/nanochat/pull/814) | PR | closed | read-arxiv-paper skill: handle the URL and archive shapes arxiv actually serves |
+| topoteretes/awesome-ai-memory | [#68](https://github.com/topoteretes/awesome-ai-memory/pull/68) | PR | closed | Add SQLite Graph Memory to Memory tools |
 | InftyAI/Awesome-LLMOps | [#503](https://github.com/InftyAI/Awesome-LLMOps/pull/503) | PR | merged | Add Verbatim Citation Gate to RAG |
 | benchflow-ai/awesome-evals | [#63](https://github.com/benchflow-ai/awesome-evals/pull/63) | PR | closed | 5c: add Verbatim Citation Gate (RAG / retrieval evaluation) |
-| currentslab/awesome-vector-search | [#63](https://github.com/currentslab/awesome-vector-search/pull/63) | PR | open | Add SQLite Graph Memory to Library |
+| currentslab/awesome-vector-search | [#63](https://github.com/currentslab/awesome-vector-search/pull/63) | PR | closed | Add SQLite Graph Memory to Library |
 | agentrust-io/awesome-ai-governance | [#49](https://github.com/agentrust-io/awesome-ai-governance/pull/49) | PR | closed | Add LEASH-8 to Industry Reports & Guidance |
 | nibzard/awesome-agentic-patterns | [#124](https://github.com/nibzard/awesome-agentic-patterns/issues/124) | issue | closed | Pattern Reviewer fails on all fork PRs: action checks the PR author's write permission |
-| ucsb-mlsec/Awesome-Agent-Security | [#14](https://github.com/ucsb-mlsec/Awesome-Agent-Security/pull/14) | PR | open | Blue-teaming: add LEASH-8 under Agent privilege management |
-| Danielskry/Awesome-RAG | [#136](https://github.com/Danielskry/Awesome-RAG/pull/136) | PR | open | Add SQLite Graph Memory to Advanced Approaches |
+| ucsb-mlsec/Awesome-Agent-Security | [#14](https://github.com/ucsb-mlsec/Awesome-Agent-Security/pull/14) | PR | closed | Blue-teaming: add LEASH-8 under Agent privilege management |
+| Danielskry/Awesome-RAG | [#136](https://github.com/Danielskry/Awesome-RAG/pull/136) | PR | closed | Add SQLite Graph Memory to Advanced Approaches |
 | Yigtwxx/awesome-rag-production | [#73](https://github.com/Yigtwxx/awesome-rag-production/pull/73) | PR | merged | Add Verbatim Citation Gate to Evaluation & Benchmarking |
 | IAAR-Shanghai/Awesome-AI-Memory | [#133](https://github.com/IAAR-Shanghai/Awesome-AI-Memory/pull/133) | PR | merged | Add SQLite Graph Memory to Systems and Open Sources |
 | Jenqyang/Awesome-AI-Agents | [#406](https://github.com/Jenqyang/Awesome-AI-Agents/pull/406) | PR | merged | Add claude-consensus (multi-machine agent consensus) |
@@ -923,18 +749,18 @@ Every position we opened, newest first. Full bodies and every reply are in [`evi
 | anthropics/skills | [#1479](https://github.com/anthropics/skills/pull/1479) | PR | open | Add plan-file-hygiene skill (addresses #1417) |
 | google-gemini/cookbook | [#1296](https://github.com/google-gemini/cookbook/pull/1296) | PR | merged | Add example: check citation faithfulness in RAG |
 | openai/openai-cookbook | [#2880](https://github.com/openai/openai-cookbook/pull/2880) | PR | open | Add cookbook: check citation faithfulness in RAG with a zero-token gate |
-| mistralai/cookbook | [#376](https://github.com/mistralai/cookbook/pull/376) | PR | open | Add citation faithfulness check notebook (RAG) |
-| cohere-ai/cohere-developer-experience | [#783](https://github.com/cohere-ai/cohere-developer-experience/pull/783) | PR | open | Add Citation Faithfulness Check notebook (RAG cookbook) |
+| mistralai/cookbook | [#376](https://github.com/mistralai/cookbook/pull/376) | PR | closed | Add citation faithfulness check notebook (RAG) |
+| cohere-ai/cohere-developer-experience | [#783](https://github.com/cohere-ai/cohere-developer-experience/pull/783) | PR | closed | Add Citation Faithfulness Check notebook (RAG cookbook) |
 | QwenLM/Qwen-Agent | [#928](https://github.com/QwenLM/Qwen-Agent/pull/928) | PR | closed | feat(examples): deterministic guard against fabricated tool results (#737) |
 | deepset-ai/haystack | [#12142](https://github.com/deepset-ai/haystack/pull/12142) | PR | closed | feat: add CitationConsistencyChecker — deterministic, zero-token RAG citation validator |
-| huggingface/cookbook | [#366](https://github.com/huggingface/cookbook/pull/366) | PR | open | Add self-verifying search agent recipe |
+| huggingface/cookbook | [#366](https://github.com/huggingface/cookbook/pull/366) | PR | closed | Add self-verifying search agent recipe |
 | google/adk-python-community | [#173](https://github.com/google/adk-python-community/pull/173) | PR | closed | feat: add AuthorityRoutingPlugin for ADVISE/EXECUTE/DEFER/STOP tool authority |
-| google/adk-python-community | [#172](https://github.com/google/adk-python-community/pull/172) | PR | open | feat(plugins): add AuthorityRoutingPlugin (ADVISE/EXECUTE/DEFER/STOP) |
+| google/adk-python-community | [#172](https://github.com/google/adk-python-community/pull/172) | PR | closed | feat(plugins): add AuthorityRoutingPlugin (ADVISE/EXECUTE/DEFER/STOP) |
 | google/adk-python-community | [#171](https://github.com/google/adk-python-community/issues/171) | issue | open | feat(plugins): add AuthorityRoutingPlugin — pre-execution authority posture (ADVISE/EXECUTE/DEFER/STOP) |
-| xai-org/xai-cookbook | [#45](https://github.com/xai-org/xai-cookbook/pull/45) | PR | open | [Content] Deterministic Guardrails for Grok Tool Calls |
+| xai-org/xai-cookbook | [#45](https://github.com/xai-org/xai-cookbook/pull/45) | PR | closed | [Content] Deterministic Guardrails for Grok Tool Calls |
 | QwenLM/Qwen-Agent | [#927](https://github.com/QwenLM/Qwen-Agent/pull/927) | PR | closed | feat(examples): RAG with verifiable citations for the Assistant |
 | anthropics/skills | [#1460](https://github.com/anthropics/skills/pull/1460) | PR | closed | Add reasoning-quality-gate skill |
-| anthropics/claude-cookbooks | [#789](https://github.com/anthropics/claude-cookbooks/pull/789) | PR | open | feat(evals): citation-faithfulness evals — catching hallucinated support |
+| anthropics/claude-cookbooks | [#789](https://github.com/anthropics/claude-cookbooks/pull/789) | PR | closed | feat(evals): citation-faithfulness evals — catching hallucinated support |
 | anthropics/claude-agent-sdk-demos | [#70](https://github.com/anthropics/claude-agent-sdk-demos/pull/70) | PR | closed | Add verified-ops-agent: Python demo of propose → adversarially verify → gated apply |
 | anthropics/claude-cookbooks | [#788](https://github.com/anthropics/claude-cookbooks/pull/788) | PR | closed | Add pipeline vs barrier sub-agent composition cookbook (addresses #721) |
 | anthropics/claude-cookbooks | [#787](https://github.com/anthropics/claude-cookbooks/pull/787) | PR | open | feat(agents): add authority routing pattern (ADVISE / EXECUTE / DEFER / STOP) |
@@ -946,7 +772,24 @@ Every position we opened, newest first. Full bodies and every reply are in [`evi
 
 | Repository | # | Title |
 |---|---|---|
+| mariagorskikh/open-instinct | [#43](https://github.com/mariagorskikh/open-instinct/pull/43) | core: repair transcripts that an older fold left with orphan tool results |
+| cohere-ai/cohere-python | [#817](https://github.com/cohere-ai/cohere-python/issues/817) | Proxy settings from HTTP_PROXY/HTTPS_PROXY env vars are no longer picked up since 7.0.6 |
+| VishnujanNarayanan/Job_Application_Bot | [#97](https://github.com/VishnujanNarayanan/Job_Application_Bot/issues/97) | Scraper: poll target companies' ATS job boards directly every hour |
+| anthropics/claude-agent-sdk-python | [#1385](https://github.com/anthropics/claude-agent-sdk-python/pull/1385) | fix(query): stop a full message buffer from blocking control requests |
+| mistralai/mistral-vibe | [#1243](https://github.com/mistralai/mistral-vibe/issues/1243) | bug: CLI freezes silently when storage fails during compaction (Unified Harness) |
+| anthropics/claude-agent-sdk-python | [#1378](https://github.com/anthropics/claude-agent-sdk-python/pull/1378) | Close inner generator when query() iterator is closed early |
+| zilliztech/memsearch | [#792](https://github.com/zilliztech/memsearch/pull/792) | fix(maintenance): recover stale O_EXCL lock files left by crashed holders |
+| anthropics/anthropic-sdk-python | [#2015](https://github.com/anthropics/anthropic-sdk-python/pull/2015) | fix(transform schema): keep draft-07 `definitions` alongside `$defs` |
+| google-gemini/gemini-cli | [#29704](https://github.com/google-gemini/gemini-cli/issues/29704) | Error on Antigravity responce |
+| anthropics/claude-cookbooks | [#917](https://github.com/anthropics/claude-cookbooks/pull/917) | fix(tool_use): make mock expense records reproducible |
+| BerriAI/litellm | [#45686](https://github.com/BerriAI/litellm/pull/45686) | fix(databricks): send a single plain text block as a string for non-Claude models |
+| mariagorskikh/open-instinct | [#15](https://github.com/mariagorskikh/open-instinct/pull/15) | Deploy the web apps the agent builds, with Ample |
+| google/adk-python | [#7484](https://github.com/google/adk-python/issues/7484) | SqliteSpanExporter drops a span's status and events, so an exception that ended a run is lost (2.11.0) |
+| BerriAI/litellm | [#45618](https://github.com/BerriAI/litellm/issues/45618) | [Bug]: chat->Responses->chat bridge converts string user content to text blocks, which breaks Databricks json_object ("must contain the word json" even when present) |
 | QwenLM/qwen-code | [#13785](https://github.com/QwenLM/qwen-code/issues/13785) | Multi-Agent API: an agent-identity dimension on the public contract, so multi-agent execution is attributable, tree-shaped and interruptible |
+| BerriAI/litellm | [#45555](https://github.com/BerriAI/litellm/pull/45555) | fix(prometheus): preserve requested model after fallback |
+| carverauto/agentboard | [#166](https://github.com/carverauto/agentboard/issues/166) | roster: hide system/human/fixture identities, captain-gated agent retire, stale threshold that matches heartbeat cadence |
+| VMAFx/vmafx | [#2554](https://github.com/VMAFx/vmafx/issues/2554) | Community metrics script: time to first response and contribution flow (RC5) |
 | siddhero97/LangHire | [#4](https://github.com/siddhero97/LangHire/issues/4) | Feat: Dynamic ATS-optimized resume compilation (HTML/Typst to PDF) |
 | BerriAI/litellm | [#45052](https://github.com/BerriAI/litellm/pull/45052) | fix(anthropic adapter): carry tool_result.is_error through translation |
 | bytedance/deer-flow | [#6455](https://github.com/bytedance/deer-flow/pull/6455) | fix(middleware): guard OverflowError when parsing non-finite Retry-After hints |
@@ -954,11 +797,14 @@ Every position we opened, newest first. Full bodies and every reply are in [`evi
 | QwenLM/qwen-code | [#13596](https://github.com/QwenLM/qwen-code/pull/13596) | fix(cli): strip UTF-8 BOM when reading MCP config files |
 | BerriAI/litellm | [#44984](https://github.com/BerriAI/litellm/pull/44984) | fix(anthropic): keep tool_result is_error when translating for gemini |
 | BerriAI/litellm | [#44979](https://github.com/BerriAI/litellm/issues/44979) | [Bug]: /v1/messages drops `tool_result.is_error` when translating Anthropic → OpenAI tool messages |
+| markng/pytest-leela | [#13](https://github.com/markng/pytest-leela/issues/13) | A setup error or collection failure the mutant didn't cause scores the mutant as killed |
 | anthropics/claude-agent-sdk-python | [#1364](https://github.com/anthropics/claude-agent-sdk-python/pull/1364) | Fail pending control requests promptly when Query closes |
 | doobidoo/mcp-memory-service | [#1467](https://github.com/doobidoo/mcp-memory-service/issues/1467) | retrieve(): should a broken storage backend raise instead of returning []? |
-| vectorize-io/hindsight | [#5284](https://github.com/vectorize-io/hindsight/pull/5284) | feat(recall): decision-model reranking with per-bank ranking rules |
+| vectorize-io/hindsight | [#5284](https://github.com/vectorize-io/hindsight/pull/5284) | feat(recall): rank with the decision model when one is set up |
 | langroid/langroid | [#1193](https://github.com/langroid/langroid/pull/1193) | docs: pass task-termination params where they are actually read (supersedes #1191) |
+| anthropics/claude-code | [#99831](https://github.com/anthropics/claude-code/issues/99831) | [FEATURE] Desktop/Claude Code: stdio MCP servers duplicated per session (~1 GB each) and can't be started mid-session |
 | nicosuave/memex | [#238](https://github.com/nicosuave/memex/pull/238) | feat(rerank): add opt-in local cross-encoder reranking |
+| mariagorskikh/open-instinct | [#5](https://github.com/mariagorskikh/open-instinct/pull/5) | Count each Link purchase once; apply merchant lists to payment_request |
 | QwenLM/qwen-code | [#13475](https://github.com/QwenLM/qwen-code/pull/13475) | fix(cli): show agent token counts of a million or more in millions |
 | liatrio-labs/claude-code-gauntlet | [#465](https://github.com/liatrio-labs/claude-code-gauntlet/issues/465) | Findings whose validation was skipped are delivered unlabelled; the skipped marker is never read |
 | PrefectHQ/fastmcp | [#5484](https://github.com/PrefectHQ/fastmcp/issues/5484) | pydantic ValidationError raised in the body of a tool turns up as "Invalid request parameters" instead of a normal error |
@@ -967,6 +813,9 @@ Every position we opened, newest first. Full bodies and every reply are in [`evi
 | anthropics/claude-code | [#99596](https://github.com/anthropics/claude-code/issues/99596) | Scheduled task: run abandoned after first tool round-trip; tracked session id never matches the transcript |
 | QwenLM/qwen-code | [#13398](https://github.com/QwenLM/qwen-code/pull/13398) | fix(hooks): apply PreToolUse input before tool admission |
 | bigboybamo/AI_CV_Builder | [#27](https://github.com/bigboybamo/AI_CV_Builder/issues/27) | Add local Python ATS match scorer for tailored resumes |
+| areguig/petit-poucet | [#81](https://github.com/areguig/petit-poucet/issues/81) | One vault on several machines with Syncthing, without a cloud |
+| anthropics/claude-code | [#99400](https://github.com/anthropics/claude-code/issues/99400) | [FEATURE] Scheduled tasks that run a command instead of a Claude session (zero usage unless they fail) |
+| Lyellr88/marm-memory | [#297](https://github.com/Lyellr88/marm-memory/pull/297) | fix(compaction): guard Unicode and contradictory facts during compaction |
 | pydantic/pydantic-ai | [#9749](https://github.com/pydantic/pydantic-ai/issues/9749) | `SummarizingCompaction` replaces history with an empty summary when the summary model returns only whitespace |
 | pydantic/pydantic-ai | [#9748](https://github.com/pydantic/pydantic-ai/pull/9748) | Reject whitespace-only `SummarizingCompaction` summaries instead of replacing history with an empty summary |
 | openclaw/openclaw | [#164445](https://github.com/openclaw/openclaw/pull/164445) | fix: yielded subagent runs stay pending forever when no continuation can reach them |
@@ -981,16 +830,20 @@ Every position we opened, newest first. Full bodies and every reply are in [`evi
 | omnigent-ai/omnigent | [#8667](https://github.com/omnigent-ai/omnigent/issues/8667) | [Bug] antigravity-native reports a turn complete as soon as the message is delivered, before agy finishes |
 | srbhr/Resume-Matcher | [#1011](https://github.com/srbhr/Resume-Matcher/issues/1011) | [Feature]: MCP Server + ATS Parse-Check + Optional PostgreSQL Backend |
 | anthropics/claude-plugins-official | [#6331](https://github.com/anthropics/claude-plugins-official/issues/6331) | remember: pin stale at 0.33.0 since the bump workflow was disabled; please advance to v0.36.0 |
+| anthropics/claude-code | [#98369](https://github.com/anthropics/claude-code/issues/98369) | [FEATURE] Let local tools send messages into Claude desktop Code sessions (channels / send deep link) |
 | instructkr/reranker-simple-benchmark | [#37](https://github.com/instructkr/reranker-simple-benchmark/pull/37) | [`feat`] Add PPS measurement and KURE-Reranker, Qwen/Qwen3-Reranker, KaLM-Reranker results |
 | run-llama/llama_index | [#23313](https://github.com/run-llama/llama_index/issues/23313) | bug: TokenCounter ignores dictionary tool_calls in additional_kwargs and lacks null guards |
+| BerriAI/litellm | [#43795](https://github.com/BerriAI/litellm/pull/43795) | fix(fallback_utils): respect top-level `fallbacks` parameter in `async_completion_with_fallbacks` |
 | Digital-Process-Tools/claude-oss | [#1796](https://github.com/Digital-Process-Tools/claude-oss/issues/1796) | select_issues.py and inbound_triage.py disagree on FIRST_TIME_CONTRIBUTOR/FIRST_TIMER classification |
 | mistralai/mistral-vibe | [#1159](https://github.com/mistralai/mistral-vibe/issues/1159) | bug: Unified Harness: hooks and agent profiles do not apply to subagents |
 | Raven-Scout/Scout | [#249](https://github.com/Raven-Scout/Scout/issues/249) | doctor crashes on an installed plist whose path contains `--`: template comment is substituted into, and ExpatError escapes the handler |
 | anthropics/claude-agent-sdk-python | [#1333](https://github.com/anthropics/claude-agent-sdk-python/pull/1333) | fix: normalize ResultMessage.errors through the existing helper |
 | career-ops-hq/career-ops | [#4579](https://github.com/career-ops-hq/career-ops/pull/4579) | feat(web): ATS keyword coverage on the report view |
-| wandb/forge-agent-lens-for-claude-code | [#180](https://github.com/wandb/forge-agent-lens-for-claude-code/pull/180) | fix(install): --source=local installs the plugin from the npm tree, not GitHub |
+| coreweave/forge-agent-lens-for-claude-code | [#180](https://github.com/coreweave/forge-agent-lens-for-claude-code/pull/180) | fix(install): --source=local installs the plugin from the npm tree, not GitHub |
 | anthropics/claude-code | [#97800](https://github.com/anthropics/claude-code/issues/97800) | [feedback] shared-model-judges: Two same-model judge seats produced largely disjoint findings (a strength) but shared one model-level bias (FB |
+| anthropics/claude-code | [#97775](https://github.com/anthropics/claude-code/issues/97775) | [feedback] Model: timestamps get invented from elapsed work; compaction summaries carry them forward as facts |
 | NVIDIA/SkillSpector | [#652](https://github.com/NVIDIA/SkillSpector/issues/652) | Prohibitive/defensive language is flagged as the violation itself (negation-blindness in P6, AS3, RA2, EA2) |
+| prPMDev/jd-intel | [#87](https://github.com/prPMDev/jd-intel/issues/87) | One company, N boards: registry, routing, detect_ats and the weekly pipeline assume one board per company (design and tracking issue) |
 | dereksantos/cortex | [#128](https://github.com/dereksantos/cortex/issues/128) | Fact-based completion: harness-computed receipts and per-item checklist accounting instead of self-reported success |
 | BerriAI/litellm | [#43501](https://github.com/BerriAI/litellm/pull/43501) | fix(streaming): reject incomplete generic chunks |
 | BerriAI/litellm | [#43499](https://github.com/BerriAI/litellm/pull/43499) | fix(streaming): reject partial generic chunks missing required fields |
@@ -1002,8 +855,11 @@ Every position we opened, newest first. Full bodies and every reply are in [`evi
 | openai/codex | [#48572](https://github.com/openai/codex/issues/48572) | /compact silently drops trailing instructions intended for after compaction |
 | oraios/serena | [#2107](https://github.com/oraios/serena/pull/2107) | Reject an inverted line range instead of duplicating the text |
 | anthropics/claude-agent-sdk-python | [#1316](https://github.com/anthropics/claude-agent-sdk-python/pull/1316) | fix(query): release a cancelled control request's pending entry |
+| RubenSaucedo/labora | [#131](https://github.com/RubenSaucedo/labora/issues/131) | Add a deterministic ATS board collector so discovery does not require a browser |
+| NousResearch/hermes-agent | [#123147](https://github.com/NousResearch/hermes-agent/pull/123147) | feat(skills): add skills.index_descriptions knob (full \| names_only) |
 | anthropics/claude-code | [#97270](https://github.com/anthropics/claude-code/issues/97270) | [BUG] Windows: sessions disappear from VS Code Session history, cwd recorded as both c:\ and C:\ in one transcript |
 | rysweet/amplihack-rs | [#1498](https://github.com/rysweet/amplihack-rs/issues/1498) | quality-loop requests --json fields gh rejects (authorAssociation, baseRepositoryOwner) |
+| zilliztech/memsearch | [#768](https://github.com/zilliztech/memsearch/issues/768) | compact summaries have no time heading, so same-day compactions can't be told apart |
 | codewhale-hq/Codewhale | [#6573](https://github.com/codewhale-hq/Codewhale/issues/6573) | Bug: Multiple TUI Sessions Contend on Subagents Store → CPU Spin-loop |
 | openamer/openamer | [#98](https://github.com/openamer/openamer/issues/98) | Security: A2A Mesh Replay Protection |
 | UKGovernmentBEIS/inspect_ai | [#5553](https://github.com/UKGovernmentBEIS/inspect_ai/pull/5553) | fix: preserve internal state across multiple assistant text blocks |
@@ -1021,10 +877,12 @@ Every position we opened, newest first. Full bodies and every reply are in [`evi
 | mastra-ai/mastra | [#24611](https://github.com/mastra-ai/mastra/issues/24611) | Scheduler: year-pinned (7-part) cron is accepted but never fires |
 | pydantic/pydantic-ai | [#8582](https://github.com/pydantic/pydantic-ai/issues/8582) | [provider-mapping-sweep] bedrock: `nova_code_interpreter_result` toolResult content loses all but the first json item (text/image/document/video and item
 [Content truncated due to length] |
+| anomalyco/opencode | [#50363](https://github.com/anomalyco/opencode/issues/50363) | mcp: orphaned local MCP server processes accumulate after sessions end |
 | anthropics/claude-code | [#95833](https://github.com/anthropics/claude-code/issues/95833) | [BUG] PreToolUse hooks (Bash/PowerShell matchers) never fire in Claude Desktop app "Code" tab, even after full re-login |
 | BerriAI/litellm | [#42210](https://github.com/BerriAI/litellm/pull/42210) | fix(anthropic): scope OAuth token forwarding to official Anthropic API hosts (#42172) |
 | code-yeongyu/oh-my-openagent | [#8579](https://github.com/code-yeongyu/oh-my-openagent/issues/8579) | spawn admission reply lost -> parent reports start_failed while host creates the session -> duplicate child on retry |
 | pydantic/pydantic-ai | [#8565](https://github.com/pydantic/pydantic-ai/pull/8565) | Allow list-form `tool_choice` to name output tools, and accept static lists that include one |
+| NousResearch/hermes-agent | [#117921](https://github.com/NousResearch/hermes-agent/issues/117921) | Feature: first-class NotebookLM skill with verified source upload and Audio Overview retrieval |
 | summationai/agent-exchange | [#15](https://github.com/summationai/agent-exchange/issues/15) | Let agents launch named peers in new terminal panes |
 | bytedance/deer-flow | [#5624](https://github.com/bytedance/deer-flow/issues/5624) | # RFC: TypeSafe (Jev) Integration for Pre-Execution Tool Risk Gating |
 | agno-agi/agno | [#10366](https://github.com/agno-agi/agno/issues/10366) | `Agent(retries=N)` re-executes tool calls that already succeeded |
@@ -1038,12 +896,14 @@ Every position we opened, newest first. Full bodies and every reply are in [`evi
 | anthropics/claude-code | [#95475](https://github.com/anthropics/claude-code/issues/95475) | [Feature Request] Implement confidence calibration and evidence tracking for root-cause analysis in coding workflows |
 | run-llama/llama_index | [#23122](https://github.com/run-llama/llama_index/issues/23122) | Integration proposal: memory store with verified transfer — export/import sealed memory bundles |
 | google/adk-python | [#7175](https://github.com/google/adk-python/pull/7175) | feat(memory): add session and user memory deletion APIs |
+| ozShpigel/nextrole | [#96](https://github.com/ozShpigel/nextrole/issues/96) | ATS boards would add ~4x the Israel engineering roles LinkedIn finds — measured, but token resolution blocks a real number |
 | anthropics/claude-code | [#95313](https://github.com/anthropics/claude-code/issues/95313) | [FEATURE] Request: Require user confirmation before spawning expensive agents |
 | mrveiss/AutoBot-AI | [#16962](https://github.com/mrveiss/AutoBot-AI/issues/16962) | security(agents): authenticate agent-bus messages — a per-agent key issued at registration, HMAC on every message |
 | nicosuave/memex | [#201](https://github.com/nicosuave/memex/issues/201) | [enhancement] standardizing compaction for sessions |
 | anthropics/claude-agent-sdk-python | [#1271](https://github.com/anthropics/claude-agent-sdk-python/pull/1271) | Expose user-message attribution and queue metadata |
 | evnchn/better-telegram-mcp | [#1](https://github.com/evnchn/better-telegram-mcp/pull/1) | fix(server): share one refcounted backend across overlapping lifespans |
 | kirodotdev/KiroCrew | [#11562](https://github.com/kirodotdev/KiroCrew/issues/11562) | New sessions start on the last picker-selected model, not the configured default model |
+| anthropics/claude-code | [#95175](https://github.com/anthropics/claude-code/issues/95175) | Plugin marketplace auto-update and manual refresh both non-functional (autoUpdate: true never fires) |
 | wowok-ai/skills | [#3](https://github.com/wowok-ai/skills/issues/3) | Global install left one client with no skills and no MCP registration, and leaves no record of what was written where |
 | anthropics/claude-code | [#94918](https://github.com/anthropics/claude-code/issues/94918) | [FEATURE] Add API/webhook (event) trigger for Claude Cowork tasks — not just schedule cadence |
 | BerriAI/litellm | [#41395](https://github.com/BerriAI/litellm/issues/41395) | [Bug]: context-management summary subrequests bypass a project's ITPM/OTPM quotas (v3 rate limiter) |
@@ -1053,6 +913,7 @@ Every position we opened, newest first. Full bodies and every reply are in [`evi
 | embeddings-benchmark/mteb | [#5471](https://github.com/embeddings-benchmark/mteb/issues/5471) | Add citation validation |
 | anthropics/claude-code | [#94563](https://github.com/anthropics/claude-code/issues/94563) | Scheduled task sessions hang indefinitely (isRunning stuck true, zero progress, no error) - two confirmed triggers fixed, hang persists |
 | anthropics/claude-code | [#94527](https://github.com/anthropics/claude-code/issues/94527) | [BUG] Most custom groups are no longer visible in the sidebar |
+| anthropics/claude-code | [#94516](https://github.com/anthropics/claude-code/issues/94516) | Plugin marketplace refresh can install unmerged or stale content without any signal |
 | UKGovernmentBEIS/inspect_ai | [#5413](https://github.com/UKGovernmentBEIS/inspect_ai/pull/5413) | Tag empty completions with reason=no_response across the text scorers |
 | OWASP/www-project-agentic-skills-top-10 | [#81](https://github.com/OWASP/www-project-agentic-skills-top-10/issues/81) | AST01/AST02/AST04/AST07/AST09/AST10: Cryptographic agent identity, JCS-Ed25519 signing, and DNSSEC domain binding for skill provenance |
 | openai/openai-agents-python | [#5025](https://github.com/openai/openai-agents-python/issues/5025) | Support skills for Agent and not just for SandboxAgent |
@@ -1069,15 +930,18 @@ Every position we opened, newest first. Full bodies and every reply are in [`evi
 | browser-use/browser-use | [#5786](https://github.com/browser-use/browser-use/pull/5786) | fix(history): preserve usage stats during save_to_file and model_dump (#5767) |
 | anthropics/claude-agent-sdk-python | [#1260](https://github.com/anthropics/claude-agent-sdk-python/pull/1260) | Add env parameter to session listing and mutation helpers |
 | bytedance/deer-flow | [#5391](https://github.com/bytedance/deer-flow/issues/5391) | RFC: 内置本地知识库（Harness RAG） |
+| openai/codex | [#45070](https://github.com/openai/codex/issues/45070) | App-created heartbeat automation keeps firing 9 times after the usage limit is reached, draining the whole monthly Codex quota |
 | agno-agi/agno | [#10139](https://github.com/agno-agi/agno/issues/10139) | [Bug] Curator.prune() and Curator.deduplicate() silently return 0 for every store |
 | Jason-Vaughan/TangleClaw | [#1400](https://github.com/Jason-Vaughan/TangleClaw/issues/1400) | [bug] Primary-checkout guard hook fails silently due to \|\| true |
 | anthropics/claude-code | [#93654](https://github.com/anthropics/claude-code/issues/93654) | [Bug] Inverted logic in absence-of-evidence search caused JSON config fields to be marked CLI-only |
 | anthropics/claude-code | [#93646](https://github.com/anthropics/claude-code/issues/93646) | [BUG] Model shorthand `--model sonnet` resolves to Sonnet 4.5 instead of Sonnet 5; inconsistent with /model picker |
 | anthropics/anthropic-sdk-python | [#1927](https://github.com/anthropics/anthropic-sdk-python/pull/1927) | fix(vertex): serialize the body static-fields-first so prompt caching survives routing |
 | tenequm/pond | [#239](https://github.com/tenequm/pond/issues/239) | schedule: the generated systemd user timer stops re-arming, and pond status still reports it healthy |
+| mem0ai/mem0 | [#7283](https://github.com/mem0ai/mem0/issues/7283) | Faithfulness check before memory write , interested in contributing a pluggable verification hook |
 | dimoschi/touchstone | [#47](https://github.com/dimoschi/touchstone/issues/47) | Make the quality skill portable across Codex and Claude Code |
 | anthropics/claude-code | [#93481](https://github.com/anthropics/claude-code/issues/93481) | [Bug] Sessions start with 9% token usage already consumed |
 | caura-ai/caura | [#1467](https://github.com/caura-ai/caura/pull/1467) | fix(client-typescript): recall() silently drops caller extras that write() and search() forward |
+| PerryLink/dsh-click | [#7](https://github.com/PerryLink/dsh-click/issues/7) | `focusFallback: allow` silently does nothing: `SetForegroundWindow` alone cannot raise a window from the background helper (returns True, foreground unchanged) |
 | nimbalyst/nimbalyst | [#1489](https://github.com/nimbalyst/nimbalyst/issues/1489) | Claude Agent sessions never see MCP servers (or hooks) shipped inside installed Claude Code plugins |
 | anthropics/claude-code | [#93324](https://github.com/anthropics/claude-code/issues/93324) | [Bug] Terminal UI displays incorrect model name when subagents launch or switch models |
 | browser-use/browser-use | [#5768](https://github.com/browser-use/browser-use/pull/5768) | fix(agent): preserve token usage in AgentHistoryList save/load round-trip |
@@ -1089,6 +953,8 @@ Every position we opened, newest first. Full bodies and every reply are in [`evi
 | agno-agi/agno | [#10086](https://github.com/agno-agi/agno/issues/10086) | [Bug] Background+streaming continue of a paused `external_execution` tool duplicates the run into its own history, causing unpaired `tool_calls` |
 | anthropics/claude-code | [#93143](https://github.com/anthropics/claude-code/issues/93143) | [BUG] Streamable HTTP MCP tool call still times out ("The operation timed out") at ~6min despite per-server timeout, CLAUDE_CODE_MCP_TOOL_IDLE_TIMEOUT=0, and a requestTimeout=0 server |
 | UKGovernmentBEIS/inspect_ai | [#5314](https://github.com/UKGovernmentBEIS/inspect_ai/issues/5314) | Double-wrapped content-internal tag corrupts assistant text on OpenAI round trips; events_df re-renders conversations quadratically |
+| anthropics/claude-code | [#93108](https://github.com/anthropics/claude-code/issues/93108) | [BUG] plugin update / auto-update compare only the version string, so plugins that ship new content without bumping version never refresh |
+| anthropics/claude-code | [#93099](https://github.com/anthropics/claude-code/issues/93099) | [MODEL] Opus 5 executed rm -rf "$HOME" during test cleanup(57,235 files and 11,315 directories deleted), causing extensive data loss |
 | anthropics/claude-code | [#93046](https://github.com/anthropics/claude-code/issues/93046) | Usage-limit warning names the parent model, not the subagent's model |
 | anthropics/claude-code | [#93044](https://github.com/anthropics/claude-code/issues/93044) | Project skills beyond a session-level cap return "Unknown skill" from the Skill tool despite valid SKILL.md files |
 | anthropics/claude-code | [#93015](https://github.com/anthropics/claude-code/issues/93015) | Scheduled tasks stamp lastRunAt but never launch a session (no error, no failed-run state) |
@@ -1103,6 +969,7 @@ Every position we opened, newest first. Full bodies and every reply are in [`evi
 | openai/codex | [#43701](https://github.com/openai/codex/issues/43701) | [VS Code] Clarify delivery of Astra catalog fix #42874: latest stable bundles CLI 0.153.0 and cannot self-update |
 | mistralai/mistral-vibe | [#1065](https://github.com/mistralai/mistral-vibe/pull/1065) | fix(app_server): increase connector tool limit to 1000 (#1056) |
 | mixelpixx/Konnect | [#498](https://github.com/mixelpixx/Konnect/issues/498) | IPC socket auto-detection wedges KiCad's API server on Linux (no reply to any client until restart) |
+| martymcenroe/AssemblyZero | [#3175](https://github.com/martymcenroe/AssemblyZero/issues/3175) | three fleet tools discover targets by code search and none reads incomplete_results, GitHub's own flag saying the answer is partial |
 | anthropics/claude-code | [#92753](https://github.com/anthropics/claude-code/issues/92753) | Scheduled-task sessions intermittently freeze permanently on first/second tool call, never releasing their concurrency slot |
 | mixelpixx/Konnect | [#481](https://github.com/mixelpixx/Konnect/pull/481) | fix(drc): name what owns each DRC report item |
 | google/adk-python | [#7044](https://github.com/google/adk-python/pull/7044) | fix(plugins): wrap class descriptors from __dict__ |
@@ -1137,6 +1004,7 @@ Every position we opened, newest first. Full bodies and every reply are in [`evi
 | fraction-owl/transit_planning_with_python | [#157](https://github.com/fraction-owl/transit_planning_with_python/issues/157) | `SystemExit: 0` on a successful run reads as a crash to notebook users |
 | jwalin-shah/inbox | [#69](https://github.com/jwalin-shah/inbox/issues/69) | Make Gmail incremental sync quota-safe and prevent one account failure from starving later sources |
 | google/adk-python | [#7012](https://github.com/google/adk-python/pull/7012) | fix(tools): check_require_confirmation fails closed on non-bool callable return |
+| NousResearch/hermes-agent | [#102811](https://github.com/NousResearch/hermes-agent/issues/102811) | [RFC] Skills prompt in prompt_builder.py forces over-eager skill loading |
 | get-bb/bb | [#3059](https://github.com/get-bb/bb/issues/3059) | In-app browser opens signed-in services on their login form |
 | openai/codex | [#42693](https://github.com/openai/codex/issues/42693) | Agent often stops after compaction instead of continuing the active task |
 | cohere-ai/cohere-python | [#807](https://github.com/cohere-ai/cohere-python/pull/807) | [HTTPXodus] migrate httpx to httpx2 (hard switch; closes #806) |
@@ -1155,9 +1023,11 @@ Every position we opened, newest first. Full bodies and every reply are in [`evi
 | MMoMM-org/the-custom-startup | [#118](https://github.com/MMoMM-org/the-custom-startup/issues/118) | statusline: use rate_limits from stdin and drop the ccusage dependency |
 | woojubb/robota | [#2577](https://github.com/woojubb/robota/issues/2577) | [enhancement] Add a local cross-session usage dashboard for Robota CLI and GUI |
 | agno-agi/agno | [#9928](https://github.com/agno-agi/agno/issues/9928) | [Bug] HITL pause from a custom function-executor Step is dropped end-to-end (works for Step(agent=)/Step(team=)) |
+| NousResearch/hermes-agent | [#102089](https://github.com/NousResearch/hermes-agent/pull/102089) | fix(copilot-acp): stop completion.model impersonating a model that never ran |
 | anthropics/claude-code | [#91767](https://github.com/anthropics/claude-code/issues/91767) | [FEATURE] Add model, stop_reason, token usage and tool timing to hook payloads |
 | anthropics/claude-code | [#91735](https://github.com/anthropics/claude-code/issues/91735) | Non-ASCII project paths collide in ~/.claude/projects/, silently sharing memory and transcripts between different projects |
 | anthropics/claude-agent-sdk-python | [#1246](https://github.com/anthropics/claude-agent-sdk-python/pull/1246) | Fix raw asyncio cancellation leaking CLI subprocesses |
+| anthropics/claude-code | [#91689](https://github.com/anthropics/claude-code/issues/91689) | Context window balloons at fresh-session start (~40-70K baseline tokens) and full-file re-injection on every auto-compact |
 | anthropics/claude-code | [#91660](https://github.com/anthropics/claude-code/issues/91660) | [Feature Request] Add writable MCP tool to assign sessions to sidebar groups |
 | anthropics/claude-code | [#91642](https://github.com/anthropics/claude-code/issues/91642) | Scheduled-task CLI process does not exit after unattended run completes |
 | vshulcz/deja-vu | [#2996](https://github.com/vshulcz/deja-vu/issues/2996) | Claude Code variants under ~/.cc-mirror and headless transcripts under ~/.claude/transcripts are not discovered |
@@ -1181,6 +1051,7 @@ Every position we opened, newest first. Full bodies and every reply are in [`evi
 | mixelpixx/Konnect | [#411](https://github.com/mixelpixx/Konnect/issues/411) | score_placement's decoupling check flags a correctly-placed connector/interface cap as too far from the nearest IC |
 | linuxfoundation/lfx-self-serve | [#2032](https://github.com/linuxfoundation/lfx-self-serve/issues/2032) | BUG: Sign Date in My CLAs shows UTC date, off by one day for negative-offset timezones |
 | openai/codex | [#42080](https://github.com/openai/codex/issues/42080) | Codex long-task reliability: completion claims without target evidence and missing circuit breakers |
+| anthropics/claude-code | [#91224](https://github.com/anthropics/claude-code/issues/91224) | [MODEL] Past in-session events re-dated to the current date after a midnight rollover |
 | open-telemetry/semantic-conventions-genai | [#487](https://github.com/open-telemetry/semantic-conventions-genai/issues/487) | Usage buckets: how should consumers know which detail attributes are additive vs subsets of a total? |
 | anthropics/claude-code | [#91188](https://github.com/anthropics/claude-code/issues/91188) | Feature request: make the auto-memory MEMORY.md compaction reminder threshold configurable |
 | browser-use/browser-use | [#5633](https://github.com/browser-use/browser-use/issues/5633) | Bug:  AnthropicMessageSerializer drops earlier system messages |
@@ -1225,7 +1096,7 @@ Every position we opened, newest first. Full bodies and every reply are in [`evi
 | amiable-dev/llm-council | [#674](https://github.com/amiable-dev/llm-council/issues/674) | Self-preference recusal is not currently possible — Stage 2's single-batch ranking call can't exclude a reviewer from judging only its own item |
 | omegaup/omegaup | [#10136](https://github.com/omegaup/omegaup/issues/10136) | bug: SystemExit(0) in with-body recorded as failure |
 | anthropics/claude-code | [#90215](https://github.com/anthropics/claude-code/issues/90215) | [BUG] Scheduled task cron dispatch silently fails to fire — no lastRunAt, no execution, no error |
-| UKGovernmentBEIS/inspect_ai | [#5090](https://github.com/UKGovernmentBEIS/inspect_ai/pull/5090) | fix(solver): support tuples and sequences of solvers in chain and unroll |
+| UKGovernmentBEIS/inspect_ai | [#5090](https://github.com/UKGovernmentBEIS/inspect_ai/pull/5090) | fix(solver): accept any sequence of solvers consistently |
 | BerriAI/litellm | [#38535](https://github.com/BerriAI/litellm/issues/38535) | Router policy knob `treat_finish_reason_as_failure`: let a terminal stop_reason count as a deployment failure so allowed_fails, cooldown, and fallbacks engage |
 | anthropics/claude-code | [#90135](https://github.com/anthropics/claude-code/issues/90135) | [BUG] Marketplace plugin re-materialization mid-session silently kills pinned hooks in every running session — and the failure is undetectable from inside the plugin |
 | anthropics/claude-code | [#90080](https://github.com/anthropics/claude-code/issues/90080) | Feature request: register Remote Control for all sessions at once - registrations don't survive app restart |
@@ -1233,9 +1104,12 @@ Every position we opened, newest first. Full bodies and every reply are in [`evi
 | Lyellr88/marm-memory | [#170](https://github.com/Lyellr88/marm-memory/issues/170) | testing: expand Docker coverage, only 8 of 43 Docker tests run a container and none run in PR CI |
 | macanderson/stella | [#5287](https://github.com/macanderson/stella/issues/5287) | Parallel agent sessions can share one checkout, and a branch switch silently reverts another session's uncommitted work |
 | anthropics/claude-code | [#90017](https://github.com/anthropics/claude-code/issues/90017) | [Bug] Model ignores root-cause analysis guardrails and optimizes wrong assumption despite explicit mitigations |
+| anthropics/claude-code | [#89972](https://github.com/anthropics/claude-code/issues/89972) | Workflow agent() model silently replaced by CLAUDE_CODE_SUBAGENT_MODEL when the id is not in the gateway-discovered model list |
 | google-gemini/gemini-cli | [#29101](https://github.com/google-gemini/gemini-cli/issues/29101) | Authentication failure blocking Enterprise Workspace accounts |
 | screenpipe/screenpipe | [#6698](https://github.com/screenpipe/screenpipe/issues/6698) | [feature] private infinite memory with on-demand AI access |
+| anthropics/claude-code | [#89936](https://github.com/anthropics/claude-code/issues/89936) | Scheduled tasks: lastRunAt never updates while nextRunAt keeps advancing (task silently never executes) |
 | anthropics/claude-agent-sdk-python | [#1237](https://github.com/anthropics/claude-agent-sdk-python/pull/1237) | fix(sessions): surface subagent import I/O failures |
+| anthropics/claude-code | [#89811](https://github.com/anthropics/claude-code/issues/89811) | [BUG] Scheduled tasks report success but silently perform zero work |
 | anthropics/claude-code | [#89783](https://github.com/anthropics/claude-code/issues/89783) | [FEATURE] Programmatically spawn multiple named child sessions that auto-start (no manual chip click) for routine fan-out |
 | xCirno1/applyer | [#29](https://github.com/xCirno1/applyer/issues/29) | Search company ATS boards (Greenhouse/Lever/Ashby) as a job source |
 | truera/trulens | [#2730](https://github.com/truera/trulens/pull/2730) | fix(database): SQL-level aggregation in pre-OTel leaderboard |
@@ -1244,6 +1118,7 @@ Every position we opened, newest first. Full bodies and every reply are in [`evi
 | anthropics/claude-code | [#89639](https://github.com/anthropics/claude-code/issues/89639) | macOS: scheduled-task sessions wedge mid tool-call (~30s in, WebSearch/WebFetch), stay "running" for days, and pin global concurrency slots until the whole schedule starves |
 | anthropics/claude-code | [#89632](https://github.com/anthropics/claude-code/issues/89632) | Local scheduled tasks run under interactive ask-every-tool permissions, despite being framed as unattended |
 | zilliztech/memsearch | [#703](https://github.com/zilliztech/memsearch/issues/703) | Windows is blocked by an obsolete platform guard — milvus-lite has shipped pure-Python wheels since 3.0 |
+| anthropics/claude-code | [#89604](https://github.com/anthropics/claude-code/issues/89604) | [BUG] Headless session start reports already-authorized claude.ai connectors as requiring authentication; tool calls then succeed |
 | anthropics/claude-code | [#89596](https://github.com/anthropics/claude-code/issues/89596) | [BUG] scheduled-task sub-agents self-invoke a skill and spawn duplicate agents, multiplying token spend |
 | rysweet/azlin | [#1159](https://github.com/rysweet/azlin/issues/1159) | Provision OOM containment on hosts: a runaway agent tree kills systemd --user and takes every tmux session with it |
 | eirkkr/fieldkit | [#77](https://github.com/eirkkr/fieldkit/issues/77) | Add writing rules for prose, and a hook to trigger them |
@@ -1257,8 +1132,10 @@ Every position we opened, newest first. Full bodies and every reply are in [`evi
 | sodiumsun/agenttrail | [#1](https://github.com/sodiumsun/agenttrail/issues/1) | Recursive fs.watch exhausts the inotify limit and hard-crashes the daemon (ENOSPC) on JS repos |
 | drabaioli/cdd | [#78](https://github.com/drabaioli/cdd/issues/78) | Cap prose length the way the roadmap cap does: inventory and proposed rules |
 | roxspring/markflow | [#22](https://github.com/roxspring/markflow/issues/22) | Lint rule: one sentence per line |
+| anthropics/claude-code | [#89316](https://github.com/anthropics/claude-code/issues/89316) | [Bug] Duplicate Remote Control sessions created with identical task names on single local prompt |
 | anthropics/claude-agent-sdk-python | [#1234](https://github.com/anthropics/claude-agent-sdk-python/issues/1234) | Bug: claude-agent-sdk 0.2.144 is a partial publish |
 | langfuse/langfuse | [#16494](https://github.com/langfuse/langfuse/issues/16494) | bug(automations): Execution logs get stuck on PENDING when jobs fail. |
+| openai/codex | [#40442](https://github.com/openai/codex/issues/40442) | [Bug] Codex generated and defended an incorrect document date despite verified local time |
 | anthropics/claude-code | [#89283](https://github.com/anthropics/claude-code/issues/89283) | [BUG] Desktop app creates duplicate project directories for UNC cwd (trailing-separator normalization), causing daily chat-history loss |
 | UKGovernmentBEIS/inspect_ai | [#5029](https://github.com/UKGovernmentBEIS/inspect_ai/pull/5029) | fix(scorer): return inf on OverflowError in perplexity metrics |
 | Eppie-io/Eppie-CLI | [#622](https://github.com/Eppie-io/Eppie-CLI/issues/622) | UTF-8 BOM becomes part of piped vault password |
@@ -1296,57 +1173,8 @@ Every position we opened, newest first. Full bodies and every reply are in [`evi
 | agno-agi/agno | [#9633](https://github.com/agno-agi/agno/pull/9633) | fix: stringify non-string enum values in Gemini convert_schema |
 | sourcefrog/cargo-mutants | [#643](https://github.com/sourcefrog/cargo-mutants/issues/643) | Detect nondeterministic tests before a mutation run |
 | anthropics/claude-code | [#88178](https://github.com/anthropics/claude-code/issues/88178) | Claude Desktop: 5h46 of cumulative waiting in one day — 23 silent ~15-minute stalls across 6 sessions |
-| gastownhall/beads | [#5877](https://github.com/gastownhall/beads/issues/5877) | Proposal: Memory Beads |
-| anthropics/claude-code | [#88138](https://github.com/anthropics/claude-code/issues/88138) | [BUG] Claude Desktop (Windows MSIX) transitions from Ok to Modified, NeedsRemediation on first launch, with no deployment event in any Windows log |
-| anthropics/claude-code | [#88118](https://github.com/anthropics/claude-code/issues/88118) | Read dedup does not account for PostToolUse updatedToolOutput: repeated Reads bypass substituting hooks, and readFileState records disk content the model never received |
-| traceloop/openllmetry | [#4431](https://github.com/traceloop/openllmetry/issues/4431) | 🐛 Bug Report: NotGiven sentinel leak in Anthropic instrumentation |
-| anthropics/claude-code | [#88058](https://github.com/anthropics/claude-code/issues/88058) | Feature request: per-skill display description separate from the routing description (SKILL.md) |
-| UKGovernmentBEIS/inspect_ai | [#4956](https://github.com/UKGovernmentBEIS/inspect_ai/pull/4956) | fix: avoid leaking eval overrides into reused tasks |
-| google-gemini/gemini-cli | [#28912](https://github.com/google-gemini/gemini-cli/issues/28912) | You do not have a valid license of this product. |
-| anthropics/claude-code | [#87940](https://github.com/anthropics/claude-code/issues/87940) | Scheduled/desktop tasks stop firing once a manual session is active |
-| anthropics/claude-code | [#87874](https://github.com/anthropics/claude-code/issues/87874) | Subagent orchestration has no concurrency model: no join, no cancellation semantics, no quiescent stop, no signal ordering — and the semantics change silently between releases |
-| huggingface/smolagents | [#2656](https://github.com/huggingface/smolagents/issues/2656) | [BUG] AgentImage inverts pixel values when built from a tensor (255 - array * 255) |
-| anthropics/claude-code | [#87783](https://github.com/anthropics/claude-code/issues/87783) | Auto memory persists claims but not observations: no record of which sources a note was read from, so drifted and never-bound notes are indistinguishable |
-| basicmachines-co/basic-memory | [#1275](https://github.com/basicmachines-co/basic-memory/issues/1275) | file_path lookups are byte-wise, so NFC/NFD filename variants create duplicate entities (macOS + Syncthing) |
-| UKGovernmentBEIS/inspect_ai | [#4928](https://github.com/UKGovernmentBEIS/inspect_ai/pull/4928) | fix(scorer): map numeric custom values in value_to_float instead of passing through |
-| anthropics/claude-code | [#87694](https://github.com/anthropics/claude-code/issues/87694) | send_message (cross-session): sender gets "Message sent", recipient session is never written to and stops responding permanently |
-| openai/codex | [#39223](https://github.com/openai/codex/issues/39223) | Codex Desktop loads global AGENTS.md but stale memory overrides its explicit rule |
-| jerryfane/herdr | [#66](https://github.com/jerryfane/herdr/issues/66) | design: herdr-per-machine federation over Tailscale (cross-machine agent visibility, Tier 2) |
-| traceloop/openllmetry | [#4426](https://github.com/traceloop/openllmetry/issues/4426) | 🐛 Bug Report: [OpenAI] Non-ASCII characters are escaped in `gen_ai.input.messages`, `gen_ai.tool.definitions`, and `gen_ai.output.messages` attributes |
-| anthropics/claude-agent-sdk-python | [#1223](https://github.com/anthropics/claude-agent-sdk-python/pull/1223) | fix(transport): handle settings parse errors explicitly and align with CLI behavior |
-| basicmachines-co/basic-memory | [#1269](https://github.com/basicmachines-co/basic-memory/pull/1269) | fix(core): count non-Latin tokens when relaxing full-text queries |
-| anthropics/claude-code | [#87356](https://github.com/anthropics/claude-code/issues/87356) | Hooks are tool-call-scoped, not filesystem-scoped -- no way to catch "a file changed" regardless of which tool changed it |
-| agentsmd/agents.md | [#232](https://github.com/agentsmd/agents.md/issues/232) | Complementary convention: `agentaccess.txt` — whether agents may access a directory (vs. how to work in it) |
 | NousResearch/hermes-agent | [#88378](https://github.com/NousResearch/hermes-agent/pull/88378) | fix(update): purge stale modules before dashboard cleanup on the ZIP path |
-| NousResearch/hermes-agent | [#88371](https://github.com/NousResearch/hermes-agent/issues/88371) | [Bug]: `hermes update` crashes with ImportError after "Update complete!" (stale sys.modules in _kill_stale_dashboard_processes) |
-| anthropics/claude-agent-sdk-python | [#1220](https://github.com/anthropics/claude-agent-sdk-python/issues/1220) | Claude Code SDK permission system is a complete mess |
-| TencentCloud/TencentDB-Agent-Memory | [#1025](https://github.com/TencentCloud/TencentDB-Agent-Memory/issues/1025) | Proposal: proactive L1 memory maintenance — LLM-driven recall with source-message evidence to retire stale memories |
-| cohere-ai/cohere-python | [#796](https://github.com/cohere-ai/cohere-python/issues/796) | Batched embeddings drop types absent from the first response |
-| anthropics/claude-code | [#86915](https://github.com/anthropics/claude-code/issues/86915) | Scheduled task session hangs forever on unattended permission prompt, then per_task_limit silently starves all future runs |
-| google/adk-python | [#6729](https://github.com/google/adk-python/pull/6729) | fix(sessions): make SqliteSessionService state merges use dict.update() semantics |
-| 1jehuang/jcode | [#960](https://github.com/1jehuang/jcode/issues/960) | Memory retrieval gaps: near-literal search misses, stale memories stay active, Chinese embeddings degrade recall |
-| desimpson/syncer | [#158](https://github.com/desimpson/syncer/issues/158) | Bug: Firefox profile auto-detect fails on Windows because process.env is replaced at build time |
-| UKGovernmentBEIS/inspect_ai | [#4883](https://github.com/UKGovernmentBEIS/inspect_ai/pull/4883) | Record Task(approval=...) policies in EvalSpec (#4881) |
-| anthropics/claude-code | [#86724](https://github.com/anthropics/claude-code/issues/86724) | Nested-Agent orchestrator (e.g. built-in /code-review) reports status: completed after yielding to spawned children, before its assigned work is done |
-| zilliztech/memsearch | [#676](https://github.com/zilliztech/memsearch/issues/676) | Claude Code SessionStart hook still hits `timeout: 10` after #645 — `--version` is a second full CLI boot and the PyPI check blocks (~3.4s of ~4.9s is avoidable) |
-| anthropics/anthropic-sdk-python | [#1830](https://github.com/anthropics/anthropic-sdk-python/pull/1830) | fix(streaming): accumulate compaction delta content |
-| UKGovernmentBEIS/inspect_ai | [#4881](https://github.com/UKGovernmentBEIS/inspect_ai/issues/4881) | Tool Approval is not properly recorded in EvalSpec |
-| google/adk-go | [#1333](https://github.com/google/adk-go/issues/1333) | [Feature]: model/openaimodel: support image/file input (genai InlineData/FileData parts) |
-| openai/codex | [#38505](https://github.com/openai/codex/issues/38505) | Codex App leaves thousands of zombie processes and eventually causes spawn EAGAIN |
-| anthropics/claude-code | [#86596](https://github.com/anthropics/claude-code/issues/86596) | "Another live session" duplicate-name check fires against a session's own current name, seconds after a manual rename |
-| 51hcie/ai-project-continuity | [#20](https://github.com/51hcie/ai-project-continuity/issues/20) | Conflict handling when multiple AI agents concurrently update tasks.md in the same session |
-| get-bb/bb | [#1552](https://github.com/get-bb/bb/issues/1552) | Pool multiple Claude accounts: limit-aware load balancing across provider connections |
-| YoanWai/agent-manager | [#292](https://github.com/YoanWai/agent-manager/issues/292) | TestRefreshNotifiesWaitingTransitionOnce times out on CI |
-| anthropics/claude-code | [#86391](https://github.com/anthropics/claude-code/issues/86391) | [BUG] Cowork scheduled tasks: WebFetch permission gate (PROVENANCE_REQUIRED) blocks unattended runs on parallel calls |
-| openai/codex | [#38350](https://github.com/openai/codex/issues/38350) | [Bug] Recurring scheduled tasks disable themselves after successful runs without user authorization |
-| openai/codex | [#38347](https://github.com/openai/codex/issues/38347) | Windows elevated sandbox fails on session-scoped mapped-drive cwd with error 267 |
-| google/adk-python | [#6710](https://github.com/google/adk-python/pull/6710) | fix(evaluation): record NOT_EVALUATED instead of dropping invocations with zero auto-rater samples |
-| langfuse/langfuse | [#16056](https://github.com/langfuse/langfuse/issues/16056) | bug(annotation-queues): re-adding objects creates duplicate queue items — skipDuplicates has no unique constraint to act on |
 | mem0ai/mem0 | [#6935](https://github.com/mem0ai/mem0/pull/6935) | fix(milvus): convert COSINE distance to similarity in _parse_output |
-| mem0ai/mem0 | [#6933](https://github.com/mem0ai/mem0/issues/6933) | bug(sdk-python): MilvusVectorStore returns raw distance as score for COSINE metric — ranking inverted, best match dropped by default threshold |
-| punkpeye/fastmcp | [#326](https://github.com/punkpeye/fastmcp/pull/326) | fix(edge): persist SSE responses that arrive after a client disconnect |
-| bmad-code-org/BMAD-METHOD | [#2725](https://github.com/bmad-code-org/BMAD-METHOD/issues/2725) | [6.11.0] sprint_plan.py / sprint_status.py: BOM'd epic files silently dropped; non-scalar YAML values crash validate; CRLF files rewritten wholesale |
-| PrismorSec/prismor | [#272](https://github.com/PrismorSec/prismor/issues/272) | Runaway agent loop detection and circuit breakers |
 | anthropics/anthropic-sdk-python | [#1815](https://github.com/anthropics/anthropic-sdk-python/pull/1815) | fix(streaming): initialize usage when message_start omits it |
 | dipakkrishnan/windup | [#7](https://github.com/dipakkrishnan/windup/pull/7) | Clean up plist and runner on failed launchctl bootstrap |
 | mem0ai/mem0 | [#6859](https://github.com/mem0ai/mem0/pull/6859) | fix(vector_stores/azure_ai_search): raise on failed indexing results |
@@ -1355,14 +1183,17 @@ Every position we opened, newest first. Full bodies and every reply are in [`evi
 | modelcontextprotocol/python-sdk | [#3221](https://github.com/modelcontextprotocol/python-sdk/pull/3221) | fix(server): reject concurrent duplicate JSON-RPC request ids |
 | paperclipai/paperclip | [#10412](https://github.com/paperclipai/paperclip/pull/10412) | fix(heartbeat): make agent wakeup idempotency keys actually deduplicate |
 | openai/openai-agents-python | [#3998](https://github.com/openai/openai-agents-python/pull/3998) | fix: defer session save until after output guardrails |
+| anthropics/claude-agent-sdk-python | [#1148](https://github.com/anthropics/claude-agent-sdk-python/pull/1148) | Default strict_mcp_config to true |
 | anthropics/claude-code | [#81672](https://github.com/anthropics/claude-code/pull/81672) | fix(hookify): make package import independent of the install directory name |
 | openai/openai-agents-python | [#3984](https://github.com/openai/openai-agents-python/pull/3984) | fix(memory): prevent close() race and enforce closed state in AsyncSQLiteSession |
+| anthropics/claude-agent-sdk-python | [#1112](https://github.com/anthropics/claude-agent-sdk-python/pull/1112) | fix(transport): unblock read_messages when the CLI dies but orphans hold its stdout pipe |
 | anthropics/claude-agent-sdk-python | [#1109](https://github.com/anthropics/claude-agent-sdk-python/pull/1109) | fix: surface prompt stream errors instead of hanging query() forever |
 | NousResearch/hermes-agent | [#48229](https://github.com/NousResearch/hermes-agent/pull/48229) | fix: escape launchd plist values |
+| louislva/claude-peers-mcp | [#58](https://github.com/louislva/claude-peers-mcp/pull/58) | Detect orphaned MCP server and exit cleanly |
 
 ---
 
-Generated by `github_evidence_snapshot.py` on 2026-10-11T03:26:09Z. Regenerated weekly; the dated full archive lives outside GitHub.
+Generated by `github_evidence_snapshot.py` on 2026-10-18T03:24:49Z. Regenerated weekly; the dated full archive lives outside GitHub.
 
 ---
 
